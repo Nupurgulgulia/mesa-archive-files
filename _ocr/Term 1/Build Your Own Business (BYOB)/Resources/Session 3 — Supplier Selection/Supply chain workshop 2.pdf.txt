@@ -1,0 +1,249 @@
+OCR (Tesseract, mean confidence 89.2) of Term 1/Build Your Own Business (BYOB)/Resources/Session 3 — Supplier Selection/Supply chain workshop 2.pdf
+
+=== page 1 ===
+BYOB CHALLENGE - WORKSHOP 2 - JULY 2026
+Sourcing Mast
+The Indian D2C playbook — finding, vetting and ordering
+from your first supplier.
+
+Saurabh Jadhav
+
+Operator-Educator - D2C, Supply Chain & Founder-Stage GTM
+
+=== page 2 ===
+@ What we'll cover
+AGENDA
+J! d
+What we'll cover today.
+01 Where to Source 02 Discover & Vet
+India's supplier ecosystem — and where to start. Building a shortlist you can trust.
+0 3 Contact, Sample & Order 04 Your Mission
+From first email to inventory in hand. A 10-day sourcing sprint.
+
+=== page 3 ===
+} J
+ONCE YOUR IDEA IS CHOSEN
+LJ] Ll
+The real challenge begins: execution.
+How do you find a supplier you can How do you avoid getting cheated? How do you verify quality before
+trust? you commit?
+
+=== page 4 ===
+@ Shared vocabulary
+GLOSSARY
+.
+Eight terms to speak the language.
+MOQ Minimum Order Quantity — the smallest number of units a Lead Time Time from placing an order to the goods arriving — plan your
+supplier will make in a single order. launch date around it.
+Sample A single production unit you order before bulk, to verify TrustSEAL IndiaMart’s verification badge — signals a supplier has
+quality, material and finish. passed basic background checks.
+GST Goods & Services Tax registration — a valid GSTIN is proof a PO Purchase Order — the written record of product, price, terms
+supplier is a real, compliant business. and timeline you agree with a supplier.
+‘Wholesaler A seller of ready, standardized stock in bulk — faster and Landed Cost The true cost of one unit after product cost, shipping, duties
+lower-MOQ than a manufacturer. and taxes are added
+
+=== page 5 ===
+B The playbook
+The Sourcing Playbook
+Finding — and vetting — your first supplier. S
+
+=== page 6 ===
+@ The BYOB golden rule
+THE GOLDEN RULE
+ild1 local
+Build local, buy local.
+An 8-week sprint Your focus Why it works
+Success means leveraging India’s own Indian suppliers, domestic Faster turnaround, easier
+vast supplier ecosystem — no time for manufacturing, and local service troubleshooting, and
+imports. providers. needs
+SOURCED & MADE IN INDIA
+Jes Gl
+(e) 3) FS C3 | E
+| ra ANT: ) IR Al ( TER
+Ly 5 iy CHARACTER y
+(5 — Re pe
+Ob) © vise]
+
+=== page 7 ===
+@ Four sourcing channels
+WHERE SHOULD YOU FIND SUPPLIERS?
+Start where speed and trust meet.
+IndiaMart / TradeIndia Local Wholesalers
+Speed: High - Customization: Medium Speed: High - Customization: Low
+Reliable domestic suppliers with modest customization — the best all- Simple, standardized products when time is critical. Great for rapid
+round bet for the BYOB challenge. testing and backup inventory.
+Regional Hubs Manufacturer (direct) EDGED CEE
+Jaipur, Surat, Tiruppur - Customization: High Speed: Low - Customization: High
+Category-specific and powerful — but really only if you have a local Best for large orders with significant customization — not your first, small
+contact on the ground. test batch.
+
+=== page 8 ===
+@ Discovery & vetting - Days 1-3
+. .
+Approach discovery like a 5
+Use specific keywords Filter by location YOUR GOAL THIS PHASE
+Search "canvas tote with zipper’, not just Prioritize your state/region to cut shipping A shortlist of 5-7 high-qualit
+"bags". time, cost and complexity. . y
+suppliers.
+The quality of your search shapes every step that follows
+Look for the "TrustSEAL" Read the business profile Invest time upfront to avoid costly mistakes later.
+It signals the supplier has passed basic Check GST registration, physical address,
+background checks. years in business, testimonials.
+
+=== page 9 ===
+@ The supplier vetting checklist
+THE SUPPLIER VETTING CHECKLIST
+. . .
+Five boxes every supplier must tick.
+Verified status Physical address Authentic product photos
+Has a TrustSEAL or is listed as a "Verified A clear, specific address — not just a city name. Their own actual products, not generic stock
+Supplier”. images.
+4 5 THEN
+Appropriate business type Professional web presence Shortlist the 5-7 suppliers that meet these
+Profile explicitly lists "Manufacturer" or Bonus: a basic website or detailed social criteria, then move to outreach.
+"Wholesaler". presence.
+
+=== page 10 ===
+@ Contact & sampling - Days 4-7
+. . f
+One email that signals you're -
+SAMPLE OUTREACH TEMPLATE Be specific
+Product details, quantities and timeline expectations.
+Subject: Inquiry for [Product Name] — New D2C Brand
+Dear [Supplier], Establish credibility
+We are a new D2C brand from [University Name]'s BYOB program launching a line of Mention your university program to add legitimacy.
+[brief product description]. Could you please share:
+1. Minimum Order Quantity (MOQ) Ask everything upfront
+2. Price per unit at MOQ Saves time and shows professionalism.
+3. Sample cost & ordering process
+4. Lead time for 50-100 units
+5. Available customization options Signal serious intent & follow up
+stomiz:
+E State your ordering timeline; nudge politely after 24-48 hours.
+We aim to place a test order within 10 days and are looking for a long-term supplier
+relationship.
+Aim to narrow to 2-3 top candidates for sampling.
+Thank you, ! p ' pling
+[Your Name] - [Your Contact Information]
+
+=== page 11 ===
+@ Beyond the checklist
+BUILDING TRUST WITH INDIAN SUPPLIERS
+. . . .
+
+Suppliers reward a relationship, not a transaction.
+
+THE TRANSACTIONAL APPROACH THE RELATIONSHIP APPROACH
+
+What most people do What you should do
+
+Send one email. Establish credibility Communicate regularly
+
+Negotiate only on price. Mention the Mesa program. Use WhatsApp for quick check-ins.
+
+Disappear after the order. Visit if possible Negotiate flexibly
+
+One in-person visit beats 100 emails. Focus on MOQs and lead times, not just
+price.
+
+=== page 12 ===
+@ Live rcise
+LET'S DO IT LIVE ¢
+LJ °
+A real call with a supplier.
+Who wants to volunteer?
+PRODUCT CATEGORY - PET PROTECTION WEAR
+Dog raincoats Dog shoes Dog T-shirts
+
+=== page 13 ===
+@ The most important rule of sourcing
+[2 | -—
+THE ONE NON-NEGOTIABLE 0 4
+. . 3 r
+PY Do not place a bulk order without a physical [=a
+sample. \\ 21
+Financial protection Quality verification Supplier assessment Marketing preparation
+21,000 on a sample protects you Photos mislead — a sample lets The process tests their Areal sample lets you shoot
+froma ¥30,000+ mistake on a you judge material, construction communication, professionalism authentic content before
+bulk order. and finish and reliability. inventory arrives
+
+=== page 14 ===
+@ The purchase order email
+Put every term c
+
+Product details Pricing Payment terms Timeline Delivery info
+
+Description, quantity, colour, Per-unit price, total, and any Paid now, balance due, and Production time, dispatch Complete address with PIN
+
+size, customization, extra costs. the method. date, delivery deadline. code and contact details.
+
+A written PO isn't bureaucracy — it's the record you point to when a shipment doesn't match what you agreed.
+
+=== page 15 ===
+@ The critical QC step
+QUALITY CONTROL ON ARRIVAL
+. .
+The first 24 hours decide everything.
+Immediate Quality assessment Documentation Supplier Secure storage
+inspection Check 20%+ for defects and Photograph any defects and communication Store clean and organized;
+Open the box on arrival; correct specs — size, colour, damaged packaging as Report issues within 24h with track inventory for fulfilment.
+count every item against material. evidence photos; propose fair
+your PO. resolutions.
+Most suppliers fix quality issues willingly — but only if reported promptly with clear documentation. Late complaints are met with resistance.
+
+=== page 16 ===
+@ Your mission - next 10 days
+YOUR COMPLETE SOURCING ACTION PLAN
+Ten days, three phases.
+DAYS 1-3 - DISCOVERY DAYS 4-7 - SAMPLE & SELECT DAYS 8-10 - ORDER & RECEIVE
+1 Finalize product specs and requirements. 4 Evaluate responses; narrow to 2-3 7 Place your order with a formal purchase
+candidates. order.
+2 Build a supplier shortlist with the vetting
+checklist. 5 Order physical samples (highest priority). 8 Track production; confirm dispatch over
+. WhatsApp.
+3 Send professional outreach to 5-7 6 Prepare a formal purchase-order template.
+suppliers. 9 Inspect on arrival and run 24-hour quality
+control.
+16
+
+=== page 17 ===
+@ Troubleshooting 101
+TROUBLESHOOTING 101
+.
+Spot the signs, run the play.
+Supplier delays Quality issues Supplier goes silent
+Signs: missed deadlines, vague updates, late Signs: doesn’t match sample, defects, inconsistent Signs: slow replies, dodged questions, missed
+samples. finish callbacks.
+ACTION PLAN ACTION PLAN ACTION PLAN
+1. Request a specific completion date. 1. Document with detailed photos immediately. 1. Switch channels — call, then WhatsApp.
+2. Set daily check-ins via phone/WhatsApp. 2. Contact supplier within 24h with evidence. 2. Restate your order timeline and intent to buy.
+3. Consider partial shipments 3. Request partial refund or replacement. 3. Give a firm 48-hour deadline to respond.
+4. Activate backup supplier if delay > 5 days. 4. Sort sellable from defective units. 4. Activate a backup supplier from your shortlist.
+
+=== page 18 ===
+@ Key takeaways
+SOURCING MASTERY
+thi
+Four things to remember.
+(1 Buildlocal, buy local ()2 The sample is non-negotiable
+India’s own ecosystem is faster, lighter on capital and easier to Never place a bulk order without a physical sample.
+fix.
+(03 Vetbefore you commit (04 Use modern tools
+Verified status, a real address, and a relationship — not just IndiaMart’s filters, TrustSEAL and business profiles make you
+the lowest price. look professional from day one.
+
+=== page 19 ===
+@ Open floor
+YOUR TURN
+Bring me your sourcing dilemmas, your MOQ math, your
+supplier red flags.
+19
+
+=== page 20 ===
+THANK YOU
+fi i
+Now go find your supplier.
+You have the playbook. Build your shortlist, order the samples, and lock
+in a supplier you can trust.
+Saurabh Jadhav
+saurabh.jadhavi@gmail.com - linkedin.com/in/saurabh-jadhav17

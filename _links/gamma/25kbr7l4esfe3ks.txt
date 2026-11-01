@@ -1,0 +1,232 @@
+Source: https://gamma.app/docs/Copy-of-Strategic-Lead-Qualification-in-Modern-B2B-Sales-25kbr7l4esfe3ks?mode=doc
+Title: Copy of Strategic Lead Qualification in Modern B2B Sales
+Captured: 2026-10-20T07:55:01.503Z (Gamma page text via browser)
+
+Copy of Strategic Lead Qualification in Modern B2B Sales
+
+PO
+Strategic Lead Qualification in Modern B2B Sales
+
+Did you know pursuing unqualified leads can cost 3-4 times more in resources, time, and opportunity costs?
+
+Understanding lead qualification is crucial for business efficiency and strategic resource allocation in today's competitive B2B landscape.
+
+Last edited about 2 months ago
+
+Why Lead Qualification Matters
+50%
+Time Wasted
+
+Average B2B sales team spends half their time on unqualified prospects.
+
+50%
+Extended Sales Cycle
+
+Poor qualification can extend a 6-12 month sales cycle by up to 50%.
+
+30%
+Improved Retention
+
+Because you're not selling to bad fit customers
+
+1.4x
+Improvement in LTV
+
+Because you're selling to good-fit customers
+
+Modern Qualification Frameworks
+1
+BANT
+
+Traditional approach: Budget, Authority, Need, Timeline. 
+
+Still relevant but often too rigid.
+
+Guess which is the most important one?
+
+2
+MEDDIC
+
+Metrics, Economic Buyer, Decision Criteria, Decision Process, Identify Pain, Champion 
+
+Designed for complex enterprise sales. 
+
+More comprehensive, focuses on organizational dynamics.
+
+3
+CHAMP 
+
+Challenges, Authority, Money, Prioritization
+
+Modern adaptation. Puts customer challenges first, 
+
+More aligned with solution selling.
+
+4
+GPCT
+
+Goal, Plan, Challenges, Timeline
+
+Deeper than BANT, Modern,  more meaningful conversations.
+
+BANT
+Budget
+
+Evaluates the prospect's financial readiness and potential to invest in the solution
+
+Authority
+
+Confirms the lead's power to make or significantly influence purchasing decisions
+
+Need
+
+Identifies how closely the lead's challenges match the product or service's core capabilities
+
+Timeline
+
+Gauges the prospect's urgency and expected decision-making window
+
+While BANT provides a structured approach to lead qualification, it has limitations in capturing the nuanced landscape of modern B2B sales.
+
+Progressive organizations now complement BANT with more holistic lead scoring techniques to ensure a comprehensive and adaptive qualification process.
+CHAMP
+Challenges
+
+Explore specific pain points and obstacles confronting potential customers
+
+Authority
+
+Assess organizational decision-making dynamics and key stakeholders
+
+Money
+
+Evaluate financial resources and investment potential
+
+Prioritization
+
+Understand strategic priorities and potential impact
+
+CHAMP explores a lead's unique context, including pain points, obstacles, decision-making dynamics, and strategic priorities. This enables crafting targeted engagement strategies.
+
+CHAMP recognizes complex buyer journeys, prioritizing comprehensive lead understanding to build genuine connections, demonstrate value, and develop tailored solutions.
+GPCT BA/C&I Framework
+Goals
+
+Involve understanding the lead's objectives and what they aim to achieve with a product or service
+
+Plans
+
+Refer to the strategies they have in place to reach those goals
+
+Challenges
+
+Help identify the obstacles they face
+
+Timeline
+
+Gauges their urgency in making a decision
+
+Budget
+
+Assesses their financial capacity
+
+Authority
+
+Determines if they have decision-making power
+
+Negative Consequences
+
+Examine the risks of not addressing their challenges
+
+Positive Implications/Critical Events
+
+Explore the potential benefits of adopting the offering
+
+This strategy goes beyond BANT by incorporating qualitative factors and focuses on building a deeper understanding of the lead's needs and motivations.
+
+As the buyer-seller dynamic evolves, GPCTBA/C&I provides a modern approach to lead qualification, reflecting the complexities of the buyer's journey and fostering a customer-centric sales process.
+MEDDICC
+Metrics
+
+Involve quantifiable measures that determine the potential value of the solution to the lead's business
+
+Economic Buyer
+
+Refers to identifying the person with the authority to make purchasing decisions
+
+Decision Criteria
+
+Entails understanding the specific factors that influence the lead's decision-making process
+
+Decision Process
+
+Involves mapping out the steps and stakeholders involved in the lead's buying journey
+
+Identify Pain
+
+Focuses on uncovering the lead's pain points and challenges
+
+Champion
+
+Pertains to finding an internal advocate who champions the solution within the lead's organization
+
+Competition
+
+What's the alternative or the competition?
+
+MEDDIC helps sales teams gather comprehensive insights into a lead's needs, motivations, and decision-making dynamics, enabling tailored engagement strategies.
+
+MEDDIC aids in building strong relationships, mitigating obstacles, and aligning solutions with the lead's unique requirements, increasing conversion and customer satisfaction.
+The Two Dimensions of Qualification
+Objective Criteria
+Company size
+Annual revenue thresholds
+Number of employees
+Technical requirements
+Geographic location
+Subjective Criteria
+Pain points severity
+Cultural alignment
+Decision-making readiness
+Competitive situation
+Political landscape
+The Two Dimensions of Qualification
+Objective Criteria
+
+Simpler - Ideally, pre-researched
+
+Company size
+Annual revenue thresholds
+Number of employees
+Technical requirements
+Geographic location
+Subjective Criteria
+NO ONE wants to sit and answer questions
+Ask Strategic Questions - "Start broad, then narrow down"
+Sample Broad Questions:
+'What prompted you to look into this now?'
+'What could be better about the current solution?'
+'Who else is involved in making this decision?'
+'What happens if you don't solve this problem?'
+'What's your timeline for implementation?'
+Use the 'Why? What? How?' technique:
+Why is this important?
+What impact does it have?
+How urgent is the solution needed?
+Identify both:
+Current problems (immediate needs)
+Anticipated challenges (future needs)
+Real Talk
+1
+Track Success Metrics
+
+Monitor qualification to close ratio, sales cycle length, average deal size, and win rate changes.
+
+2
+Balance Objective and Subjective Criteria
+
+Find the right mix to capture opportunities without inconsistent results.
+
+You'll never have all the answers.
+
+Identify what are must-haves.

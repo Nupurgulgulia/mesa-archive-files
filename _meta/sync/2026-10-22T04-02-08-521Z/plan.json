@@ -1,0 +1,81 @@
+{
+ "runId": "2026-10-22T04-02-08-521Z",
+ "coursesNew": [],
+ "notesWritten": 1,
+ "notesUnchanged": 167,
+ "filesMatched": 0,
+ "filesKnown": 120,
+ "removed": 0,
+ "downloads": [
+  {
+   "materialId": "5c2c5b25-d6e5-442f-86aa-0a3f37bed001",
+   "courseId": "4ae1dbe1-595b-4bae-9985-4a64ea96bc17",
+   "topicTitle": "Resources",
+   "sessionName": "Session 1",
+   "title": "Why AI Systems Fail",
+   "key": "Term 2/AI with Mihirr Sose/Resources/Session 1/MESA_T2-L1_Why AI Systems Fail.pdf",
+   "contentType": "application/pdf",
+   "sizeBytes": 2258771
+  },
+  {
+   "materialId": "d92066fa-1492-4a53-a7e9-9d342c87fd41",
+   "courseId": "4ae1dbe1-595b-4bae-9985-4a64ea96bc17",
+   "topicTitle": "Resources",
+   "sessionName": "Session 2",
+   "title": "Case 01",
+   "key": "Term 2/AI with Mihirr Sose/Resources/Session 2/MESA_Case 01 - 22 Oct.pdf",
+   "contentType": "application/pdf",
+   "sizeBytes": 124045
+  },
+  {
+   "materialId": "738d6c43-0bbc-432e-b561-48b34d4fb233",
+   "courseId": "4ae1dbe1-595b-4bae-9985-4a64ea96bc17",
+   "topicTitle": "Resources",
+   "sessionName": "Session 2",
+   "title": "Calendar Seed  Data",
+   "key": "Term 2/AI with Mihirr Sose/Resources/Session 2/calendar.csv",
+   "contentType": "text/csv",
+   "sizeBytes": 569
+  },
+  {
+   "materialId": "c2cf320c-ec81-4762-aa0e-7749cb5dd3fa",
+   "courseId": "4ae1dbe1-595b-4bae-9985-4a64ea96bc17",
+   "topicTitle": "Resources",
+   "sessionName": "Session 2",
+   "title": "Current inventory Seed Data",
+   "key": "Term 2/AI with Mihirr Sose/Resources/Session 2/current_inventory.csv",
+   "contentType": "text/csv",
+   "sizeBytes": 734
+  },
+  {
+   "materialId": "2a0ea90f-ef2e-4590-8fb6-5082b0744290",
+   "courseId": "4ae1dbe1-595b-4bae-9985-4a64ea96bc17",
+   "topicTitle": "Resources",
+   "sessionName": "Session 2",
+   "title": "Distributor Seed Data",
+   "key": "Term 2/AI with Mihirr Sose/Resources/Session 2/distributor_master.csv",
+   "contentType": "text/csv",
+   "sizeBytes": 233
+  },
+  {
+   "materialId": "1f056753-fbcf-4a2f-b0b5-8b89ce2075d6",
+   "courseId": "4ae1dbe1-595b-4bae-9985-4a64ea96bc17",
+   "topicTitle": "Resources",
+   "sessionName": "Session 2",
+   "title": "SKU Seed Data",
+   "key": "Term 2/AI with Mihirr Sose/Resources/Session 2/sku_master.csv",
+   "contentType": "text/csv",
+   "sizeBytes": 1091
+  },
+  {
+   "materialId": "3cafa499-953a-4ebc-a039-6ccfa0c04dab",
+   "courseId": "4ae1dbe1-595b-4bae-9985-4a64ea96bc17",
+   "topicTitle": "Resources",
+   "sessionName": "Session 2",
+   "title": "Weekly Sales Seed Data",
+   "key": "Term 2/AI with Mihirr Sose/Resources/Session 2/weekly_sales.csv",
+   "contentType": "text/csv",
+   "sizeBytes": 4904
+  }
+ ]
+}

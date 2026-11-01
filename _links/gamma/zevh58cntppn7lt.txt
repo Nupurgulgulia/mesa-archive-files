@@ -1,0 +1,474 @@
+Source: https://gamma.app/docs/Copy-of-Jobs-To-Be-Done-JTBD-AMUSED-Framework-zevh58cntppn7lt?mode=doc
+Title: Copy of Jobs To Be Done (JTBD) + AMUSED Framework
+Captured: 2026-10-20T07:53:01.645Z (Gamma page text via browser)
+
+Copy of Jobs To Be Done (JTBD) + AMUSED Framework
+
+PO
+Jobs To Be Done (JTBD) + AMUSED Framework
+
+A practical framework for Product, Marketing, Sales, Growth, and Strategy teams
+
+Understand Demand
+
+JTBD identifies what customers are truly hiring your product to do
+
+Evaluate Opportunity
+
+AMUSED helps assess whether the demand is worth solving
+
+Drive Innovation
+
+Together, they reveal hidden competitors and growth opportunities
+
+The Core Idea of JTBD
+People don't buy products. They hire them to get a job done.
+
+Customers choose products because they help them make progress in a situation. JTBD shifts focus from customer profiles to customer intent.
+
+Hire Uber
+
+To reach somewhere reliably
+
+Hire Spotify
+
+To improve a moment
+
+Hire Excel
+
+To analyze numbers
+
+Hire Coffee
+
+To stay alert
+
+Hire ChatGPT
+
+To think faster
+
+Hire Amazon
+
+To get the best selection & deal 
+
+The product is a tool. The real value is the progress created. Better solutions win by helping users move forward faster, easier, cheaper, or with less anxiety.
+
+Traditional Thinking vs JTBD Thinking
+
+Demographics explain who buys. JTBD explains why they buy — often revealing hidden competitors and growth opportunities.
+
+Traditional View
+
+	
+
+JTBD View
+
+
+
+
+Who is the customer?
+
+	
+
+What are they trying to achieve?
+
+
+
+
+What features do they need?
+
+	
+
+What outcome do they need?
+
+
+
+
+What segment are they in?
+
+	
+
+What situation triggered demand?
+
+
+
+
+Who are our competitors?
+
+	
+
+What alternatives are they using today?
+
+
+
+
+How do we improve the product?
+
+	
+
+How do we improve the job completion rate?
+
+The Three Layers of a Job
+
+Every job has three distinct layers that must all be understood to design a winning solution.
+
+1
+Social Job
+
+How do they want to be perceived?
+
+2
+Emotional Job
+
+How does the customer want to feel?
+
+3
+Functional Job
+
+What task needs to be completed?
+
+Many products win emotionally or socially, not just functionally. Understanding all three layers is the key to differentiation.
+
+Example: Buying a Laptop
+
+A single purchase decision carries all three job layers simultaneously. Here's how they play out:
+
+⚙️ Functional
+
+Run work apps smoothly without lag or crashes
+
+❤️ Emotional
+
+Feel confident it won't fail during critical moments
+
+👥 Social
+
+Look professional and credible in meetings
+
+Many products win emotionally or socially, not just functionally. Ignoring these layers leaves value on the table.
+
+A Good JTBD Statement
+
+When [situation], I want to [motivation], so I can [desired outcome].
+
+A well-formed JTBD statement always includes context, motivation, and a success outcome — and never mentions your product.
+
+Commuter
+
+When I commute, I want to learn something useful, so I can use time productively.
+
+New Hire
+
+When I start a new role, I want to understand workflows quickly, so I can contribute fast.
+
+Marketer
+
+When I run ads, I want to know which creatives work, so I can reduce CAC.
+
+Host
+
+When guests visit, I want my home cleaned quickly, so I can feel prepared.
+
+Example — Uber
+Not transportation. Reliability on demand.
+
+When I need to get somewhere urgently, I want a reliable ride quickly, so I can arrive on time without hassle.
+
+Why Uber Won
+Fast access to rides
+Transparent ETA
+Cashless payments
+Lower uncertainty
+Better availability than taxis
+Hidden Competitors
+Taxis
+Public transport
+Asking a friend
+Driving yourself
+Cancelling the trip
+
+​Harvard Business School​
+
+Example — Spotify
+Not music streaming. Effortless mood management.
+
+When I want music that matches my mood, I want instant personalized listening, so I can enjoy the moment effortlessly.
+
+Why It Won
+Personalized playlists
+Cross-device use
+Instant access
+Discovery built-in
+No downloads needed
+Hidden Competitors
+Radio
+YouTube
+Pirated MP3s
+Silence
+
+​Railsware​
+
+Example — Duolingo
+Not lessons. Consistent progress with low friction.
+
+When I want to learn a language but lack time and motivation, I want small engaging lessons, so I can improve consistently.
+
+Why It Won
+Short sessions
+Gamification
+Streaks
+Mobile-first
+Easy habit loop
+Hidden Competitors
+Doing nothing
+Buying a textbook
+YouTube lessons
+Formal classes
+
+​Railsware​
+
+Example — B2B CRM
+Not software. Better revenue control.
+
+When I manage a sales team, I want visibility into pipeline and follow-ups, so I can forecast revenue and improve performance.
+
+What Buyers Actually Hire
+Confidence in forecasting
+Rep accountability
+Better manager coaching
+Cleaner processes
+Reduced revenue surprises
+Hidden Competitors
+Spreadsheets
+WhatsApp updates
+Weekly calls
+Guesswork
+Example — Hiring a Consultant
+Not consulting hours. Faster high-quality decisions.
+
+When I face a strategic problem with high stakes, I want expert guidance quickly, so I can make a better decision with less risk.
+
+Pattern Recognition
+
+Leverage experience across many similar situations
+
+Speed
+
+Compress months of analysis into days
+
+Confidence
+
+Reduce uncertainty in high-stakes decisions
+
+External Credibility
+
+Validate decisions with independent authority
+
+Structured Thinking
+
+Bring frameworks and clarity to complex problems
+
+How to Discover Jobs
+Interview for behavior, not opinions
+
+Focus on recent switching moments. Real behavior is better than hypothetical answers.
+
+1
+What happened before you looked for a solution?
+
+Uncover the triggering situation and context
+
+2
+What frustrated you? What alternatives did you try?
+
+Identify existing poor solutions and pain points
+
+3
+Why did you choose this option? What nearly stopped you?
+
+Reveal decision criteria and barriers to switching
+
+4
+What does success look like? What trade-offs did you make?
+
+Define the desired outcome and acceptable compromises
+
+What Makes a Good Job?
+
+Not every job is worth solving. A strong job opportunity usually has most of these characteristics — and this is where AMUSED becomes useful.
+
+1
+Clear Pain or Desire
+
+The customer feels it acutely
+
+2
+High Frequency or High Stakes
+
+Happens often or matters greatly
+
+3
+Poor Existing Alternatives
+
+Current solutions are inadequate
+
+4
+Measurable Outcome
+
+Success can be clearly defined
+
+5
+Urgency & Willingness to Pay
+
+Customers are motivated to act
+
+6
+Broad Market & Multiple Improvements
+
+Enough scale and room to innovate
+
+Introducing AMUSED
+
+JTBD identifies demand. AMUSED identifies opportunity. Use it to test if a job is worth solving and where the biggest leverage lies.
+
+1
+A — Automate
+2
+M — Minimize
+3
+U — Upgrade
+4
+S — Simplify
+5
+E — Eliminate
+6
+D — Delegate
+
+Together, JTBD + AMUSED form a complete system: identify what customers need, then find the best way to deliver it better than anyone else.
+
+AMUSED Explained
+A — Automate
+
+Can repetitive or manual work be done automatically? Reduce human effort through technology.
+
+M — Minimize
+
+Can time, effort, cost, or steps be reduced? Compress the job to its essential core.
+
+U — Upgrade
+
+Can quality, speed, confidence, or outcomes improve? Raise the ceiling of what's possible.
+
+S — Simplify
+
+Can the experience become easier? Lower the skill or effort required to succeed.
+
+E — Eliminate
+
+Can friction or waste disappear entirely? Remove steps that don't add value.
+
+D — Delegate
+
+Can parts be handled by software, experts, or others? Shift the burden away from the user.
+
+Example — Expense Management
+
+When month-end closes approach, I want to reconcile employee expenses quickly, so I can close books accurately.
+
+AMUSED Analysis
+A: Auto-read receipts
+M: Reduce manual entry
+U: Better audit accuracy
+S: One-click approvals
+E: Remove paper receipts
+D: Auto-route to managers
+Why This Job Is Strong
+Recurring pain every month
+Quantifiable ROI
+Clear budget owner
+Operational urgency
+
+All 6 AMUSED levers apply — a strong signal of high opportunity.
+
+Example — Food Delivery
+
+When I'm tired after work, I want dinner quickly with low effort, so I can relax.
+
+AMUSED Analysis
+A: Smart reordering
+M: Reduce browsing time
+U: Better ETA accuracy
+S: Easier checkout
+E: Remove cooking effort
+D: Outsource meal prep + delivery
+Why This Job Is Strong
+Frequent use case
+Strong emotional value
+Convenience premium
+
+Emotional + functional + social jobs all satisfied in one transaction.
+
+Example — Recruiting
+
+When I need to hire quickly, I want qualified candidates fast, so I can fill roles without slowing the team.
+
+AMUSED Analysis
+A: Resume screening
+M: Reduce interview scheduling time
+U: Better candidate matching
+S: Clear hiring workflow
+E: Remove redundant interviews
+D: Outsource sourcing
+Why This Job Is Strong
+Time-sensitive pressure
+Expensive delays
+Measurable business impact
+
+Every day a role goes unfilled has a real cost — urgency drives willingness to pay.
+
+Example — Ad Performance Analysis
+
+When campaigns are live, I want to know what creative drives conversions quickly, so I can reallocate spend profitably.
+
+AMUSED Analysis
+A: Auto dashboards
+M: Reduce analyst hours
+U: Better decisions
+S: Clear recommendations
+E: Remove spreadsheet work
+D: AI insights assistant
+Why This Job Is Strong
+Direct link to revenue
+Every hour of delay costs money
+Clear ROI on better decisions
+
+When the job is directly tied to revenue, willingness to pay is highest.
+
+Putting It All Together
+JTBD finds the demand. AMUSED finds the opportunity.
+Prioritize
+Apply AMUSED
+Validate
+Write JTBD
+Discover Job
+For Product Teams
+
+Prioritize features that improve job completion rate, not just feature requests
+
+For Marketing Teams
+
+Message the progress customers gain, not the features you ship
+
+For Sales Teams
+
+Qualify by situation and urgency, not just budget and authority
+
+For Strategy Teams
+
+Find markets where jobs are underserved and AMUSED scores are high
+
+Putting It All Together
+Customers rarely want your product. They want progress.
+
+If you understand the job better than competitors, you can build better products, sharper messaging, and stronger growth.
+
+JTBD tells you what matters. AMUSED tells you where to win.

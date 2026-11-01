@@ -1,0 +1,545 @@
+OCR (Tesseract, mean confidence 85.9) of Term 1/Build Your Own Business (BYOB)/Resources/Session 2 — Product Discovery/Product Selection workshop.pdf
+
+=== page 1 ===
+BYOB CHALLENGE - JULY 2026
+A framework for picking profitable products — before
+you spend a rupee building them.
+Saurabh Jadhav
+¢é Operator-Educator - D2C, Supply Chain & Founder-Stage GTM
+
+=== page 2 ===
+@ Why we're here
+PY You are the product. |
+You feel something. RA
+' RAS : 3 L 4 \
+That's what sells. AN
+Don Draper - Mad Men (2007-2015) id TERN ER
+oA >
+LN Py 2
+02
+
+=== page 3 ===
+@ Your coach today
+fhe | INTRODUCTION
+\ 8? s 1 h
+=~ / Hi, I'm Saurab :
+= 2
+BRANDS & STARTUPS ENGAGED
+«(fy on ‘2 0 rersDwar
+Fate ard ati x
+[1
+ABInBev JUMPSTARTR
+A decade across beverages, D2C enablement and cross-border supply chain — and a few dozen founders I've helped
+stress-test the exact decision we're making today.
+
+=== page 4 ===
+@ What we'll cover
+AGENDA
+. Ld Ld
+Four steps from idea to decision.
+()1 The Founder's Dilemma ()2 The Two D2C Playbooks
+Acknowledging the challenge every first-time D2C Your strategic fork in the road: Margin or Volume.
+founder faces.
+(03 The Sanity Check (4 Your Mission
+Does your idea survive its playbook? A five-part checklist. Finding — and validating — your one winning idea.
+
+=== page 5 ===
+[] Part One
+PART ONE
+' il
+The Founder's Dilemma
+Acknowledging the challenge — before we hand you the tools to
+beat it.
+05
+
+=== page 6 ===
+@ Three founders, one problem
+THE STARTING LINE
+eo ogee
+Does this sound familiar?
+LJ
+h | "Ihave 20 ideas, from t-shirts to h | "I'm in love with my product idea, h | "Ihave a great idea for a low-
+snacks. | don’t know how to but I'm scared the numbers won't priced product, but everyone says
+compare them or which has the work. How do | know if it's a real the margins are too low for D2C. Is
+best chance.” business?” it even possible?”
+Analysis-Paralysis Ankit Passionate Priya Resourceful Rohan
+Too many options, no way to rank them Loves the idea, fears the math Low price, worried about margin
+By the end of today, all three have a system — not a hunch — to decide.
+
+=== page 7 ===
+@ Ground rules
+HOW TO USE THIS WORKSHOP
+Three things to keep in
+8 p .
+Playbooks, not prisons Coach, not customer A framework, not a final idea
+Two proven paths. Your job is to grasp the My role is to stress-test your thinking and Success today is leaving with a system
+principles and apply them to your own hand you a framework — not to tell you if that lets you make a confident decision.
+idea. I'd buy it.
+
+=== page 8 ===
+@ The strategic fork
+THE TWO D2C PLAYBOOKS
+o Ld Cd [)
+
+The most important decision you'll make.
+
+PLAYBOOK 1 PLAYBOOK 2
+
+o
+
+The Margin Play The Volume Play
+
+Higher-priced products. Win on profit per unit. Typically Lower-priced products. Win on basket size & velocity.
+
+above 500. Typically under 2500.
+
+Almost every profitable D2C product commits, early, to one of these two.
+
+=== page 9 ===
+@ Part Two
+PART TWO
+h fi of e
+Path to Profitability
+Two playbooks, side by side — and the unit economics that make
+each one work.
+09
+
+=== page 10 ===
+@ The two playbooks, compared
+MARGIN PLAY VS VOLUME PLAY
+Same goal, two different engines.
+The Margin Play The Volume Play
+Above 500 Less than 500
+Core Goal Maximise profit on every single item. Maximise the total value of the shopping cart.
+Key Metric Gross Profit per Unit & LTV Average Order Value (AQV) & Order Volume
+Channel Focus Own D2C Website & Socials Marketplaces & D2C Website
+Marketing Focus Brand Building & Community Performance Marketing & Promotions
+Logistics Policy Offer "Free Everything” (Shipping, COD) Charge for shipping below a threshold
+Customer Policy Generous “No Questions Asked" returns “Replacement Only" policy
+10
+
+=== page 11 ===
+@ Playbook 1- The Margin Play
+Your cost is never just the cost.
+Worked example: ceramic mugs
+Selling price 21,000
+THE 3x-4x RULE OF PRICING
+Landed cost 300 . .
+Selling Price = 3-4x Total Cost
+Packaging 50
+Transaction fee 225 Total COGS 3475
+Shipping & fulfilment 100 Profitable selling price 31,425-%1,900
+Total COGS
+Not the 300 you might first calculate.
+
+=== page 12 ===
+@ Why the buffer matters
+WHAT YOUR MARKUP ACTUALLY PAYS FOR
+. . 1.
+
+The gap between cost and price isn't greed.
+
+Marketing Mistakes Your time Profit
+
+Customer acquisition (CAC) Returns, damages and shipping The countless hours running What's left after every
+
+can easily eat 20-30% of your issues will happen — and eat the business need to be operational expense is
+
+selling price. into margin. compensated too. covered. This is the point.
+If the math doesn’t leave room for all four, the product doesn’t work — no matter how much you love it.
+
+=== page 13 ===
+@ Playbook 2 - The Volume Play
+ONE ITEM LOSES. A BASKET WINS.
+. .
+The whole game is the cart, not the item.
+RECEIPT 1- SINGLE ITEM RECEIPT 2 - CART SALE
+1 Enamel Pin 4 Enamel Pins - "4 for 999"
+_ by
+Selling price 2299 Selling price (AOV) 2999 R FS fim)
+h 0
+COGS (product + ship + fees) -¥350 COGS (4x product + ship + fees) -¥750 > £ ~~
+Profit -351 Profit +3249
+Same product, same day. The only thing that changed was the size of the basket.
+13)
+
+=== page 14 ===
+@ Building the basket
+THE VOLUME PLAY
+.
+Three levers to build the basket.
+SKU Variety Smart Bundling Shipping Threshold
+Launch with 20+ designs. Make it hard to Create 3-for-2 deals or "Starter Kits" that The most powerful tool: “Free shipping
+choose just one. feel like a great value. on orders over ¥799!"
+
+=== page 15 ===
+B Part Three
+Finding Evidence of Demand
+Become a digital detective. Don't guess — find proof. S
+
+=== page 16 ===
+@ Three places to find proof
+WHERE THE EVIDENCE LIVES
+.
+Three research desks, one verdict.
+(5)
+Amazon Research Google Trends Meta Ad Library
+* Check "Best Sellers” & "Movers & Shakers” in ¢ Compare product interest and find * Mine hashtags like #founditonamazonindia;
+D2C-friendly categories “Rising Queries". study competitor ads.
+* Look for products with 500+ reviews holding * Look for consistent 6-12 month upward * Which posts get the most saves? What do
+4+ stars. trends, not seasonal spikes. comments reveal?
+* Mine "Frequently bought together" for * Use "Related queries” to find adjacent * Use the Ad Library to see what brands are
+complementary opportunities. product opportunities. pushing hard.
+Live example on each desk during the session.
+
+=== page 17 ===
+THE Al RESEARCH ASSISTANT
+Your new co-founder.
+Use Al to ideate, analyse and validate — before you commit a
+single rupee.
+17
+
+=== page 18 ===
+@ Prompts that earn their keep
+Put Al to work across all three . e A + @®
+STRESS-TESTING PROMPTS
+
+“Generate 15 product ideas for eco- “Create a detailed customer persona for "Act as a skeptical VC and poke holes in my
+
+conscious millennials under ¥2000." someone buying a cork yoga mat.” product idea.”
+
+“List trending kitchen gadgets that solve "Identify potential objections customers "What operational challenges might | face
+
+specific pain points.” might have to this product.” with this product?”
+
+"Suggest 10 ‘elevated’ versions of everyday "Compare the pros and cons of these three “Identify the top 5 competitors for this
+
+home goods." product ideas." productin India.”
+
+=== page 19 ===
+[] Part Four
+PART FOUR
+The Sani ecklis
+ty Checklist
+Five gates every idea must clear — read against whichever
+playbook you picked. 1 High Demand
+2 Sharp Positioning
+3 Pricing & Profitability
+4 Operations & Simplicity
+5 Supplier & Sourcing
+
+=== page 20 ===
+@ Sanity Checklist -10f 5
+CHECKLIST 1
+.
+High Demand
+a BY
+THE MARGIN PLAY THE VOLUME PLAY
+® Doesit solve a clear, high-value problem or serve a passionate e Does it have high "impulse buy" or "discovery" potential — fun,
+niche (e.g. "best travel pillow for side-sleepers")? trendy, visually appealing, collectible?
+® [sthere a strong brand story or unique angle that justifies a ® |[sita product where customers naturally want to buy multiples
+premium price? (jewellery, stickers, socks, stationery)?
+® Is your target customer someone who values and will pay for ® Isthe target audience broad and highly active on visual
+quality and brand over the cheapest option? platforms — Instagram, Pinterest, YouTube?
+NS 4
+20
+
+=== page 21 ===
+@ Sanity Checklist - 2 of 5
+CHECKLIST 2
+og .
+Sharp Positioning
+a BY
+THE MARGIN PLAY THE VOLUME PLAY
+e What is your USP? Why are you demonstrably better or different ® |Isthe core appeal visual and easy to understand in under 2
+from competitors? seconds?
+® [sthe brand identity — visuals, packaging, tone — premium, e Can you easily create 20+ SKUs — designs, colours, variations —
+trustworthy and professional? to encourage collection and choice?
+e Can you explain its value in one clear sentence? (The "No- e Is the brand identity fun, relatable, and does it encourage
+Brainer" Value Prop Test) sharing and community?
+NS 4
+21
+
+=== page 22 ===
+@ Sanity Checklist - 3 of 5
+CHECKLIST 3
+o_o ego
+Pricing & Profitability
+Ve N
+THE MARGIN PLAY THE VOLUME PLAY
+e Isthe selling price within the ¥700-32,500 "sweet spot” fora ® Is the single-item price low enough to be an easy, low-risk
+considered but accessible D2C purchase? impulse buy (< 3700)?
+® The 3x-4x Rule: is your selling price at least 3-4x your total ® The AOV Test: a clear strategy (20+ SKUs, bundles, shipping
+landed cost? The critical gate. threshold) to push cart value above 2800? The critical gate.
+® Is Gross Profit per unit high enough to comfortably cover CAC ® |s Gross Profit on your target AOV (e.g. 900), not the single
+and still leave healthy profit? item, enough to cover all costs?
+NS 4
+22
+
+=== page 23 ===
+@ Sanity Checklist - 4 of 5
+CHECKLIST 4
+. . o_o
+Operations & Simplicity
+Ve N
+THE MARGIN PLAY THE VOLUME PLAY
+® Isitasingle SKU or very limited variations (e.g. 3 colours)? e Is the product extremely lightweight and small? Non-negotiable
+Minimise complexity. to keep multi-item shipping low.
+® |Isitnon-perishable and durable, to reduce the risk of loss and ® |[siteasy to pick, pack and store many variations without
+damage? creating chaos?
+e Isitlightweight enough that "free shipping" is viable and won't e sit durable and non-perishable? High volume increases the
+destroy your margin? chance of operational issues.
+NS 4
+23
+
+=== page 24 ===
+@ Sanity Checklist -5 of 5
+CHECKLIST 5
+Supplier & Sourcing
+a bY
+THE MARGIN PLAY THE VOLUME PLAY
+® Can you find a supplier who reliably delivers the high quality ® Can you find a supplier who can handle many small
+required to justify your price? variations and fast re-orders for popular designs?
+® The First Tranche Test: will your first order (Landed Cost x ® Are the MOQs per design low enough to offer a wide variety
+MOQ) be well under your initial 225,000 capital? within your initial capital?
+A J
+
+=== page 25 ===
+@ After all five gates
+THE FINAL VERDICT
+One question decides it all.
+IF YOU'RE PLAYING FOR MARGIN IF YOU'RE PLAYING FOR VOLUME
+Does this idea have the brand Does this idea have the variety and
+potential and unit economics to win AOV potential to win as a high-
+as a high-margin product? volume business?
+
+=== page 26 ===
+@ Unit economics - the strategic view
+HIGH-LEVEL UNIT ECONOMICS
+. .
+The strategic view.
+Metric The Margin Play - > 2700 The Volume Play - < 2700
+Example Categories Minimalist jewellery, niche home goods, premium Quirky stationery (stickers, pins), phone grips, enamel pins,
+accessories, specialised hobby tools beverage sachets, funky socks
+Core Tactic Justify a premium price through brand story, quality and Drive a higher cart value through SKU variety, bundling and
+differentiation. impulse appeal
+Average Order Value 21,200 - 22,500 2800 - 21,200 (item 2150-2400]
+Avg. Gross Margin 65% - 80% 50% - 65% (on AOV)
+Landed Cost % of AOV 15% - 25% 25% - 40%
+Primary Channel Focus Own D2C website & social commerce Marketplaces (volume) & D2C website (AOV)
+Revenue Share - New vs Large High for new brands (25-40%) as customers seek unique Moderate (20-30%), but high velocity lets new players
+products. enter quickly.
+
+=== page 27 ===
+@ Unit economics - the PSL view
+DETAILED UNIT ECONOMICS
+.
+The P&L view.
+Metric The Margin Play - > 3700 The Volume Play - < 3700
+Example Categories Minimalist jewellery, niche home goods, premium Quirky stationery, phone grips, enamel pins, beverage
+accessories, specialised hobby tools sachets, funky socks
+Typical Parcel Weight < 500g < 250g (multiple items)
+Shipping Cost (Domestic) Absorbed into margin; often offered "Free" as marketing Charged below a threshold (e.g. < 2799) — a key AOV lever.
+(~290).
+Transaction Cost (PG/MDR) ~2.5% of AOV ~2.5% of AOV
+Packaging Cost 250 - F780 (premium unboxing) 230 - F50 (functional, light)
+Cancellation % (pre-dispatch) 5-10% 8-15% (impulse nature)
+Return / RTO % 10 - 15% (free returns as a conversion tool) < 8% (strict "Replacement Only")
+27
+
+=== page 28 ===
+@ Marketing benchmarks - the growth view
+GROWTH BENCHMARKS
+os eye .
+
+Acquisition economics.
+
+Metric The Margin Play - > 3700 The Volume Play - < 3700
+
+Marketing Focus Brand building & community — invest high margins in Performance marketing & promotions — low CAC,
+
+content, socials and customer delight. bundling offers and sampling to drive impulse.
+
+Customer Acquisition Cost 250-3500 2100 - 2250
+
+LTV : CAC Ratio 3.5: 1or higher 2.5:10r higher
+
+Conversion Rate 15% -2.5% 2.5% -4%
+
+=== page 29 ===
+@ Marketing benchmarks - the growth view
+GROWTH BENCHMARKS
+.
+Channels & retention.
+Metric The Margin Play The Volume Play
+Top Performing Channels Instagram, Pinterest, Google Ads, Email, Influencer (long- Instagram, TikTok, Facebook Ads, Influencer (short-term,
+term partnerships) high-reach)
+Key Marketing Promotion “10% Off Your First Order" or “Free Shipping on All Orders" “Buy 3, Get 1 Free," "Build Your Own Bundle," “Free
+Shipping over 799"
+Loyalty & Retention Community initiatives, exclusive offers, loyalty programs, High purchase frequency — frequent drops, promotions
+exceptional service. and gamification.
+Est. Orders - ¥10k/mo ad budget ~20 - 40 orders ~40 - 80 orders (lower AOV)
+29
+
+=== page 30 ===
+[] Put it to work
+INTERACTIVE BREAK
+[J] [J]
+Time for an exercise.
+Three minutes, in your teams. Let's classify two real products.
+30
+
+=== page 31 ===
+@ Team exercise - 3 minutes
+YOUR TURN
+Margin or Volume?
+[4 | _—
+I 3 PRODUCT A 3 - on)
+ly High-quality leather journal L == 3 Trendy phone grips
+¢ yp Price: 1,200 \ \ Y 3 Price: ¥350
+© A el |
+a) HF
+For each product: which playbook would you use — and what's the from the checklist you'd need to answer?
+
+=== page 32 ===
+@ Data-backed profitability & practicality
+WHERE THE INDIAN MARKET IS OPEN
+. . .
+Six categories worth betting on.
+Beauty & Personal Care $28Bn Health & Nutrition $32Bn Pet-Care $10.5Bn
+~5.6% CAGR, ~19% online. Room for new brands, ~10% annual growth. High perceived value, 5.6% CAGR, a quarter already D2C. Predictable AOV,
+light logistics, healthy margins (Nykaa GM 449%). “vitamin-size" parcels — 60%+ gross margins. sticky cohorts, subscription kibble.
+Home Décor +$4.4Bn Better-for-You Snacks $3.85Bn Fashion Apparel $15.2Bn
+10.9% CAGR (2024-29). High ticket (37.9k AOQV) 7-8% CAGR. Lower AOV but 30-40% margins and 12.5% CAGR. Returns are a challenge, but niche
+offsets heavier shipping; 25-47% margins. high repeat frequency build loyal cohorts. brands hit 40-50% margins with focused sizing.
+Each balances market depth, unit profitability and logistical ease — the three things a first-time D2C brand can't fake.
+32
+
+=== page 33 ===
+@ The ‘Hard Mode’ list
+CATEGORIES TO AVOID — FOR THIS SPRINT
+. .
+Four traps that fail the sanity check.
+Formulated Products The regulatory & trust hurdle. FSSAI/GMP labs, high MOQs, stability testing —and ~~ FailsFirstTranche Fails Supplier
+Skincare, cosmetics, supplements,
+perfumes hs pple deep customer scepticism toward anything new you ingest or apply. Fails Simplicity
+i The capital & support black hole. Expensive product development, massive
+Consumer Electronics Pp PP! Xpensive produ velop hl Fails First Tranche Fails Simplicity
+Gadgets, devices, accessories MOQs, and you own warranties, repairs and technical support.
+The logistics death trap. Astronomical shipping destroys the 3x-4x rule,
+Large & Heavy Items IP . .
+warehousing is costly, damage rates are high, delivery coordination is a full-time Fails Simplicity Price too high
+Furniture, large décor, lamps ob
+Jol
+Anything Perishable The ticking clock of spoilage. Expiry creates waste, cold-chain shipping is Co ) )
+Gourmet foods, fresh flowers, meal expensive, and FSSAl compliance is mandatory and non-trivial falsSimplcity)) EelisSuontier
+
+=== page 34 ===
+@ Common pitfalls to avoid
+BEFORE "IS IT A GOOD IDEA?" ASK "CAN IT MAKE MONEY?"
+. . .
+Six ways founders talk themselves into losing.
+Emotional Attachment Margin Miscalculation Time Compression
+Don't love your idea; love the data that proves If the math doesn’t work on paper, it will never Every day you aren't selling is a day you are
+it works work in reality. losing money.
+Operational Complexity Niche Overspecialisation Supply Chain Fragility
+Complexity is the enemy of speed; keep your Find a market niche enough to own, but big If you only have one supplier, you don't have a
+product radically simple. enough to matter. business.
+
+=== page 35 ===
+@ Your mission - before next workshop
+.
+Run two ideas through the whole ;
+THE WORKFLOW
+ARRIVE AT THE NEXT WORKSHOP WITH
+Run at least two product ideas through this entire workflow.
+® Asingle, validated product idea with clear unit
+economics.
+Document each step — trend evidence, unit economics, checklist results. o Initial supplier contacts already established.
+© Aone-sentence value proposition that passes the “no-
+Select one winning idea that gets a clear "GO" on the checklist. brainer" test.
+® Specific questions about your supply-chain strategy.
+Search IndiaMART — identify 3-5 potential suppliers for your winner.
+Contact at least 2 suppliers to test responsiveness — the 7-day supplier test.
+
+=== page 36 ===
+THANK YOU
+find thei
+
+Go find the idea
+that makes money.
+You have the framework. The next winning D2C product is a decision
+away — make it with numbers, not hope.
+¢ Saurabh Jadhav
+
+saurabh.jadhavi@gmail.com - linkedin.com/in/saurabh-jadhav17
+
+=== page 37 ===
+@ Appendix - FY24 benchmarks
+INDICATIVE UNIT ECONOMICS - PER ORDER
+Six categories, by the numbers.
+
+Metric (FY24) Beauty & PC Nutraceuticals Pet-Care Home Décor Healthy Snacks Fashion Apparel
+
+TAM &CAGR $28Bn-5.6% $321Bn-10% $10.5Bn-5.6% +$4.4Bn 10.9% $3.85Bn-7.6% $165Bn-12.3%
+
+Large vs New split 60/40 70/30 55/45 75125 80/20 65/35
+
+Channel mix 81:9:10 85:7:8 65:25:10 70:15:15 60:20:20 68:12:20
+
+Average Order Value %500-1,000 ?1,200+ ~%1,500 %7,900 700-900 ?1,800-2,500
+
+Gross Margin 44% 60-65% 30-40% 25-47% 30-40% 45-55%
+
+=== page 38 ===
+@ Appendix - FY24 benchmarks
+DETAILED UNIT ECONOMICS - PER ORDER
+Cost & returns, by category.
+
+Metric (FY24) Beauty & PC Nutraceuticals Pet-Care Home Décor Healthy Snacks Fashion Apparel
+
+Typical Parcel Weight 0.25kg 0.30kg 2kg 3kg 0.50kg 0.80kg
+
+Shipping (domestic) 326/0.5kg same 265avg 265-90 326 /0.5kg 340-50
+
+Transaction (PG/MDR) 1-3% GMV same same same same same
+
+Packaging Cost 240-100 similar 260-120 2120-180 240-60 280-120
+
+Cancellation % (pre- 7-10% 1 25-30% COD 6-8% 10-12% 5-8% 8-12% 12-15%
+
+dispatch)
+
+Return /RTO % ~15% 10-12% 12-15% 18-22% 20-25% 25-30%
+
+38
+
+=== page 39 ===
+@ Appendix - FY24 benchmarks
+MARKETING BENCHMARKS
+Acquisition & retention, by category.
+Metric (FY24) Beauty & PC Nutraceuticals Pet-Care Home Décor Healthy Snacks Fashion Apparel
+Customer Acquisition Cost 2150-300 2200-400 2250-500 2400-800 2100-250 2200-450
+LTV: CAC Ratio 35:1 4:1 5:1 3:1 25:1 35:1
+Repeat Rate (12 mo) 35-45% 60-70% 55-65% 25-35% 40-50% 30-40%
+Order Frequency 25% 1 yr 4x lyr 35%/yr 15% / yr 3x/yr 28x /yr
+Conversion Rate 25-35% 18-2.8% 3-4% 15-25% 2-3% 18-28%
+Top Channels 1G40-FB 25 Ggl 20 Ggl 45+ YT 25 Email 15 FB35:1G 30 WA 20 Pin 40+1G 30+ Ggl 20 IG50-FB25-Infl 15 G 45 FB 25 -Infl 20
+Email Open WhatsApp CTR 22-28% 12-18% 25-32% 15-22% 24-30% 20-25% 20-26% 10-15% 18-24% + 14-20% 20-26% 16-22%
+
+=== page 40 ===
+@ Appendix - BYOB sanity checklist
+CATEGORY SCORECARD
+. . . .
+How six categories score against the checllist.
+Checklist Item Home & Kitchen Fashion Accessories Beauty Tools Pet Accessories Healthy Snacks Nutraceuticals
+1- Goldilocks Price (2700-2500) Pass Excellent Excellent Pass Hurdle Pass
+needs bundle: e size:
+2-First Tranche (<25k) Hurdle Pass Excellent Pass Fail Fail
+MO bet J+ ru MP )(
+3.7-Day Supplier Test Pass Excellent Pass Pass Hurdle Fail
+- f
+4-"No-Brainer" Value Prop Pass Pass Excellent Pass Pass Hurdle
+t
+5- Simplicity Test Hurdle Excellent Excellent Pass Fail Fail
+fragility t per tory bu

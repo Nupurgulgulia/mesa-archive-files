@@ -1,0 +1,25 @@
+{
+ "counts": {
+  "announcements_updated": 43,
+  "assignments_updated": 48,
+  "events_seen": 443,
+  "attendance_sessions": 120,
+  "attendance_summary_rows": 14,
+  "mrs": 4,
+  "recordings_seen": 91
+ },
+ "plan": {
+  "notesWritten": 0,
+  "filesMatched": 120,
+  "removed": 0,
+  "coursesNew": []
+ },
+ "steps": {
+  "export-links": "{}",
+  "extract-text": "{\"unsupported\":7}",
+  "ocr": "0 documents to OCR",
+  "mirror": "}"
+ },
+ "failures": [],
+ "snapshotAt": "2026-10-20T16:31:29.286Z"
+}

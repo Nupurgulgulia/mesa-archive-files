@@ -1,0 +1,950 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Workshop 3 — The Deal Health Agent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EFF1F4; --paper-2:#E4E8ED; --card:#FBFCFD;
+  --ink:#14203A; --ink-soft:#43506E; --rule:#C6CCD6; --slate:#3A4A6B;
+  --verified:#0F6F63; --asserted:#B26A00; --fabricated:#A32B2B;
+  --faculty:#5B3E8E;
+  --display:"IBM Plex Sans Condensed","Helvetica Neue",Arial,sans-serif;
+  --body:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono","SF Mono",Consolas,monospace;
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:17.5px;line-height:1.68;-webkit-font-smoothing:antialiased}
+a{color:var(--slate)}
+:focus-visible{outline:3px solid var(--slate);outline-offset:2px}
+.eyebrow{font-family:var(--display);text-transform:uppercase;letter-spacing:.14em;
+  font-weight:600;font-size:12px;color:var(--ink-soft)}
+code{font-family:var(--mono);font-size:.87em;background:var(--paper-2);padding:1px 5px;border-radius:2px}
+
+.masthead{border-bottom:1px solid var(--rule);background:var(--paper-2)}
+.masthead-in{max-width:var(--maxw);margin:0 auto;padding:34px 26px 30px}
+.masthead h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,5.2vw,56px);
+  line-height:1.03;letter-spacing:-.015em;margin:12px 0 14px;max-width:18ch}
+.masthead p{max-width:62ch;margin:0 0 18px;color:var(--ink-soft)}
+.stamp{display:inline-flex;gap:10px;align-items:baseline;flex-wrap:wrap;
+  font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+  border:1px solid var(--rule);border-radius:2px;padding:5px 10px;background:var(--card)}
+.stamp b{color:var(--ink);font-weight:600}
+#facToggle{font-family:var(--display);font-size:11.5px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;border:1.5px solid var(--faculty);color:var(--faculty);background:transparent;
+  padding:7px 14px;border-radius:2px;cursor:pointer}
+#facToggle:hover{background:var(--faculty);color:#fff}
+
+.shell{max-width:var(--maxw);margin:0 auto;padding:0 26px 90px;
+  display:grid;grid-template-columns:236px 1fr;gap:54px}
+@media (max-width:900px){.shell{grid-template-columns:1fr;gap:0}
+  .rail{position:static!important;border-right:0!important;padding-right:0!important;
+    border-bottom:1px solid var(--rule);margin-bottom:30px;max-height:none!important}}
+
+.rail{position:sticky;top:0;align-self:start;padding:34px 22px 34px 0;
+  border-right:1px solid var(--rule);max-height:100vh;overflow-y:auto}
+.rail ol{list-style:none;margin:10px 0 22px;padding:0}
+.rail li{margin:0 0 2px}
+.rail a{display:grid;grid-template-columns:52px 1fr;gap:8px;align-items:baseline;
+  text-decoration:none;color:var(--ink-soft);font-family:var(--display);
+  font-size:13.5px;font-weight:500;padding:6px 8px;border-radius:2px;border-left:2px solid transparent}
+.rail a:hover{background:var(--card);color:var(--ink)}
+.rail a .t{font-family:var(--mono);font-size:11px;color:var(--slate)}
+.rail a.on{border-left-color:var(--ink);color:var(--ink);background:var(--card);font-weight:700}
+
+main{padding:44px 0 0;min-width:0}
+section{margin:0 0 78px;scroll-margin-top:20px}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(23px,3.1vw,31px);
+  line-height:1.12;letter-spacing:-.01em;margin:10px 0 16px}
+h3{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:.01em;margin:36px 0 10px}
+p{margin:0 0 16px}
+ul,ol.body-list{margin:0 0 18px;padding-left:22px}
+li{margin:0 0 8px}
+
+.divider{border-top:3px solid var(--ink);padding-top:14px;margin:96px 0 40px}
+.divider .eyebrow{color:var(--ink)}
+.divider h2{font-size:clamp(28px,4.2vw,40px);margin-top:6px}
+
+.step-head{display:flex;gap:16px;align-items:baseline;border-top:2px solid var(--ink);padding-top:14px}
+.step-head .clock{font-family:var(--mono);font-size:12px;font-weight:600;color:#fff;
+  background:var(--ink);padding:3px 8px;border-radius:2px;white-space:nowrap}
+.goal{font-size:19px;color:var(--ink-soft);max-width:64ch;margin:0 0 30px;font-style:italic}
+
+.do{list-style:none;margin:26px 0 8px;padding:0;counter-reset:d}
+.do>li{counter-increment:d;display:grid;grid-template-columns:44px 1fr;gap:18px;
+  padding:0 0 26px;margin:0}
+.do>li::before{content:counter(d);font-family:var(--display);font-weight:700;font-size:17px;
+  color:#fff;background:var(--ink);width:32px;height:32px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;margin-top:2px}
+.do>li>div>b:first-child{display:block;font-family:var(--display);font-size:18px;
+  font-weight:700;letter-spacing:.005em;margin-bottom:3px}
+.do>li p{margin:0 0 10px}
+.do>li p:last-child{margin-bottom:0}
+
+.check{border:1.5px dashed var(--verified);background:#0F6F6308;padding:14px 18px;margin:26px 0 0}
+.check .eyebrow{color:var(--verified);display:block;margin-bottom:5px}
+.check p{margin:0}
+
+.note{border-left:3px solid var(--slate);background:var(--card);padding:16px 20px;margin:26px 0}
+.note.warn{border-left-color:var(--fabricated)}
+.note.good{border-left-color:var(--verified)}
+.note p:last-child{margin-bottom:0}
+.note .eyebrow{display:block;margin-bottom:6px}
+
+.faculty{border-left:3px solid var(--faculty);background:#5B3E8E0A;padding:16px 20px;margin:26px 0}
+.faculty .eyebrow{color:var(--faculty);display:block;margin-bottom:6px}
+.faculty p:last-child{margin-bottom:0}
+body.no-faculty .faculty{display:none}
+
+.chip{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);
+  font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;
+  padding:3px 9px;border-radius:2px;border:1.5px solid}
+.chip.v{color:var(--verified);border-color:var(--verified);background:#0F6F630F}
+.chip.a{color:var(--asserted);border-color:var(--asserted);background:#B26A000F}
+.chip.f{color:var(--fabricated);border-color:var(--fabricated);background:#A32B2B0F}
+.legend{display:grid;gap:12px;margin:24px 0}
+
+.case{border:2px solid var(--ink);background:var(--card);padding:24px 26px;margin:26px 0}
+.case dl{display:grid;grid-template-columns:132px 1fr;gap:12px 20px;margin:0}
+.case dt{font-family:var(--display);font-size:11.5px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;color:var(--ink-soft);padding-top:5px}
+.case dd{margin:0}
+@media (max-width:560px){.case dl{grid-template-columns:1fr;gap:4px 0}
+  .case dd{margin-bottom:14px}}
+
+.block{border:1px solid var(--rule);background:var(--card);border-radius:3px;margin:20px 0;overflow:hidden}
+.block-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;
+  background:var(--paper-2);border-bottom:1px solid var(--rule);padding:8px 12px}
+.block-bar span{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft)}
+.copy{font-family:var(--display);font-size:11px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;border:1px solid var(--slate);color:var(--slate);background:transparent;
+  padding:4px 11px;border-radius:2px;cursor:pointer}
+.copy:hover{background:var(--slate);color:#fff}
+.copy.done{background:var(--verified);border-color:var(--verified);color:#fff}
+.block pre{margin:0;padding:17px 19px;overflow-x:auto;font-family:var(--mono);
+  font-size:12.5px;line-height:1.66;white-space:pre-wrap;word-break:break-word}
+
+table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px}
+th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-family:var(--display);font-size:11.5px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;color:var(--ink-soft);border-bottom:1.5px solid var(--ink)}
+tbody tr:nth-child(odd){background:var(--card)}
+
+.audit{border:1px solid var(--rule);background:var(--card);border-radius:3px;padding:24px}
+.claim{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start;
+  border:1.5px solid var(--rule);border-radius:3px;padding:14px 16px;margin:0 0 11px;
+  background:var(--paper);cursor:pointer;text-align:left;width:100%;font:inherit;color:inherit}
+.claim:hover{border-color:var(--slate)}
+.claim .src{display:block;margin-top:6px;font-family:var(--mono);font-size:11.5px;color:var(--ink-soft)}
+.claim .mark{font-family:var(--display);font-size:11px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;color:var(--ink-soft);border:1.5px dashed var(--rule);
+  border-radius:2px;padding:3px 9px;white-space:nowrap}
+.claim[data-flagged="true"]{border-color:var(--fabricated);background:#A32B2B0A}
+.claim[data-flagged="true"] .mark{border:1.5px solid var(--fabricated);color:var(--fabricated)}
+.verdict{display:none;grid-column:1/-1;margin-top:11px;padding-top:11px;
+  border-top:1px dashed var(--rule);font-size:14.5px}
+.audit.scored .verdict{display:block}
+.audit.scored .claim[data-bad="true"]{border-color:var(--fabricated)}
+.audit.scored .claim[data-bad="false"]{border-color:var(--verified)}
+.audit-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
+.btn{font-family:var(--display);font-size:12px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;background:var(--ink);color:#fff;border:1px solid var(--ink);
+  padding:9px 18px;border-radius:2px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:hover{background:var(--slate);border-color:var(--slate);color:#fff}
+.score-out{font-family:var(--mono);font-size:13px;color:var(--ink-soft)}
+
+.sent{border:1.5px solid var(--rule);border-radius:3px;padding:14px 16px;margin:0 0 11px;background:var(--paper)}
+.sent p{margin:0 0 11px}
+.sbtns{display:flex;gap:8px;flex-wrap:wrap}
+.sbtn{font-family:var(--display);font-size:11px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.09em;border:1.5px solid var(--rule);background:transparent;color:var(--ink-soft);
+  padding:5px 12px;border-radius:2px;cursor:pointer}
+.sbtn[aria-pressed="true"]{border-color:var(--ink);color:#fff;background:var(--ink)}
+.sfeed{display:none;margin-top:11px;padding-top:11px;border-top:1px dashed var(--rule);font-size:14.5px}
+.labeller.scored .sfeed{display:block}
+
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;align-items:end;
+  border:1px solid var(--rule);background:var(--card);padding:22px;border-radius:3px}
+.calc label{display:block;font-family:var(--display);font-size:12px;text-transform:uppercase;
+  letter-spacing:.1em;font-weight:600;color:var(--ink-soft);margin-bottom:6px}
+.calc input{width:100%;font-family:var(--mono);font-size:16px;padding:9px 11px;
+  border:1px solid var(--rule);border-radius:2px;background:var(--paper);color:var(--ink)}
+#ratioOut{font-family:var(--mono);font-size:15px;line-height:1.5}
+#ratioNum{font-family:var(--display);font-size:38px;font-weight:700;display:block;line-height:1}
+
+figure{margin:28px 0}
+figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);margin-top:8px}
+svg{max-width:100%;height:auto;display:block}
+footer{border-top:1px solid var(--rule);background:var(--paper-2);padding:26px;
+  font-family:var(--mono);font-size:12px;color:var(--ink-soft)}
+footer div{max-width:var(--maxw);margin:0 auto}
+</style><header class="masthead">
+  <div class="masthead-in">
+    <span class="stamp"><b>AI AGENT WORKSHOP 3</b> · 55 minutes · pairs · one laptop each</span>
+    <h1>The deal your rep is sure about</h1>
+    <p>Build an agent that reads a sales call and tells you whether the deal is real. Then run it against three transcripts. One deal is healthy. One obviously is not. The third is the reason this workshop exists.</p>
+    <button id="facToggle" type="button">Hide faculty notes</button>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="rail" aria-label="Run sheet">
+    <span class="eyebrow">Before we start</span>
+    <ol>
+      <li><a href="#case"><span class="t">—</span><span>The case</span></a></li>
+      <li><a href="#model"><span class="t">—</span><span>The scoring model</span></a></li>
+    </ol>
+    <span class="eyebrow">Workshop 3 · Deal health</span>
+    <ol>
+      <li><a href="#p1"><span class="t">00–10</span><span>What managers check</span></a></li>
+      <li><a href="#p1b"><span class="t">05–10</span><span>Spot the invention</span></a></li>
+      <li><a href="#p2"><span class="t">10–30</span><span>Build the agent</span></a></li>
+      <li><a href="#p3"><span class="t">30–45</span><span>Run all three</span></a></li>
+      <li><a href="#p3b"><span class="t">40–45</span><span>Calibrate</span></a></li>
+      <li><a href="#p4"><span class="t">45–55</span><span>Debrief</span></a></li>
+    </ol>
+    <span class="eyebrow">Transcripts</span>
+    <ol>
+      <li><a href="#tA"><span class="t">A</span><span>Farhan · footwear</span></a></li>
+      <li><a href="#tB"><span class="t">B</span><span>Rohit · beauty</span></a></li>
+      <li><a href="#tC"><span class="t">C</span><span>Meghna · home care</span></a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+  <!-- ========== CASE ========== -->
+  <section id="case">
+    <span class="eyebrow">Setup</span>
+    <h2>The case</h2>
+    <p class="goal">You are not selling today. You are reviewing calls that someone else made, the way a sales manager does every Monday morning.</p>
+
+    <div class="case">
+      <dl>
+        <dt>The seller</dt>
+        <dd><b>GoKwik</b> — e-commerce enablement for Indian D2C brands. <b>KwikCheckout</b>, a one-click checkout that reduces cart abandonment. <b>RTO Shield</b>, which scores every cash-on-delivery order for the risk the customer refuses the parcel, so high-risk orders can be verified, converted to prepaid, or declined before they ship.</dd>
+        <dt>The problem</dt>
+        <dd>RTO — return to origin. A refused COD parcel goes back to the warehouse. The brand pays shipping both ways and gets nothing. It rarely shows as a line item, so most brands under-count it.</dd>
+        <dt>Market numbers</dt>
+        <dd>COD is 40–60% of orders. RTO runs 15–30% on COD. Roughly ₹120–250 cost per RTO plus blocked inventory. Fits brands doing more than about 1,500 orders a month.</dd>
+        <dt>Your job</dt>
+        <dd>Build an agent that reads a raw transcript and returns a structured deal review: what was established, what was missed, how healthy the deal is, and what the rep should do next.</dd>
+      </dl>
+    </div>
+
+    <p>This is the most delegated task in modern sales operations, and for a simple reason: it is high volume, pattern-based, and nobody has time to listen to forty calls a week. It is also the task where an agent has one genuine advantage over the person who made the call.</p>
+
+    <div class="note">
+      <span class="eyebrow">The advantage</span>
+      <p>The agent was not in the room. It does not like the buyer, it did not enjoy the conversation, and it has nothing invested in the deal being real. Hold on to that — it is the whole reason this works, and it comes back at the end.</p>
+    </div>
+
+    <figure>
+      <svg viewBox="0 0 900 250" role="img" aria-label="One transcript goes into the agent and produces a six-section deal review; three transcripts are compared">
+        <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0,0 L9,4.5 L0,9 z" fill="#3A4A6B"/></marker></defs>
+        <g font-family="IBM Plex Sans Condensed, sans-serif">
+          <rect x="14" y="80" width="150" height="76" rx="3" fill="#FBFCFD" stroke="#14203A" stroke-width="1.5"/>
+          <text x="89" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#14203A">RAW TRANSCRIPT</text>
+          <text x="89" y="128" text-anchor="middle" font-size="11.5" fill="#43506E">no summary,</text>
+          <text x="89" y="144" text-anchor="middle" font-size="11.5" fill="#43506E">no preprocessing</text>
+
+          <line x1="168" y1="118" x2="222" y2="118" stroke="#3A4A6B" stroke-width="1.5" marker-end="url(#ar)"/>
+
+          <rect x="226" y="66" width="170" height="104" rx="3" fill="#14203A"/>
+          <text x="311" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">YOUR AGENT</text>
+          <text x="311" y="120" text-anchor="middle" font-size="11.5" fill="#C6CCD6">5 criteria · 0/1/2</text>
+          <text x="311" y="138" text-anchor="middle" font-size="11.5" fill="#C6CCD6">quote or no evidence</text>
+
+          <line x1="400" y1="118" x2="454" y2="118" stroke="#3A4A6B" stroke-width="1.5" marker-end="url(#ar)"/>
+
+          <rect x="458" y="22" width="180" height="196" rx="3" fill="#FBFCFD" stroke="#14203A" stroke-width="1.5"/>
+          <text x="548" y="46" text-anchor="middle" font-size="12" font-weight="700" fill="#14203A">SIX SECTIONS</text>
+          <text x="476" y="72" font-size="11.5" fill="#43506E">1 · Deal snapshot</text>
+          <text x="476" y="94" font-size="11.5" fill="#43506E">2 · Scorecard /10</text>
+          <text x="476" y="116" font-size="11.5" fill="#43506E">3 · Risk flags</text>
+          <text x="476" y="138" font-size="11.5" fill="#43506E">4 · Rep coaching</text>
+          <text x="476" y="160" font-size="11.5" fill="#43506E">5 · Next actions</text>
+          <text x="476" y="182" font-size="11.5" fill="#43506E">6 · The one question</text>
+          <line x1="470" y1="196" x2="626" y2="196" stroke="#C6CCD6" stroke-width="1"/>
+          <text x="548" y="210" text-anchor="middle" font-size="11" fill="#43506E" font-style="italic">every score evidenced</text>
+
+          <line x1="642" y1="118" x2="696" y2="118" stroke="#3A4A6B" stroke-width="1.5" marker-end="url(#ar)"/>
+
+          <rect x="700" y="46" width="186" height="146" rx="3" fill="#E4E8ED" stroke="#14203A" stroke-width="1.5"/>
+          <text x="793" y="72" text-anchor="middle" font-size="12" font-weight="700" fill="#14203A">RUN IT THREE TIMES</text>
+          <text x="793" y="100" text-anchor="middle" font-size="12" fill="#0F6F63" font-weight="600">A — healthy</text>
+          <text x="793" y="126" text-anchor="middle" font-size="12" fill="#A32B2B" font-weight="600">B — obviously not</text>
+          <text x="793" y="152" text-anchor="middle" font-size="12" fill="#B26A00" font-weight="600">C — ?</text>
+          <text x="793" y="176" text-anchor="middle" font-size="11" fill="#43506E" font-style="italic">same prompt, no tuning</text>
+        </g>
+      </svg>
+      <figcaption>One prompt, three transcripts. If you tune the prompt between runs, you have not built an agent — you have hand-graded three calls.</figcaption>
+    </figure>
+
+    <div class="faculty">
+      <span class="eyebrow">Faculty note</span>
+      <p>Do not hand out transcripts B and C until minute 30. If pairs see all three during the build, they will write a prompt that recognises these specific calls rather than one that generalises — and the whole Part 3 comparison collapses. Transcript A is the only one on the table during Part 2.</p>
+    </div>
+  </section>
+
+  <!-- ========== SCORING MODEL ========== -->
+  <section id="model">
+    <span class="eyebrow">Setup</span>
+    <h2>The scoring model</h2>
+    <p class="goal">Everyone uses this exact model. Different prompts, same scale — otherwise the comparison at minute 40 means nothing.</p>
+
+    <h3>The five things a manager checks</h3>
+    <table>
+      <thead><tr><th>Criterion</th><th>A healthy answer</th><th>The failure</th></tr></thead>
+      <tbody>
+        <tr><td><b>Need</b></td><td>A number, a frequency, or an incident. “RTO is running 24% and we lost about eleven lakh last quarter.”</td><td>“They're interested in reducing RTO.” That is a topic, not a need.</td></tr>
+        <tr><td><b>Economic buyer</b></td><td>A name, a role, and how they decide.</td><td>“The contact will take it internally.” To whom? Nobody knows.</td></tr>
+        <tr><td><b>Timeline</b></td><td>A dated external event — a season, an audit, a contract end.</td><td>“They said Q4.” A quarter is not an event.</td></tr>
+        <tr><td><b>Next step</b></td><td>One specific thing, with an owner and a date, agreed out loud by both sides.</td><td>“I'll send the deck.” One-sided, undated, requires nothing of the buyer.</td></tr>
+        <tr><td><b>Multi-threading</b></td><td>Two or more people, across functions.</td><td>One contact. Single-threaded deals die when that person gets busy or overruled.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note good">
+      <span class="eyebrow">The signal that matters more than any other</span>
+      <p>Whether the buyer <b>did</b> something, or only <b>said</b> something. Enthusiasm is not a signal. Agreeing to pull data is a signal. Booking a date is a signal. Introducing a colleague is a signal.</p>
+      <p>Every deal that dies at 90% was forecast on things a buyer said.</p>
+    </div>
+
+    <h3>The scale</h3>
+    <table>
+      <thead><tr><th>Score</th><th>Means</th><th>Test</th></tr></thead>
+      <tbody>
+        <tr><td><b>0</b></td><td>Not established</td><td>The rep never asked, or asked and got nothing usable.</td></tr>
+        <tr><td><b>1</b></td><td>Partial</td><td>Touched on, but no number, no name, no date.</td></tr>
+        <tr><td><b>2</b></td><td>Established</td><td>A specific, quotable fact exists in the transcript.</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead><tr><th>Total /10</th><th>Band</th><th>What it means on Monday morning</th></tr></thead>
+      <tbody>
+        <tr><td><b>8–10</b></td><td><span class="chip v">Healthy</span></td><td>Forecastable. Work it.</td></tr>
+        <tr><td><b>4–7</b></td><td><span class="chip a">At risk</span></td><td>Real but incomplete. Name the gap and close it before the next stage.</td></tr>
+        <tr><td><b>0–3</b></td><td><span class="chip f">Unqualified</span></td><td>Not a deal yet. Requalify it or take it out of the pipeline.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note warn">
+      <span class="eyebrow">The rule that makes the agent usable</span>
+      <p>Every score must be justified with a <b>verbatim quote</b> from the transcript, or with the words <code>NO EVIDENCE IN TRANSCRIPT</code>. No paraphrasing. No inference. No “the buyer seemed”.</p>
+      <p>If the agent cannot quote it, the score is 0. This one constraint is the difference between a review a manager would act on and a plausible-sounding summary. Build it into the first line of your prompt, and repeat it.</p>
+    </div>
+  </section>
+
+  <!-- ========== DIVIDER ========== -->
+  <div class="divider">
+    <span class="eyebrow">Workshop 3</span>
+    <h2>Deal health · 55 minutes</h2>
+  </div>
+
+  <!-- ========== PART 1 ========== -->
+  <section id="p1">
+    <div class="step-head"><span class="clock">00–10</span><h2>What a manager is actually checking</h2></div>
+    <p class="goal">Laptops closed for the first five minutes. You are reading, not building.</p>
+
+    <ol class="do">
+      <li><div><b>Read transcript A</b><p>It is at the bottom of this page. Four minutes. Read it properly — you are about to score it by hand and then again with an agent.</p></div></li>
+      <li><div><b>Score it out loud, as a pair, against the five criteria</b><p>0, 1 or 2 on each. Say the quote you are scoring on. If you cannot find a quote, it is a 0.</p></div></li>
+      <li><div><b>Write your total somewhere you will not lose it</b><p>You will compare it to your agent's score at minute 32.</p></div></li>
+    </ol>
+
+    <div class="check">
+      <span class="eyebrow">Before you move on</span>
+      <p>Transcript A should score high. If you have it below 8, go back — you are being harsh on something, and finding out what now will save you twenty minutes later.</p>
+    </div>
+
+    <div class="faculty">
+      <span class="eyebrow">Faculty note</span>
+      <p>Take two pairs' scores for A at minute 8 and put them on the board. They should agree within a point. If they do not, the disagreement is almost always on Next Step — some pairs score the booked meeting as a 2, others want to see it confirmed. Settle it now: it was agreed out loud with a date and the buyer took an action, so it is a 2. Calibrating on A is what makes C meaningful.</p>
+    </div>
+  </section>
+
+  <section id="p1b">
+    <div class="step-head"><span class="clock">05–10</span><h2>Practice — spot what the agent made up</h2></div>
+    <p class="goal">Before you build one, look at what a badly built one produces.</p>
+
+    <p>Below is output from an agent reviewing a call. <b>Three of these six lines are not supported by anything in the transcript it read.</b> Click the ones you would refuse to put in front of a sales manager.</p>
+
+    <div class="audit" id="audit">
+      <button class="claim" type="button" data-bad="false" data-why="Usable. Direct quote, and it is exactly the kind of specific, costed need a manager wants to see. Note it carries the number and the period.">
+        <span>NEED — 2/2. “Twenty-four percent on COD… about eleven lakh last quarter.”
+          <span class="src">Evidence: verbatim quote</span></span>
+        <span class="mark">Flag</span><span class="verdict"></span>
+      </button>
+      <button class="claim" type="button" data-bad="true" data-why="Made up. Nothing in any transcript states a budget figure. The agent produced a number because a budget field wanted filling. Numbers are where invention hides best, because they read as evidence.">
+        <span>BUDGET — the buyer has approximately ₹15–20 lakh available for this.
+          <span class="src">Evidence: inferred from company size</span></span>
+        <span class="mark">Flag</span><span class="verdict"></span>
+      </button>
+      <button class="claim" type="button" data-bad="false" data-why="Usable, and the best kind of risk flag — it names something that is true, specific, and actionable. The economic buyer being named but unmet is a real risk even in a strong deal.">
+        <span>RISK — economic buyer identified by name but never spoken to directly.
+          <span class="src">Evidence: “My co-founder Ritika… she's the one who'd sign it.”</span></span>
+        <span class="mark">Flag</span><span class="verdict"></span>
+      </button>
+      <button class="claim" type="button" data-bad="true" data-why="Rapport scored as evidence. This is the failure that matters in this workshop. Warmth is not qualification, and an agent that treats tone as a signal will rank a friendly call above a well-run one every time.">
+        <span>SENTIMENT — buyer engagement is high; strong rapport indicates a healthy deal.
+          <span class="src">Evidence: buyer tone throughout</span></span>
+        <span class="mark">Flag</span><span class="verdict"></span>
+      </button>
+      <button class="claim" type="button" data-bad="false" data-why="Usable. It correctly reports absence rather than inventing something to fill the field, and it uses the exact wording the schema asks for.">
+        <span>COMPETITION — <code>NO EVIDENCE IN TRANSCRIPT</code>.
+          <span class="src">Evidence: none — not discussed on the call</span></span>
+        <span class="mark">Flag</span><span class="verdict"></span>
+      </button>
+      <button class="claim" type="button" data-bad="true" data-why="Two facts joined by an invented reason. The festive season is stated. 'Which suggests they will decide within three weeks' is not — the agent manufactured a decision timeline out of an event timeline. Say this to a manager and the deal gets forecast for a month it was never going to close in.">
+        <span>TIMELINE — festive season in ten weeks, which suggests they will decide within three weeks.
+          <span class="src">Evidence: “It starts in about ten weeks”</span></span>
+        <span class="mark">Flag</span><span class="verdict"></span>
+      </button>
+      <div class="audit-actions">
+        <button class="btn" id="scoreBtn" type="button">Score my flags</button>
+        <button class="btn ghost" id="resetBtn" type="button">Reset</button>
+        <span class="score-out" id="auditScore" aria-live="polite"></span>
+      </div>
+    </div>
+
+    <div class="note warn">
+      <span class="eyebrow">The three ways this agent failed</span>
+      <p><b>It invented a number.</b> <b>It scored warmth as evidence.</b> <b>It attached an invented conclusion to a real fact.</b> All three read fluently. All three would survive a skim. Your prompt has to make each one impossible.</p>
+    </div>
+
+    <div class="faculty">
+      <span class="eyebrow">Faculty note</span>
+      <p>The sentiment line is the one to dwell on. Most pairs flag the budget invention immediately and miss the sentiment line entirely, because it reads like reasonable sales language. Ask the room: what would this agent do with a call where the buyer was delightful and committed to nothing? That question sets up transcript C thirty minutes before they see it.</p>
+    </div>
+  </section>
+
+  <!-- ========== PART 2 ========== -->
+  <section id="p2">
+    <div class="step-head"><span class="clock">10–30</span><h2>Build the agent</h2></div>
+    <p class="goal">In pairs. You get the contract — the output schema. You write the instructions. That is the exercise.</p>
+
+    <ol class="do">
+      <li><div><b>Open a new chat</b><p>Any assistant. No web search needed — everything the agent needs is in the transcript you paste.</p></div></li>
+      <li><div><b>Copy the schema block below into your prompt, verbatim</b>
+        <p>This is the contract, not the prompt. Every pair uses the same schema so the scores are comparable.</p></div></li>
+      <li><div><b>Write the rules yourselves</b>
+        <p>The skeleton block has four sections marked <code>[YOU WRITE THIS]</code>. Those four are where the agent is actually built. Copying someone else's wording here defeats the point.</p></div></li>
+      <li><div><b>Test on transcript A. Then test on transcript A again.</b>
+        <p>Two runs, same transcript, same prompt. If the two scores disagree, your instructions are ambiguous — fix them now, not at minute 35.</p></div></li>
+      <li><div><b>Check it against your hand score from Part 1</b>
+        <p>Within one point is fine. Three points apart means one of you is wrong and it is worth finding out which.</p></div></li>
+    </ol>
+
+    <div class="block">
+      <div class="block-bar"><span>The schema · copy verbatim</span><button class="copy" type="button">Copy</button></div>
+<pre>Return EXACTLY these six sections, in this order, and nothing else.
+
+## 1. DEAL SNAPSHOT
+Company, sector, order volume, any metrics stated, every person named
+and their role. Facts only, all taken from the transcript.
+Anything not stated: write "not stated".
+
+## 2. SCORECARD
+| Criterion | Score | Evidence |
+Need / Economic buyer / Timeline / Next step / Multi-threading
+Score each 0, 1 or 2.
+Evidence must be a VERBATIM QUOTE or the exact words
+NO EVIDENCE IN TRANSCRIPT.
+Then: TOTAL /10 and BAND (Healthy 8-10, At risk 4-7, Unqualified 0-3).
+
+## 3. RISK FLAGS
+One sentence each, with the evidence. Only risks visible in THIS
+transcript. No generic risks.
+
+## 4. REP COACHING
+Two or three items. Each must quote what the rep actually said, then
+state what should have been said instead.
+
+## 5. NEXT ACTIONS
+Two or three actions for the rep, each with what it is meant to
+establish. Ordered by what most reduces risk.
+
+## 6. THE ONE QUESTION
+The single question the rep should have asked and did not. One only.</pre>
+    </div>
+
+    <div class="block">
+      <div class="block-bar"><span>The skeleton · complete the four marked sections</span><button class="copy" type="button">Copy</button></div>
+<pre>You are reviewing a sales call for GoKwik.
+
+GoKwik sells e-commerce enablement to Indian D2C brands. KwikCheckout
+is a one-click checkout that reduces cart abandonment. RTO Shield
+scores every cash-on-delivery order for the risk the customer refuses
+the parcel, so high-risk orders can be verified, converted to prepaid,
+or declined before shipping. RTO means return to origin: the brand pays
+shipping both ways and gets nothing. GoKwik fits brands doing more than
+about 1,500 orders a month.
+
+EVIDENCE RULE
+[YOU WRITE THIS — how the agent must evidence every single score, and
+what it must do when it cannot find evidence. Be specific about what
+counts as evidence and what does not.]
+
+WHAT IS NOT EVIDENCE
+[YOU WRITE THIS — the things that must never raise a score. Think about
+what a fluent, friendly, entirely unqualified call would look like.]
+
+SCORING DISCIPLINE
+[YOU WRITE THIS — how strict to be. What should the agent do when it is
+uncertain between two scores? How common should 0 be?]
+
+NOT-ASKED vs ASKED-AND-FAILED
+[YOU WRITE THIS — both score 0, but they need completely different
+coaching. Tell the agent how to tell them apart and to label which
+one it was.]
+
+OUTPUT
+[paste the schema block here]
+
+TRANSCRIPT
+[paste the transcript here]</pre>
+    </div>
+
+    <h3>How agents fail at this task</h3>
+    <table>
+      <thead><tr><th>The failure</th><th>What it looks like</th><th>What to build in</th></tr></thead>
+      <tbody>
+        <tr><td><b>Hallucination</b></td><td>States a budget, headcount or timeline that is nowhere in the transcript. The most dangerous failure, because the output reads well.</td><td>The verbatim-quote rule, stated more than once, plus an explicit ban on inference.</td></tr>
+        <tr><td><b>Generosity</b></td><td>Everything scores 7 or 8. The model is agreeable by default and reluctant to call a deal bad.</td><td>Tell it 0 is a common and correct score, and that <code>NO EVIDENCE IN TRANSCRIPT</code> is the expected answer on a weak call.</td></tr>
+        <tr><td><b>Rapport-scoring</b></td><td>A friendly, fluent call scores highly because it sounds successful.</td><td>State that tone, warmth and buyer enthusiasm are not evidence and must never raise a score.</td></tr>
+        <tr><td><b>Vague coaching</b></td><td>“The rep should ask more discovery questions.” True of every call ever recorded.</td><td>Require a quoted line from the rep and a specific replacement.</td></tr>
+        <tr><td><b>Not-asked vs asked-and-failed</b></td><td>Both score 0 with no distinction, so the coaching is wrong.</td><td>Make the agent label which it was. They need different feedback.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="check">
+      <span class="eyebrow">Before minute 30</span>
+      <p>Two runs on transcript A agreeing within a point, and nothing in your prompt that mentions footwear, Ritika, or festive season. If your prompt knows anything about this specific call, it will fail on the next two.</p>
+    </div>
+
+    <div class="faculty">
+      <span class="eyebrow">Faculty note</span>
+      <p>Circulate and read the <code>WHAT IS NOT EVIDENCE</code> section on four or five prompts. The pairs who write something real there — naming tone, enthusiasm, agreement, politeness — will score transcript C correctly in fifteen minutes. The pairs who leave it thin will not. You can predict the Part 3 results from this one section, and it is worth telling them so at minute 25 without saying why.</p>
+    </div>
+  </section>
+
+  <!-- ========== PART 3 ========== -->
+  <section id="p3">
+    <div class="step-head"><span class="clock">30–45</span><h2>Run it against all three</h2></div>
+    <p class="goal">Same prompt, three transcripts, no tuning between runs. Transcripts B and C are at the bottom of this page.</p>
+
+    <ol class="do">
+      <li><div><b>Run transcript B</b><p>Fresh chat, same prompt, paste the transcript. Record the score and band.</p></div></li>
+      <li><div><b>Run transcript C</b><p>Same again. Record the score and band.</p></div></li>
+      <li><div><b>Now read B and C yourselves and score them by hand</b>
+        <p>Do this after the agent, not before. You want to know whether you agree with it, not whether it agrees with you.</p></div></li>
+      <li><div><b>Fill in the grid and find your disagreements</b>
+        <p>Where you and the agent differ, work out which of you is right. Both happen, and the cases where the agent is wrong matter as much as the cases where it is right.</p></div></li>
+    </ol>
+
+    <table>
+      <thead><tr><th></th><th>Agent score</th><th>Agent band</th><th>Your score</th><th>Where you disagreed, and who was right</th></tr></thead>
+      <tbody>
+        <tr><td><b>A</b></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td><b>B</b></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td><b>C</b></td><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <h3>Three specific checks</h3>
+    <table>
+      <thead><tr><th>Check</th><th>What you are looking for</th></tr></thead>
+      <tbody>
+        <tr><td>Did it rank all three correctly, best to worst?</td><td>If not, which two did it swap? A swap between B and C is a different failure from a swap between A and C.</td></tr>
+        <tr><td>Transcript B has almost nothing in it. Did your agent score it near zero?</td><td>Or did it find things that are not there? Quote anything it claimed that you cannot locate in the text. This is the hallucination test.</td></tr>
+        <tr><td>What did it score transcript C?</td><td>Read C again before you decide whether you agree. Take your time with this one.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <span class="eyebrow">Compare across pairs</span>
+      <p>Get transcript C scores from two other pairs. Same transcript, same scoring model, different prompts. Write down the spread — you will need it in the debrief.</p>
+    </div>
+
+    <div class="faculty">
+      <span class="eyebrow">Faculty note</span>
+      <p>Hand out B and C now, not earlier. Expect the spread on C to run from 2 to 8 across the room, which is far wider than on A or B — and that spread is the single most useful artefact of the workshop. Collect the numbers on the board as pairs finish so the calibration section below has real data to sit against.</p>
+    </div>
+  </section>
+
+  <section id="p3b">
+    <div class="step-head"><span class="clock">40–45</span><h2>Calibrate</h2></div>
+    <p class="goal">Enter what you and your agent gave transcript C.</p>
+
+    <div class="calc">
+      <div><label for="cHand">Your hand score for C</label>
+        <input id="cHand" type="number" min="0" max="10" value="0" inputmode="numeric"></div>
+      <div><label for="cAgent">Your agent's score for C</label>
+        <input id="cAgent" type="number" min="0" max="10" value="0" inputmode="numeric"></div>
+      <div id="calOut" aria-live="polite"><span id="calNum">—</span><span id="calMsg">Enter both scores.</span></div>
+    </div>
+
+    <div class="note">
+      <span class="eyebrow">Ground truth</span>
+      <p>Transcript C scores <b>3 out of 10</b>. Need 2, everything else 0 except Next Step, which is a 1 because something was agreed — one-sided, undated, and requiring nothing of the buyer.</p>
+      <p>It is the second-longest call of the three. The buyer is enthusiastic throughout. The rep is fluent. It ends warmly. And almost nothing was established.</p>
+    </div>
+
+    <div class="faculty">
+      <span class="eyebrow">Faculty note</span>
+      <p>Do not reveal the ground truth until every pair has entered their numbers. The calibrator is designed so that a high hand score and a low agent score produces the most useful message — that is the majority case and it is the moment the workshop lands.</p>
+    </div>
+  </section>
+
+  <!-- ========== PART 4 ========== -->
+  <section id="p4">
+    <div class="step-head"><span class="clock">45–55</span><h2>Debrief</h2></div>
+    <p class="goal">Four questions. The last one is not about agents.</p>
+
+    <ol class="do">
+      <li><div><b>What did the agent catch that you missed on your own first read?</b></div></li>
+      <li><div><b>What did it get wrong, or state that was not in the transcript?</b>
+        <p>Including on transcript A. There is a real risk in A that a lot of agents miss — the economic buyer is named and has never been spoken to.</p></div></li>
+      <li><div><b>Where does a human still need to override this agent?</b>
+        <p>Name a specific decision you would not delegate to it.</p></div></li>
+      <li><div><b>What have you taken from this course that applies outside a sales role?</b>
+        <p>One thing, and where you would use it. This is the last AI workshop of the course.</p></div></li>
+    </ol>
+
+    <div class="note good">
+      <span class="eyebrow">A question worth sitting with</span>
+      <p>Your agent scored transcript C in a few seconds, and probably scored it correctly. The rep who made that call thought it went well and would have forecast it. So would most people in this room on a first read.</p>
+      <p>The agent was not smarter than you. It was just unable to be charmed.</p>
+    </div>
+
+    <div class="faculty">
+      <span class="eyebrow">Faculty note · running the debrief</span>
+      <p><b>1.</b> Put every pair's transcript C score on the board. Expect 2 to 8.</p>
+      <p><b>2.</b> Ask the pair with the highest score to read out what their agent cited as evidence for Need or Next Step. It will almost always be an enthusiasm quote. Let the room hear it.</p>
+      <p><b>3.</b> Ask: how many of you scored C higher <em>by hand</em> than your agent did? Usually a majority. This is the moment.</p>
+      <p><b>4.</b> Ask what the agent got wrong on A — Ritika named but unmet. Calibration cuts both ways and this prevents the conclusion that the agent is always right.</p>
+      <p><b>5.</b> The override question. Good answers: whether to disqualify, anything needing account knowledge from outside the call, judging whether a buyer is lying.</p>
+      <p><b>6.</b> Close on the course question. Give it the full two minutes.</p>
+    </div>
+
+    <div class="note">
+      <span class="eyebrow">The line to end on</span>
+      <p>The agent did not outperform you because it understands sales better than you do. It outperformed you because it was not in the room, did not like the buyer, and had no reason to want the deal to be real.</p>
+      <p>Every rep who has forecast a deal that died knew, somewhere, what transcript C was. The agent's only advantage is that it has nothing invested in the answer — and that is worth knowing about every judgement you will make in a commercial role.</p>
+    </div>
+  </section>
+
+  <!-- ========== TRANSCRIPTS ========== -->
+  <div class="divider">
+    <span class="eyebrow">Reference</span>
+    <h2>The three transcripts</h2>
+  </div>
+
+  <section id="tA">
+    <span class="eyebrow">Use in Part 1 and Part 2</span>
+    <h2>Transcript A — Farhan Sheikh, D2C footwear</h2>
+    <p class="goal">Aditya (GoKwik AE) · discovery call · 18 minutes</p>
+    <div class="block">
+      <div class="block-bar"><span>Transcript A · paste this into your agent</span><button class="copy" type="button">Copy</button></div>
+<pre>ADITYA: Farhan, thanks for making the time. I know it's a Friday.
+
+FARHAN: No problem. I've got about twenty minutes before a call with our 3PL.
+
+ADITYA: That's plenty. Before I say anything about us — can I ask how you're set up? Roughly what volume are you doing?
+
+FARHAN: About nine thousand orders a month. Average order value is around twenty-four hundred rupees. Mostly our own site, a bit on Myntra, but that's a different beast entirely.
+
+ADITYA: And how much of the direct volume is cash on delivery?
+
+FARHAN: Fifty-eight percent, give or take. Higher outside the metros — in tier two it's closer to seventy.
+
+ADITYA: What happens to the COD orders that come back?
+
+FARHAN: They come back to the warehouse and half the time the box is damaged. Footwear is bulky, it gets knocked about in reverse logistics. We resell what we can, the rest goes to a clearance channel at about forty percent off.
+
+ADITYA: Do you have a number on what proportion come back?
+
+FARHAN: Twenty-four percent on COD. We pulled it properly in July because the logistics line had got out of hand. It worked out to about eleven lakh last quarter once you count the shipping both ways and the stock we wrote off.
+
+ADITYA: Who pulled that number?
+
+FARHAN: Ritika did. My co-founder. She went through six months of shipping invoices against the OMS data. Took her a weekend and she was not happy about it.
+
+ADITYA: Have you tried anything to bring it down since?
+
+FARHAN: We blocked COD on anything above two thousand rupees. Orders dropped about nine percent in a month so we switched it back on. That's as far as we got.
+
+ADITYA: What made you stop rather than adjust the threshold?
+
+FARHAN: We didn't have the appetite to keep experimenting on live revenue in Q2. And nobody here has the time to sit and analyse it properly.
+
+ADITYA: What's making you look at this now rather than in January?
+
+FARHAN: Festive. It starts in about ten weeks and we do roughly forty percent of the year in six weeks. Last year the RTO in that window was worse than the rest of the year put together — I think we hit thirty-one percent in the peak fortnight. I don't want to do that again.
+
+ADITYA: What are you running on at the moment — checkout, shipping?
+
+FARHAN: Shopify for the store, Shiprocket for fulfilment, and we put in a returns platform last March.
+
+ADITYA: Does the returns platform touch any of this?
+
+FARHAN: No. That's forward returns — customer gets the parcel, tries it, sends it back. This is a different problem. These are parcels that never get opened.
+
+ADITYA: Have you looked at anyone else on the RTO side?
+
+FARHAN: We got a cold email from someone about six months ago. I didn't reply. You're the first conversation I've actually had about it.
+
+ADITYA: If you decided to go ahead with something like this, who else would need to be comfortable with it?
+
+FARHAN: My co-founder Ritika. She runs finance and ops. She'd want to see what it replaces and what the payback looks like — she's the one who'd sign it.
+
+ADITYA: Has she been part of this conversation at all?
+
+FARHAN: Not yet. But she pulled the July numbers, so she knows the problem better than I do. She'll be more sceptical than me, fair warning.
+
+ADITYA: That's useful to know. How did you end up buying the returns platform last March?
+
+FARHAN: Six lakh a year. I found it, Ritika pushed back for about three weeks, then approved it off the ops budget once we showed her what it was saving on manual processing.
+
+ADITYA: What convinced her in the end?
+
+FARHAN: A spreadsheet. She wanted to see before and after on our actual numbers, not a case study from some other brand.
+
+ADITYA: Then let's do the same thing here. Rather than me showing you a deck, let us run your own data. If you can pull six months of order-level exports — COD flag, pin code, order value, delivery outcome — we'll show you what proportion of your RTO we would have caught before it shipped. On your orders, not someone else's.
+
+FARHAN: Ritika can pull that. It's a standard export from our OMS.
+
+ADITYA: I'll send the template today. If you can get it to me by Friday, we'll have the analysis back to you by the middle of next week. Should we put half an hour in the diary for Thursday the fourteenth, with Ritika on it, to go through it?
+
+FARHAN: That works. I'll forward the invite to her this afternoon.
+
+ADITYA: Last thing — is there anything about how you're set up that would make this difficult to put in?
+
+FARHAN: Not that I can think of. We're on Shopify so I'd assume it's an app. Ritika will ask what happens if it goes down mid-festive, though. That'll be her first question.
+
+ADITYA: Good. I'll have an answer for that on Thursday.</pre>
+    </div>
+  </section>
+
+  <section id="tB">
+    <span class="eyebrow">Use in Part 3 only</span>
+    <h2>Transcript B — Rohit Bhatia, D2C beauty</h2>
+    <p class="goal">Sneha (GoKwik AE) · discovery call · 4 minutes</p>
+    <div class="block">
+      <div class="block-bar"><span>Transcript B · paste this into your agent</span><button class="copy" type="button">Copy</button></div>
+<pre>SNEHA: Hi Rohit, thanks for taking the call. Is this a good time?
+
+ROHIT: Yeah, fine.
+
+SNEHA: Great. So just to introduce ourselves — GoKwik is India's leading e-commerce enablement platform for D2C brands. We work with over a thousand brands across the country. We have two main products. KwikCheckout is a one-click checkout that reduces cart abandonment significantly — we typically see a fifteen to twenty percent uplift in conversion. And RTO Shield uses machine learning to predict which COD orders are likely to be returned, so you can take action before they ship.
+
+ROHIT: Okay.
+
+SNEHA: The RTO piece is really where most brands see the impact. We're seeing thirty to fifty percent reduction across our customer base. For a brand your size that's usually quite meaningful.
+
+ROHIT: Right.
+
+SNEHA: You must be seeing pretty high RTO on your COD orders, right?
+
+ROHIT: I guess so, yeah.
+
+SNEHA: Yeah, it's a huge problem in the industry. Especially with the shift to tier two and three. So what we do is we score every single order in real time — it's a proprietary model trained on over a billion transactions — and then you can either convert to prepaid, trigger a verification flow, or block it outright.
+
+ROHIT: Mm.
+
+SNEHA: We've also got a Trust Centre for compliance if that's relevant to you. And the integration is pretty straightforward, it's a Shopify app if you're on Shopify.
+
+ROHIT: What does it cost?
+
+SNEHA: It depends on volume and which modules you take. There's a platform fee and then a per-order component. I can put together a proposal — would that be useful?
+
+ROHIT: Sure, send something across.
+
+SNEHA: Great. And we could set up a demo as well if that helps — I can walk you through the dashboard, show you the risk scoring, how the flagging works, the reporting suite.
+
+ROHIT: Let me look at what you send first.
+
+SNEHA: Of course. What's the best email for you?
+
+ROHIT: The one you wrote to.
+
+SNEHA: Perfect. I'll get that over to you this week. Really looking forward to working together — I think there's a lot we could do here.
+
+ROHIT: Thanks.</pre>
+    </div>
+  </section>
+
+  <section id="tC">
+    <span class="eyebrow">Use in Part 3 only</span>
+    <h2>Transcript C — Meghna Iyer, D2C home care</h2>
+    <p class="goal">Vikas (GoKwik AE) · discovery call · 13 minutes</p>
+    <div class="block">
+      <div class="block-bar"><span>Transcript C · paste this into your agent</span><button class="copy" type="button">Copy</button></div>
+<pre>VIKAS: Meghna, thanks for the time. How's your week going?
+
+MEGHNA: Busy, but good. We just wrapped a big campaign so things are slightly calmer.
+
+VIKAS: Good timing then. Tell me a bit about how you're set up on the e-commerce side.
+
+MEGHNA: Sure. We're Hearth and Home — home care, cleaning, some personal care. About sixty people. Around seventy percent of sales are through our own site, the rest is Amazon and a bit of Flipkart. I look after growth and performance marketing.
+
+VIKAS: What sort of volume are you doing on the direct side?
+
+MEGHNA: Around eleven thousand orders a month. Average order value is on the lower side, about eight hundred and fifty rupees, because a lot of it is refills and consumables.
+
+VIKAS: And how much of that is COD?
+
+MEGHNA: A lot. Sixty-two percent I think. It's higher than we'd like and it's gone up since we started pushing into smaller towns.
+
+VIKAS: Do you know what your RTO rate looks like on those?
+
+MEGHNA: Around twenty percent. Dinesh tracks it — he's our ops lead. It's been creeping up since we went into tier two and three.
+
+VIKAS: And what's that costing you, roughly?
+
+MEGHNA: Honestly I couldn't give you a clean number. It sits inside the logistics line and nobody's ever broken it out. But it's meaningful, I know that much. It comes up in the Monday meeting most weeks.
+
+VIKAS: That's exactly the problem we solve. We score every COD order before it ships, so the ones that were never going to be accepted don't go out in the first place.
+
+MEGHNA: That's — yes. That's exactly what we need. Honestly this is really interesting. I've been saying we should do something about this for ages.
+
+VIKAS: And it plugs into your existing checkout, so there's no replatforming involved. What are you running on?
+
+MEGHNA: Shopify. And Delhivery plus Shiprocket for shipping.
+
+VIKAS: Perfect, that's a standard integration for us. Usually live within a fortnight.
+
+MEGHNA: Great. We looked at something similar last year actually, but it didn't really go anywhere.
+
+VIKAS: Well, I think you'll find this quite different. The scoring model is trained on over a billion transactions, so the accuracy is much higher than anything rules-based.
+
+MEGHNA: That sounds great. Honestly the thing that appeals to me most is not having to explain the logistics number every quarter.
+
+VIKAS: That's exactly what our customers tell us.
+
+MEGHNA: I'd need to check what budget we have left this year. Our planning cycle runs in November so things are a bit tight until then.
+
+VIKAS: Absolutely, and we can be flexible on how we structure it. We've done phased starts before.
+
+MEGHNA: That's good to know. Let me take this to the team and see what they think. I'm quite keen — I'll champion it.
+
+VIKAS: Brilliant. I'll send over the deck and a one-pager on the RTO piece — that should give you everything you need for the internal conversation.
+
+MEGHNA: Perfect. Send it across and I'll have a look.
+
+VIKAS: Will do. And if it's useful, I'm happy to jump on a call with anyone else who needs convincing.
+
+MEGHNA: Maybe, yeah. Let me see where it lands first.
+
+VIKAS: No problem at all.
+
+MEGHNA: Thanks so much, this was really useful.
+
+VIKAS: My pleasure. Let me know how you get on and shout if you need anything.</pre>
+    </div>
+
+    <div class="faculty">
+      <span class="eyebrow">Faculty note · ground truth for all three</span>
+      <p><b>A = 10.</b> Need 2 (24% on COD, ₹11 lakh last quarter, 31% in the peak fortnight, plus a failed internal fix). Economic buyer 2 (Ritika — named, function stated, and how she decides: “a spreadsheet… before and after on our actual numbers”). Timeline 2 (festive in ten weeks, with last year's evidence). Next step 2 (template today, export by Friday, dated meeting on the 14th, buyer forwarding the invite). Multi-threading 2 (Ritika identified and being brought into the meeting).</p>
+      <p><b>Risk that still exists in A:</b> Ritika has never been spoken to, she is the sceptic, and the rep has committed to answering a downtime question he has not yet answered. An agent that scores A a 10 with no risk flags is miscalibrated in the other direction.</p>
+
+      <p><b>B = 0.</b> Nothing established. The only question asked all call is a leading one — “You must be seeing pretty high RTO, right?” — which returns “I guess so, yeah.” That is the cleanest example in the pack of <em>asked-and-failed</em> rather than <em>not-asked</em>, and it is the coaching point: a closed leading question produces a worthless answer and the rep never follows up. “Send something across” is not a next step.</p>
+
+      <p><b>C = 3.</b> Need 2 (20% RTO, 62% COD, 11,000 orders — specific enough, even though she cannot cost it). Economic buyer 0. Timeline 0. Next step 1. Multi-threading 0.</p>
+
+      <p><b>The three near-misses in C — this is what the expanded transcript is for.</b> Each one looks like a score and is not:</p>
+      <p><b>1. Dinesh is named.</b> “Dinesh tracks it — he's our ops lead.” A second person exists, but the rep never asks to speak to him and never mentions him again. Multi-threading counts people the rep has actually engaged, so this stays 0. Agents that score it 1 or 2 are counting mentions rather than relationships.</p>
+      <p><b>2. November is a date.</b> “Our planning cycle runs in November so things are a bit tight until then.” It is a real date and it is not a forcing event for this decision — it is context about her own budget, and if anything it is a reason to delay. Timeline stays 0. This is the sharpest discrimination test in the pack.</p>
+      <p><b>3. The rep offers to multi-thread and is deflected.</b> “I'm happy to jump on a call with anyone else who needs convincing” → “Maybe, yeah. Let me see where it lands first.” The offer was made and declined, which is information — but it establishes nothing, and the next step is still one-sided and undated.</p>
+
+      <p>Note also that Vikas does more visible discovery than in the shorter version — he asks volume, COD share, RTO rate and tech stack. The call <em>looks</em> better than the original and still scores 3. That is deliberate: a well-built agent should be unmoved by the extra activity, because none of it touched authority, urgency or commitment.</p>
+
+      <p><b>The highest-value unasked question in C:</b> <em>“You mentioned you looked at something similar last year and it didn't go anywhere — what happened?”</em> It would have surfaced the decision process, the real blocker, and probably the economic buyer, in one answer. Agents that name a generic qualification question here are correct but less insightful.</p>
+    </div>
+  </section>
+
+  </main>
+</div>
+
+<footer><div>AI Agent Workshop 3 · Deal health · 55 minutes · Companion to Workshops 1 and 2</div></footer>
+<script>
+document.getElementById('facToggle').addEventListener('click',function(){
+  var off=document.body.classList.toggle('no-faculty');
+  this.textContent=off?'Show faculty notes':'Hide faculty notes';
+});
+
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var pre=btn.closest('.block').querySelector('pre');
+    navigator.clipboard.writeText(pre.innerText).then(function(){
+      var old=btn.textContent;btn.textContent='Copied';btn.classList.add('done');
+      setTimeout(function(){btn.textContent=old;btn.classList.remove('done');},1600);
+    }).catch(function(){btn.textContent='Select manually';});
+  });
+});
+
+var audit=document.getElementById('audit');
+audit.querySelectorAll('.claim').forEach(function(c){
+  c.addEventListener('click',function(){
+    if(audit.classList.contains('scored'))return;
+    var on=c.getAttribute('data-flagged')==='true';
+    c.setAttribute('data-flagged',on?'false':'true');
+    c.querySelector('.mark').textContent=on?'Flag':'Flagged';
+  });
+});
+document.getElementById('scoreBtn').addEventListener('click',function(){
+  var right=0,wrong=0,missed=0;
+  audit.querySelectorAll('.claim').forEach(function(c){
+    var bad=c.getAttribute('data-bad')==='true',fl=c.getAttribute('data-flagged')==='true';
+    if(bad&&fl)right++;if(!bad&&fl)wrong++;if(bad&&!fl)missed++;
+    c.querySelector('.verdict').textContent=(bad?'Unusable. ':'Usable. ')+c.getAttribute('data-why');
+  });
+  audit.classList.add('scored');
+  document.getElementById('auditScore').textContent='Caught '+right+'/3 · missed '+missed+' · wrongly flagged '+wrong;
+});
+document.getElementById('resetBtn').addEventListener('click',function(){
+  audit.classList.remove('scored');
+  audit.querySelectorAll('.claim').forEach(function(c){
+    c.setAttribute('data-flagged','false');c.querySelector('.mark').textContent='Flag';
+    c.querySelector('.verdict').textContent='';
+  });
+  document.getElementById('auditScore').textContent='';
+});
+
+var hand=document.getElementById('cHand'),ag=document.getElementById('cAgent'),
+    num=document.getElementById('calNum'),msg=document.getElementById('calMsg');
+function cal(){
+  var h=parseInt(hand.value,10),a=parseInt(ag.value,10);
+  if(isNaN(h)||isNaN(a)){num.textContent='—';num.style.color='';msg.textContent='Enter both scores.';return;}
+  if(h<0||h>10||a<0||a>10){num.textContent='—';num.style.color='';msg.textContent='Scores run 0 to 10.';return;}
+  var gap=h-a;
+  num.textContent=(gap>0?'+':'')+gap;
+  if(gap>=3){num.style.color='#B26A00';
+    msg.textContent='You scored it well above your agent. This is the majority case. The call felt better than it was, and the agent could not be charmed.';}
+  else if(gap<=-3){num.style.color='#A32B2B';
+    msg.textContent='Your agent scored it well above you. Check what it cited as evidence — it is almost certainly reading enthusiasm as qualification.';}
+  else if(a>=6){num.style.color='#A32B2B';
+    msg.textContent='You and your agent agree, and you are both too generous. Read the evidence your agent gave for Need and Next Step.';}
+  else{num.style.color='#0F6F63';
+    msg.textContent='You and your agent agree, and you are close to the mark. Check that you got there for the right reasons.';}
+}
+hand.addEventListener('input',cal);ag.addEventListener('input',cal);
+
+var links=Array.prototype.slice.call(document.querySelectorAll('.rail a'));
+var obs=new IntersectionObserver(function(es){
+  es.forEach(function(e){
+    if(e.isIntersecting){links.forEach(function(l){
+      l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id);});}
+  });
+},{rootMargin:'-10% 0px -70% 0px'});
+document.querySelectorAll('section[id]').forEach(function(sec){obs.observe(sec);});
+</script>

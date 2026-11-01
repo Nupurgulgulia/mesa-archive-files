@@ -1,0 +1,155 @@
+Source: https://gamma.app/docs/Copy-of-Best-Practices-for-Writing-Effective-Cold-Outreach-4re872hnvx5fgr5?mode=doc
+Title: Copy of Best Practices for Writing Effective Cold Outreach
+Captured: 2026-10-20T07:54:53.550Z (Gamma page text via browser)
+
+Copy of Best Practices for Writing Effective Cold Outreach
+
+PO
+Best Practices for Writing Effective Cold Outreach
+
+Last edited 2 months ago
+
+Why Most Cold Outreach Sucks
+Irrelevant
+
+Sending generic messages to everyone, without tailoring them to the recipient's needs.
+
+Unpersonalized
+
+Failing to address the recipient by name or mention anything specific about their company or role.
+
+Examples of Good vs Bad Outreach
+Good
+
+Subject: Excited About Your [Company Name] Growth!
+
+Body: Hi [Recipient Name], I've been following [Company Name]'s success in [Industry] and was particularly impressed with your recent [Achievement]. ...
+
+Bad
+
+Subject: Check out our amazing service!
+
+Body: Dear Sir/Madam, We offer the best [Service Name] in the market. ...
+
+Crafting an Attention-Grabbing Subject Line
+1
+Keep it Short & Sweet
+
+Aim for under 6 words.
+
+2
+Use Curiosity & Intrigue
+
+Ask a question or tease a benefit.
+
+3
+Personalize Where Possible
+
+Mention their name or company.
+
+Personalizing Your Message
+Research
+
+Take time to learn about their company and goals.
+
+Connect
+
+Mention something specific you saw online or in their work.
+
+Engage
+
+Start with a genuine compliment or question.
+
+Principles of Effective Outreach
+1
+Give Value First
+
+Lead with what you can offer them
+
+2
+Focus on Outcomes
+
+Emphasize results over methods
+
+3
+Highlight Benefits
+
+Show impact, not features
+
+4
+Solve Problems
+
+Address their specific challenges
+
+5
+Keep It Simple
+
+Use clear language and be concise
+
+These foundational principles build upon each other to create effective cold outreach that resonates with recipients and drives results.
+
+Optimizing for Mobile Readability
+1
+Short Paragraphs
+
+Use 1-2 sentences per paragraph.
+
+2
+Bullet Points
+
+Break up long text with bullet points.
+
+3
+Strong Calls to Action
+
+Make it clear what you want them to do.
+
+Closing with a Clear Call-to-Action
+1
+Direct
+
+Tell them what to do.
+
+2
+Specific
+
+Include a link to a website or schedule a call.
+
+3
+Timely
+
+Provide a deadline or incentive.
+
+Workshop
+
+1. First Line (Choose One):
+
+Relevancy: Highlight why you’re reaching out specifically.
+Observation: Use a signal or trigger event.
+Recency: Reference a recent newsworthy event.
+
+2. Body (Choose 1-4):
+
+Problem Statement: Twist the knife with comparisons/stats.
+Dream Outcome: Calculate how they reach their ideal state.
+{{Poke the bear}}- Question or statement around a pain point.
+{{Problem-solution}}- Present solution with the problem.
+Case Study: Share similar client results.
+{{Social proof}}- Quantifiable results or name drop.
+{{Personal touch}}- Personalised video or voice note.
+Value Proposition: Save money, make money, or save time.
+{{Story}}- Tell a story to make your point.
+{{Resource}}- Relevant guide or report.
+{{Offer}}- Valuable way you can help.
+
+3. Call-to-Action (Choose One):
+
+{{Soft CTA}}- Is solving {{problem}} a priority right now?
+{{Resource CTA}}- Would you want see the report?
+{{Hard CTA}}- Open to a chat about this?
+{{Colleague ask}}- Or is {{colleague name}} the right person to speak to about this?
+
+PS Optional (everyone reads these)
+
+Unsubscribe option
+<anything else?>

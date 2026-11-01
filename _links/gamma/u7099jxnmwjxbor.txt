@@ -1,0 +1,128 @@
+Source: https://gamma.app/docs/Copy-of-Mapping-Your-Customers-Journey-A-Startup-Guide-u7099jxnmwjxbor?mode=doc
+Title: Copy of Mapping Your Customer's Journey: A Startup Guide
+Captured: 2026-10-20T07:53:50.597Z (Gamma page text via browser)
+
+Copy of Mapping Your Customer's Journey: A Startup Guide
+
+PO
+Mapping Your Customer's Journey: A Startup Guide
+
+40-60% of deals end in "no decision" despite purchase intent. This presentation will outline a simple framework for mapping your customer's journey and improving your startup's success.
+
+Last edited 29 days ago
+
+Understanding the Buyer Journey
+Definition
+
+The path customers take from realizing a need to making a purchase.
+
+Framework Example
+
+Trigger → Learn → Try → Buy
+
+Buyers care about their problems and not your sales process
+The Impact on Your Business
+Key Points
+Reduces "no decision" outcomes
+Helps create targeted content
+Improves sales conversion
+Builds better customer relationships
+Building Your Journey Map
+Buyer Stages
+
+Identify key stages like awareness, consideration, decision, and purchase.
+
+Customer Emotions
+
+Understand how customers feel at each stage, such as excitement, frustration, or confusion.
+
+Key Questions
+
+List questions customers ask themselves and needs they seek to fulfill.
+
+Touch Points
+
+Identify interactions customers have with your brand, such as website visits, social media posts, or email campaigns.
+
+Pain Points
+
+Document challenges or obstacles customers encounter throughout their journey.
+
+Practical Framework for Startups
+1
+1. Identify Target Customer
+
+Who are you trying to reach? Define your ideal customer profile.
+
+2
+2. Map Key Stages
+
+Break down the journey into distinct phases based on your target customer.
+
+3
+3. List Questions/Needs
+
+What questions does your customer ask at each stage? What are their needs and goals?
+
+4
+4. Document Pain Points
+
+What challenges do customers face at each stage? How can you address them?
+
+5
+5. Plan Content/Actions
+
+Create content and strategies to guide customers through the journey.
+
+Example - Buyer Journey - EComm
+
+
+
+
+Example - Buyer Journey - Consumer
+
+
+
+
+Example Buyer Journey - SaaS
+
+
+
+
+Actionable Takeaways
+1
+Map it Out
+
+Create a detailed customer journey map for your target audience.
+
+2
+Get Personal
+
+Tailor your content and interactions to individual needs and preferences.
+
+3
+Feedback Loop
+
+Continuously gather feedback and refine your journey map for ongoing success.
+
+Workshop
+Pair Discussion
+Each person gets 4 minutes to present and receive feedback
+Focus on constructive suggestions
+Group Discussion
+Share common challenges and solutions
+Practical next steps
+Key Discussion Prompts
+What surprised you about your customer journey?
+Which stage needs the most improvement?
+What resources do you need to implement these changes?
+How will you measure success?
+Common Pitfalls
+1
+Too many stages
+2
+Vague pain points
+3
+Unrealistic action plans
+4
+Missing measurement criteria

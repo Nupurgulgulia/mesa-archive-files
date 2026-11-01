@@ -1,0 +1,486 @@
+{
+ "url": "https://drive.google.com/drive/folders/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq?usp=drive_link",
+ "exported_at": "2026-10-20T07:50:13.774Z",
+ "entries": [
+  {
+   "kind": "file",
+   "id": "10eqqlzzRf85AFKj62ukGK5IsXoq3MLlZ",
+   "name": "01_rohan_mehta.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/01_rohan_mehta.pdf",
+   "bytes": 206635
+  },
+  {
+   "kind": "file",
+   "id": "1Je-1Y77RJRtYS4iDQAiLsOAl1MZcGdgf",
+   "name": "02_priya_sharma.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/02_priya_sharma.pdf",
+   "bytes": 113125
+  },
+  {
+   "kind": "file",
+   "id": "14IUz2hvtroExHi6xK2NSY6QDGkizhE4U",
+   "name": "03_arnav_sen.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/03_arnav_sen.pdf",
+   "bytes": 409258
+  },
+  {
+   "kind": "file",
+   "id": "119ngaj9B3drAt9JglkyeNFnqAWPsKaY4",
+   "name": "04_arjun_verma.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/04_arjun_verma.pdf",
+   "bytes": 174685
+  },
+  {
+   "kind": "file",
+   "id": "1cjIFxaq_s7K-dfu8lsRQfl40lcFga8fo",
+   "name": "05_ishaan_roy.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/05_ishaan_roy.pdf",
+   "bytes": 56763
+  },
+  {
+   "kind": "file",
+   "id": "10hJdBo9sQIv3dqtFFG0urArp1u_bTfs0",
+   "name": "06_kavya_patel.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/06_kavya_patel.pdf",
+   "bytes": 259275
+  },
+  {
+   "kind": "file",
+   "id": "1xUMrRDpOrkepdB7iRhzFp3K3pXjqli2Y",
+   "name": "07_aditya_nair.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/07_aditya_nair.pdf",
+   "bytes": 87655
+  },
+  {
+   "kind": "file",
+   "id": "18ziENE-6ef026HFIqsETc1Ww1-YzJjsN",
+   "name": "08_vikram_shetty.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/08_vikram_shetty.pdf",
+   "bytes": 222446
+  },
+  {
+   "kind": "file",
+   "id": "1yvdmh9CJGd1Ci8PlR3GOPkkge9j3UdGq",
+   "name": "09_rahul_gupta.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/09_rahul_gupta.pdf",
+   "bytes": 179510
+  },
+  {
+   "kind": "file",
+   "id": "1AJy_Uz-fymX9n1jwYNy6XjeYWkvB4vCK",
+   "name": "10_nikhil_sharma.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/10_nikhil_sharma.pdf",
+   "bytes": 111050
+  },
+  {
+   "kind": "file",
+   "id": "157GKc9ujsqTp0x4EtYSbTDGyVmpxrNrW",
+   "name": "11_tarun_joseph.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/11_tarun_joseph.pdf",
+   "bytes": 135216
+  },
+  {
+   "kind": "file",
+   "id": "1XppUQKWfS6zNL1vmh9jT6ur2Uv4avQ0W",
+   "name": "12_suresh_raj.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/12_suresh_raj.pdf",
+   "bytes": 98714
+  },
+  {
+   "kind": "file",
+   "id": "1__ikI7Ds6Zwux0Hqe3fw6blc2gkCy-dS",
+   "name": "13_mohit_singh.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/13_mohit_singh.pdf",
+   "bytes": 78675
+  },
+  {
+   "kind": "file",
+   "id": "11hD9PNxtWcBm4ulJ-4hdOhgiBs5qKvSg",
+   "name": "14_sneha_kulkarni.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/14_sneha_kulkarni.pdf",
+   "bytes": 102257
+  },
+  {
+   "kind": "file",
+   "id": "1eYkXgya_GNJpqq8A0gWi5mHbOZpn-kAt",
+   "name": "15_ravi_kumar.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/15_ravi_kumar.pdf",
+   "bytes": 83878
+  },
+  {
+   "kind": "file",
+   "id": "1_PHYs7ke0PVDgmgGakzhztY4vF_-iG2y",
+   "name": "16_shiva_kumar.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/16_shiva_kumar.pdf",
+   "bytes": 49199
+  },
+  {
+   "kind": "file",
+   "id": "1ZoTZSjm5ZHd2ypI6ESR_VnHDI-Z1g7RX",
+   "name": "17_pranav_joshi.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/17_pranav_joshi.pdf",
+   "bytes": 169166
+  },
+  {
+   "kind": "file",
+   "id": "1cvD2sWc8yLJP-pG6nLK3s5IIji2uVZBO",
+   "name": "18_divya_iyer.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/18_divya_iyer.pdf",
+   "bytes": 112636
+  },
+  {
+   "kind": "file",
+   "id": "1C1G4k6Cw3oSFGWLADo1mSf0WlcP1YTKb",
+   "name": "19_vivek_patil.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/19_vivek_patil.pdf",
+   "bytes": 165350
+  },
+  {
+   "kind": "file",
+   "id": "1Ld3TLauoD2HjbaksmYRbkxaSHSr-D-tG",
+   "name": "20_deepak_yadav.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/20_deepak_yadav.pdf",
+   "bytes": 315947
+  },
+  {
+   "kind": "file",
+   "id": "1e4RpkGJxO-kte6GKuGJpR1lSRykN3BnA",
+   "name": "21_aryan_kulkarni.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/21_aryan_kulkarni.pdf",
+   "bytes": 102249
+  },
+  {
+   "kind": "file",
+   "id": "156Ki0NdESWXVES-EKvPiB_iLqbeLIoPQ",
+   "name": "22_harsh_reddy.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/22_harsh_reddy.pdf",
+   "bytes": 327559
+  },
+  {
+   "kind": "file",
+   "id": "1m1VivegxpFjB5WV6pBaPzieIZruoNMPn",
+   "name": "23_karan_das.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/23_karan_das.pdf",
+   "bytes": 196735
+  },
+  {
+   "kind": "file",
+   "id": "1W05BxvpUyDfqMxDl1h93RKHZgGIyTJtD",
+   "name": "24_shrey_marathe.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/24_shrey_marathe.pdf",
+   "bytes": 1183236
+  },
+  {
+   "kind": "file",
+   "id": "1pRrUGvVfREvMgmI1G24awWCzs6C94guG",
+   "name": "25_avinash_mukherjee.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/25_avinash_mukherjee.pdf",
+   "bytes": 258690
+  },
+  {
+   "kind": "file",
+   "id": "1E6bGOTIRj3ei_kybYEKZ_qGBCqqx31Cf",
+   "name": "26_meera_krishnan.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/26_meera_krishnan.pdf",
+   "bytes": 97125
+  },
+  {
+   "kind": "file",
+   "id": "1a-DxB3FFhKvqlxR6IvGTM5B54UNRohY4",
+   "name": "27_abhishek_tiwari.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/27_abhishek_tiwari.pdf",
+   "bytes": 117188
+  },
+  {
+   "kind": "file",
+   "id": "1BbfPcPozdl093RfPSAU7ZheN8KA9j0Di",
+   "name": "28_manish_kapoor.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/28_manish_kapoor.pdf",
+   "bytes": 248454
+  },
+  {
+   "kind": "file",
+   "id": "1RzXutb_ag2KLReskkURzQxtSH5hP130i",
+   "name": "29_rohan_basu.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/29_rohan_basu.pdf",
+   "bytes": 85921
+  },
+  {
+   "kind": "file",
+   "id": "1zIqoU8m7rOF-Gtf6jel7lM_9OCMTBK_H",
+   "name": "30_aman_borkar.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/30_aman_borkar.pdf",
+   "bytes": 289432
+  },
+  {
+   "kind": "file",
+   "id": "1bPpLlteDA_KoXijqtpEPvQvK2FvXW88F",
+   "name": "pm_01_priya_krishnan.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_01_priya_krishnan.pdf",
+   "bytes": 4151
+  },
+  {
+   "kind": "file",
+   "id": "1QjGU8I-nAIKzBCnOy5ddyB_aZN_zGvuj",
+   "name": "pm_02_kabir_mehta.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_02_kabir_mehta.pdf",
+   "bytes": 4062
+  },
+  {
+   "kind": "file",
+   "id": "1sLcTCU3cx5frUYZIqATtWj90MUZuyXRG",
+   "name": "pm_03_deepika_nair.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_03_deepika_nair.pdf",
+   "bytes": 4044
+  },
+  {
+   "kind": "file",
+   "id": "1oey05R0WOIdTeRlB7uGX5voJ0NleiOUf",
+   "name": "pm_04_virat_patel.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_04_virat_patel.pdf",
+   "bytes": 3877
+  },
+  {
+   "kind": "file",
+   "id": "1uNqRyrucGMwT2Zp9kjlUxSXfABKR_EYC",
+   "name": "pm_05_ananya_rajan.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_05_ananya_rajan.pdf",
+   "bytes": 4126
+  },
+  {
+   "kind": "file",
+   "id": "1VFsTEp2aGeC6d9I25p351x0phvUrPkrY",
+   "name": "pm_06_prashant_kumar.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_06_prashant_kumar.pdf",
+   "bytes": 3819
+  },
+  {
+   "kind": "file",
+   "id": "1HpUVvCml8hrRL57nfqopRqBOiND_ThWi",
+   "name": "pm_07_aditi_sharma.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_07_aditi_sharma.pdf",
+   "bytes": 4010
+  },
+  {
+   "kind": "file",
+   "id": "1-Q9fYu89wYXldl_RJSVFiLHdfhrYIyso",
+   "name": "pm_08_nishant_joshi.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_08_nishant_joshi.pdf",
+   "bytes": 3905
+  },
+  {
+   "kind": "file",
+   "id": "1ZOB7pp_3cIxdyQZfS4_Bifo20josCGCe",
+   "name": "pm_09_megha_gupta.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_09_megha_gupta.pdf",
+   "bytes": 3951
+  },
+  {
+   "kind": "file",
+   "id": "1pdC4eNQq30OjB3FAySH83EXqrIlbK19x",
+   "name": "pm_10_rohan_sane.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_10_rohan_sane.pdf",
+   "bytes": 3650
+  },
+  {
+   "kind": "file",
+   "id": "1qTpFplgxqsCp9kqi0JHrhhoyHnN_FG3A",
+   "name": "pm_11_sneha_patil.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_11_sneha_patil.pdf",
+   "bytes": 3795
+  },
+  {
+   "kind": "file",
+   "id": "1DqR_7A8v4BukJXDgBPH8ranj3PEBYuuq",
+   "name": "pm_12_akash_verma.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_12_akash_verma.pdf",
+   "bytes": 3486
+  },
+  {
+   "kind": "file",
+   "id": "1ydsEoPaBnd_TKHGqtnhJgYqVkqPTuYws",
+   "name": "pm_13_divya_menon.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_13_divya_menon.pdf",
+   "bytes": 3474
+  },
+  {
+   "kind": "file",
+   "id": "1COnQOsFoi37Iq4zzPv3Go6N07r9T9fkF",
+   "name": "pm_14_ravi_shankar.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_14_ravi_shankar.pdf",
+   "bytes": 3749
+  },
+  {
+   "kind": "file",
+   "id": "10lyLbQg7JkXJH0A-eM8YKNZGKE5WqvJK",
+   "name": "pm_15_tanvi_jain.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/pm_15_tanvi_jain.pdf",
+   "bytes": 3691
+  },
+  {
+   "kind": "file",
+   "id": "1WI9v_XkUKxpuhN0SXzpCDP6GKM282vOD",
+   "name": "spm_16_siddharth_rao.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_16_siddharth_rao.pdf",
+   "bytes": 4503
+  },
+  {
+   "kind": "file",
+   "id": "19yJSRwKxdFl9kDtd5h0ZzGdDbIfV85QD",
+   "name": "spm_17_nalini_iyer.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_17_nalini_iyer.pdf",
+   "bytes": 4475
+  },
+  {
+   "kind": "file",
+   "id": "1C_4qWIyVELx5T_qvNleo1SAF7a_9ZXpt",
+   "name": "spm_18_aryan_verma.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_18_aryan_verma.pdf",
+   "bytes": 4227
+  },
+  {
+   "kind": "file",
+   "id": "1IzvgiwQgL-MySZtZWWrdGH8Tb6A5kqyc",
+   "name": "spm_19_poornima_nair.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_19_poornima_nair.pdf",
+   "bytes": 4156
+  },
+  {
+   "kind": "file",
+   "id": "11Gg2mqt4tSmizLXgBfzeQy9tdqtQt0L8",
+   "name": "spm_20_varun_khanna.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_20_varun_khanna.pdf",
+   "bytes": 4350
+  },
+  {
+   "kind": "file",
+   "id": "1dX7ANjsGn73eS0xCLip1BbGHG0BjHd5O",
+   "name": "spm_21_kritika_sharma.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_21_kritika_sharma.pdf",
+   "bytes": 3919
+  },
+  {
+   "kind": "file",
+   "id": "1LHwWoI0xSYTbECwd-gFqrKRTSubx1v0M",
+   "name": "spm_22_manish_agarwal.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_22_manish_agarwal.pdf",
+   "bytes": 4059
+  },
+  {
+   "kind": "file",
+   "id": "1-TQfyJo6pINiPUcgPI-fgBbDCeL4WtnG",
+   "name": "spm_23_preethi_suresh.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_23_preethi_suresh.pdf",
+   "bytes": 4136
+  },
+  {
+   "kind": "file",
+   "id": "1RvkMb-mwODOUuk_b-aXHoNhoNYhGAyfm",
+   "name": "spm_24_nikhil_kapoor.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_24_nikhil_kapoor.pdf",
+   "bytes": 3935
+  },
+  {
+   "kind": "file",
+   "id": "1unKB98QgEjUuIxmzapSQ-7TZ25D_aH_W",
+   "name": "spm_25_sourav_das.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_25_sourav_das.pdf",
+   "bytes": 3737
+  },
+  {
+   "kind": "file",
+   "id": "1LFYUpIIZSBdwNdBBamR5_Bf5LG92DHDh",
+   "name": "spm_26_anupama_singh.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_26_anupama_singh.pdf",
+   "bytes": 4114
+  },
+  {
+   "kind": "file",
+   "id": "1QqEOA-UxJIhhzM28-4CQ2iu4Z2QRrzx9",
+   "name": "spm_27_gaurav_yadav.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_27_gaurav_yadav.pdf",
+   "bytes": 3777
+  },
+  {
+   "kind": "file",
+   "id": "1yErgdMSg5S7MLttEMpllIgko_qtc4SJ_",
+   "name": "spm_28_meena_pillai.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_28_meena_pillai.pdf",
+   "bytes": 3722
+  },
+  {
+   "kind": "file",
+   "id": "1EEXpVkD9v07eBhZ7jhuUSp2hbmvP23tP",
+   "name": "spm_29_rajesh_kumar.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_29_rajesh_kumar.pdf",
+   "bytes": 3722
+  },
+  {
+   "kind": "file",
+   "id": "1XSjT_dhttYosS1c_jNN4CFD5-5jEfEQD",
+   "name": "spm_30_priya_iyer.pdf",
+   "status": "exported",
+   "key": "_links/gdrive_folder/1HrWXNvjhpKkZTnzurTHC06Cf1BYxKDoq/spm_30_priya_iyer.pdf",
+   "bytes": 3647
+  }
+ ]
+}

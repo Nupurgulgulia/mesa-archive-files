@@ -1,0 +1,1221 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Workshops 1 &amp; 2 — Research to Outreach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#EFF1F4; --paper-2:#E4E8ED; --card:#FBFCFD;
+  --ink:#14203A; --ink-soft:#43506E; --rule:#C6CCD6; --slate:#3A4A6B;
+  --verified:#0F6F63; --asserted:#B26A00; --fabricated:#A32B2B;
+  --faculty:#5B3E8E;
+  --display:"IBM Plex Sans Condensed","Helvetica Neue",Arial,sans-serif;
+  --body:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono","SF Mono",Consolas,monospace;
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:17.5px;line-height:1.68;-webkit-font-smoothing:antialiased}
+a{color:var(--slate)}
+:focus-visible{outline:3px solid var(--slate);outline-offset:2px}
+.eyebrow{font-family:var(--display);text-transform:uppercase;letter-spacing:.14em;
+  font-weight:600;font-size:12px;color:var(--ink-soft)}
+code{font-family:var(--mono);font-size:.87em;background:var(--paper-2);padding:1px 5px;border-radius:2px}
+
+.masthead{border-bottom:1px solid var(--rule);background:var(--paper-2)}
+.masthead-in{max-width:var(--maxw);margin:0 auto;padding:34px 26px 30px}
+.masthead h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,5.2vw,56px);
+  line-height:1.03;letter-spacing:-.015em;margin:12px 0 14px;max-width:18ch}
+.masthead p{max-width:62ch;margin:0 0 18px;color:var(--ink-soft)}
+.stamp{display:inline-flex;gap:10px;align-items:baseline;flex-wrap:wrap;
+  font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+  border:1px solid var(--rule);border-radius:2px;padding:5px 10px;background:var(--card)}
+.stamp b{color:var(--ink);font-weight:600}
+#facToggle{font-family:var(--display);font-size:11.5px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;border:1.5px solid var(--faculty);color:var(--faculty);background:transparent;
+  padding:7px 14px;border-radius:2px;cursor:pointer}
+#facToggle:hover{background:var(--faculty);color:#fff}
+
+.shell{max-width:var(--maxw);margin:0 auto;padding:0 26px 90px;
+  display:grid;grid-template-columns:236px 1fr;gap:54px}
+@media (max-width:900px){.shell{grid-template-columns:1fr;gap:0}
+  .rail{position:static!important;border-right:0!important;padding-right:0!important;
+    border-bottom:1px solid var(--rule);margin-bottom:30px;max-height:none!important}}
+
+.rail{position:sticky;top:0;align-self:start;padding:34px 22px 34px 0;
+  border-right:1px solid var(--rule);max-height:100vh;overflow-y:auto}
+.rail ol{list-style:none;margin:10px 0 22px;padding:0}
+.rail li{margin:0 0 2px}
+.rail a{display:grid;grid-template-columns:52px 1fr;gap:8px;align-items:baseline;
+  text-decoration:none;color:var(--ink-soft);font-family:var(--display);
+  font-size:13.5px;font-weight:500;padding:6px 8px;border-radius:2px;border-left:2px solid transparent}
+.rail a:hover{background:var(--card);color:var(--ink)}
+.rail a .t{font-family:var(--mono);font-size:11px;color:var(--slate)}
+.rail a.on{border-left-color:var(--ink);color:var(--ink);background:var(--card);font-weight:700}
+
+main{padding:44px 0 0;min-width:0}
+section{margin:0 0 78px;scroll-margin-top:20px}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(23px,3.1vw,31px);
+  line-height:1.12;letter-spacing:-.01em;margin:10px 0 16px}
+h3{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:.01em;margin:36px 0 10px}
+p{margin:0 0 16px}
+ul,ol.body-list{margin:0 0 18px;padding-left:22px}
+li{margin:0 0 8px}
+
+.divider{border-top:3px solid var(--ink);padding-top:14px;margin:96px 0 40px}
+.divider .eyebrow{color:var(--ink)}
+.divider h2{font-size:clamp(28px,4.2vw,40px);margin-top:6px}
+
+.step-head{display:flex;gap:16px;align-items:baseline;border-top:2px solid var(--ink);padding-top:14px}
+.step-head .clock{font-family:var(--mono);font-size:12px;font-weight:600;color:#fff;
+  background:var(--ink);padding:3px 8px;border-radius:2px;white-space:nowrap}
+.goal{font-size:19px;color:var(--ink-soft);max-width:64ch;margin:0 0 30px;font-style:italic}
+
+.do{list-style:none;margin:26px 0 8px;padding:0;counter-reset:d}
+.do>li{counter-increment:d;display:grid;grid-template-columns:44px 1fr;gap:18px;
+  padding:0 0 26px;margin:0}
+.do>li::before{content:counter(d);font-family:var(--display);font-weight:700;font-size:17px;
+  color:#fff;background:var(--ink);width:32px;height:32px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;margin-top:2px}
+.do>li>div>b:first-child{display:block;font-family:var(--display);font-size:18px;
+  font-weight:700;letter-spacing:.005em;margin-bottom:3px}
+.do>li p{margin:0 0 10px}
+.do>li p:last-child{margin-bottom:0}
+
+.check{border:1.5px dashed var(--verified);background:#0F6F6308;padding:14px 18px;margin:26px 0 0}
+.check .eyebrow{color:var(--verified);display:block;margin-bottom:5px}
+.check p{margin:0}
+
+.note{border-left:3px solid var(--slate);background:var(--card);padding:16px 20px;margin:26px 0}
+.note.warn{border-left-color:var(--fabricated)}
+.note.good{border-left-color:var(--verified)}
+.note p:last-child{margin-bottom:0}
+.note .eyebrow{display:block;margin-bottom:6px}
+
+.faculty{border-left:3px solid var(--faculty);background:#5B3E8E0A;padding:16px 20px;margin:26px 0}
+.faculty .eyebrow{color:var(--faculty);display:block;margin-bottom:6px}
+.faculty p:last-child{margin-bottom:0}
+body.no-faculty .faculty{display:none}
+
+.chip{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);
+  font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;
+  padding:3px 9px;border-radius:2px;border:1.5px solid}
+.chip.v{color:var(--verified);border-color:var(--verified);background:#0F6F630F}
+.chip.a{color:var(--asserted);border-color:var(--asserted);background:#B26A000F}
+.chip.f{color:var(--fabricated);border-color:var(--fabricated);background:#A32B2B0F}
+.legend{display:grid;gap:12px;margin:24px 0}
+
+.case{border:2px solid var(--ink);background:var(--card);padding:24px 26px;margin:26px 0}
+.case dl{display:grid;grid-template-columns:132px 1fr;gap:12px 20px;margin:0}
+.case dt{font-family:var(--display);font-size:11.5px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;color:var(--ink-soft);padding-top:5px}
+.case dd{margin:0}
+@media (max-width:560px){.case dl{grid-template-columns:1fr;gap:4px 0}
+  .case dd{margin-bottom:14px}}
+
+.block{border:1px solid var(--rule);background:var(--card);border-radius:3px;margin:20px 0;overflow:hidden}
+.block-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;
+  background:var(--paper-2);border-bottom:1px solid var(--rule);padding:8px 12px}
+.block-bar span{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft)}
+.copy{font-family:var(--display);font-size:11px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;border:1px solid var(--slate);color:var(--slate);background:transparent;
+  padding:4px 11px;border-radius:2px;cursor:pointer}
+.copy:hover{background:var(--slate);color:#fff}
+.copy.done{background:var(--verified);border-color:var(--verified);color:#fff}
+.block pre{margin:0;padding:17px 19px;overflow-x:auto;font-family:var(--mono);
+  font-size:12.5px;line-height:1.66;white-space:pre-wrap;word-break:break-word}
+
+table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px}
+th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-family:var(--display);font-size:11.5px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;color:var(--ink-soft);border-bottom:1.5px solid var(--ink)}
+tbody tr:nth-child(odd){background:var(--card)}
+
+.audit{border:1px solid var(--rule);background:var(--card);border-radius:3px;padding:24px}
+.claim{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start;
+  border:1.5px solid var(--rule);border-radius:3px;padding:14px 16px;margin:0 0 11px;
+  background:var(--paper);cursor:pointer;text-align:left;width:100%;font:inherit;color:inherit}
+.claim:hover{border-color:var(--slate)}
+.claim .src{display:block;margin-top:6px;font-family:var(--mono);font-size:11.5px;color:var(--ink-soft)}
+.claim .mark{font-family:var(--display);font-size:11px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;color:var(--ink-soft);border:1.5px dashed var(--rule);
+  border-radius:2px;padding:3px 9px;white-space:nowrap}
+.claim[data-flagged="true"]{border-color:var(--fabricated);background:#A32B2B0A}
+.claim[data-flagged="true"] .mark{border:1.5px solid var(--fabricated);color:var(--fabricated)}
+.verdict{display:none;grid-column:1/-1;margin-top:11px;padding-top:11px;
+  border-top:1px dashed var(--rule);font-size:14.5px}
+.audit.scored .verdict{display:block}
+.audit.scored .claim[data-bad="true"]{border-color:var(--fabricated)}
+.audit.scored .claim[data-bad="false"]{border-color:var(--verified)}
+.audit-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
+.btn{font-family:var(--display);font-size:12px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;background:var(--ink);color:#fff;border:1px solid var(--ink);
+  padding:9px 18px;border-radius:2px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:hover{background:var(--slate);border-color:var(--slate);color:#fff}
+.score-out{font-family:var(--mono);font-size:13px;color:var(--ink-soft)}
+
+.sent{border:1.5px solid var(--rule);border-radius:3px;padding:14px 16px;margin:0 0 11px;background:var(--paper)}
+.sent p{margin:0 0 11px}
+.sbtns{display:flex;gap:8px;flex-wrap:wrap}
+.sbtn{font-family:var(--display);font-size:11px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.09em;border:1.5px solid var(--rule);background:transparent;color:var(--ink-soft);
+  padding:5px 12px;border-radius:2px;cursor:pointer}
+.sbtn[aria-pressed="true"]{border-color:var(--ink);color:#fff;background:var(--ink)}
+.sfeed{display:none;margin-top:11px;padding-top:11px;border-top:1px dashed var(--rule);font-size:14.5px}
+.labeller.scored .sfeed{display:block}
+
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;align-items:end;
+  border:1px solid var(--rule);background:var(--card);padding:22px;border-radius:3px}
+.calc label{display:block;font-family:var(--display);font-size:12px;text-transform:uppercase;
+  letter-spacing:.1em;font-weight:600;color:var(--ink-soft);margin-bottom:6px}
+.calc input{width:100%;font-family:var(--mono);font-size:16px;padding:9px 11px;
+  border:1px solid var(--rule);border-radius:2px;background:var(--paper);color:var(--ink)}
+#ratioOut{font-family:var(--mono);font-size:15px;line-height:1.5}
+#ratioNum{font-family:var(--display);font-size:38px;font-weight:700;display:block;line-height:1}
+
+figure{margin:28px 0}
+figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);margin-top:8px}
+svg{max-width:100%;height:auto;display:block}
+footer{border-top:1px solid var(--rule);background:var(--paper-2);padding:26px;
+  font-family:var(--mono);font-size:12px;color:var(--ink-soft)}
+footer div{max-width:var(--maxw);margin:0 auto}
+</style>
+
+<header class="masthead">
+  <div class="masthead-in">
+    <span class="stamp"><b>AI AGENT WORKSHOPS 1 &amp; 2</b> · 90 minutes each · groups of 3–4 · one laptop each</span>
+    <h1>From a company name to a message someone answers</h1>
+    <p>Workshop 1: build a five-step research chain and find out how much of it you can trust. Workshop 2: spend that research on ten outreach messages. If the research was thin, the messages will show it.</p>
+    <button id="facToggle" type="button">Hide faculty notes</button>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="rail" aria-label="Run sheet">
+    <span class="eyebrow">Before we start</span>
+    <ol>
+      <li><a href="#case"><span class="t">—</span><span>The case</span></a></li>
+      <li><a href="#rules"><span class="t">—</span><span>Reading output</span></a></li>
+    </ol>
+    <span class="eyebrow">Workshop 1 · Research</span>
+    <ol>
+      <li><a href="#w1a"><span class="t">00–08</span><span>Watch it run</span></a></li>
+      <li><a href="#w1b"><span class="t">08–18</span><span>Step 0 · The ICP</span></a></li>
+      <li><a href="#w1c"><span class="t">18–30</span><span>Step 1 · The shift</span></a></li>
+      <li><a href="#w1d"><span class="t">30–46</span><span>Steps 2, 3, 4</span></a></li>
+      <li><a href="#w1e"><span class="t">46–56</span><span>Build the pack</span></a></li>
+      <li><a href="#w1f"><span class="t">56–70</span><span>Grade each other</span></a></li>
+      <li><a href="#w1g"><span class="t">70–82</span><span>Fix one thing</span></a></li>
+      <li><a href="#w1h"><span class="t">82–90</span><span>Prompts vs skills</span></a></li>
+    </ol>
+    <span class="eyebrow">Workshop 2 · Outreach</span>
+    <ol>
+      <li><a href="#w2a"><span class="t">00–10</span><span>Grade your pack</span></a></li>
+      <li><a href="#w2b"><span class="t">10–20</span><span>Two styles</span></a></li>
+      <li><a href="#w2c"><span class="t">20–36</span><span>Style A emails</span></a></li>
+      <li><a href="#w2d"><span class="t">36–50</span><span>Style B emails</span></a></li>
+      <li><a href="#w2e"><span class="t">50–62</span><span>LinkedIn set</span></a></li>
+      <li><a href="#w2f"><span class="t">62–76</span><span>Grade messages</span></a></li>
+      <li><a href="#w2g"><span class="t">76–86</span><span>Diagnose</span></a></li>
+      <li><a href="#w2h"><span class="t">86–90</span><span>Final project</span></a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+  <!-- ========== CASE ========== -->
+  <section id="case">
+    <span class="eyebrow">Setup</span>
+    <h2>The case</h2>
+    <p class="goal">One seller, one target account, for both workshops. Everything specific to this case lives in the box below and nowhere else. That will matter later.</p>
+
+    <div class="case">
+      <dl>
+        <dt>You sell for</dt>
+        <dd><b>Procol</b> — procurement software. It replaces email-and-spreadsheet sourcing with structured e-auctions, vendor management and spend analytics. Sold to manufacturing, construction and IT services companies. Enterprise sale, long cycle. Claims up to 10% reduction in procurement cost.</dd>
+        <dt>You sell to</dt>
+        <dd>Procurement, finance and supply chain leaders at companies that spend serious money with outside suppliers.</dd>
+        <dt>Target account</dt>
+        <dd><b>Assigned to your group in class.</b> One real Indian company. Do not pick your own.</dd>
+        <dt>Ground rule</dt>
+        <dd>Public professional sources only: company site, LinkedIn, press, podcasts, conference talks, filings. Nothing personal. This is normal sales practice, not a classroom restriction.</dd>
+      </dl>
+    </div>
+
+    <div class="faculty">
+      <span class="eyebrow">Faculty note</span>
+      <p>Assign accounts before class. Criteria: real, Indian, 200–2,000 employees, a findable procurement or supply chain leader on LinkedIn with visible activity, and at least one piece of company news in the last 12 months. Manufacturing is safest. One account per group, no duplicates, so the comparison at minute 56 is meaningful.</p>
+    </div>
+
+    <figure>
+      <svg viewBox="0 0 900 340" role="img" aria-label="Five research steps feed one pack file, which feeds outreach in workshop two">
+        <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0,0 L9,4.5 L0,9 z" fill="#3A4A6B"/></marker></defs>
+        <g font-family="IBM Plex Sans Condensed, sans-serif">
+          <text x="8" y="22" font-size="11" letter-spacing="2" fill="#43506E">WORKSHOP 1 — EACH STEP NARROWER THAN THE LAST</text>
+          <rect x="8" y="34" width="164" height="86" fill="#FBFCFD" stroke="#14203A" stroke-width="1.5" rx="3"/>
+          <text x="24" y="57" font-size="10.5" letter-spacing="2" fill="#43506E">STEP 0</text>
+          <text x="24" y="80" font-size="16" font-weight="700" fill="#14203A">The ICP</text>
+          <text x="24" y="102" font-size="12" fill="#43506E">Who to sell to</text>
+          <rect x="188" y="34" width="164" height="86" fill="#FBFCFD" stroke="#14203A" stroke-width="1.5" rx="3"/>
+          <text x="204" y="57" font-size="10.5" letter-spacing="2" fill="#43506E">STEP 1</text>
+          <text x="204" y="80" font-size="16" font-weight="700" fill="#14203A">The shift</text>
+          <text x="204" y="102" font-size="12" fill="#43506E">Industry → budget</text>
+          <rect x="368" y="34" width="164" height="86" fill="#FBFCFD" stroke="#14203A" stroke-width="1.5" rx="3"/>
+          <text x="384" y="57" font-size="10.5" letter-spacing="2" fill="#43506E">STEP 2</text>
+          <text x="384" y="80" font-size="16" font-weight="700" fill="#14203A">The account</text>
+          <text x="384" y="102" font-size="12" fill="#43506E">Company → fit</text>
+          <rect x="548" y="34" width="164" height="86" fill="#FBFCFD" stroke="#14203A" stroke-width="1.5" rx="3"/>
+          <text x="564" y="57" font-size="10.5" letter-spacing="2" fill="#43506E">STEP 3</text>
+          <text x="564" y="80" font-size="16" font-weight="700" fill="#14203A">The role</text>
+          <text x="564" y="102" font-size="12" fill="#43506E">Who cares</text>
+          <rect x="728" y="34" width="164" height="86" fill="#FBFCFD" stroke="#14203A" stroke-width="1.5" rx="3"/>
+          <text x="744" y="57" font-size="10.5" letter-spacing="2" fill="#43506E">STEP 4</text>
+          <text x="744" y="80" font-size="16" font-weight="700" fill="#14203A">The person</text>
+          <text x="744" y="102" font-size="12" fill="#43506E">Named + evidence</text>
+          <line x1="176" y1="77" x2="182" y2="77" stroke="#3A4A6B" stroke-width="2" marker-end="url(#ar)"/>
+          <line x1="356" y1="77" x2="362" y2="77" stroke="#3A4A6B" stroke-width="2" marker-end="url(#ar)"/>
+          <line x1="536" y1="77" x2="542" y2="77" stroke="#3A4A6B" stroke-width="2" marker-end="url(#ar)"/>
+          <line x1="716" y1="77" x2="722" y2="77" stroke="#3A4A6B" stroke-width="2" marker-end="url(#ar)"/>
+          <line x1="450" y1="128" x2="450" y2="178" stroke="#3A4A6B" stroke-width="2" marker-end="url(#ar)"/>
+          <rect x="240" y="186" width="420" height="60" fill="#0F6F630F" stroke="#0F6F63" stroke-width="2" rx="3"/>
+          <text x="262" y="211" font-size="10.5" letter-spacing="2" fill="#0F6F63">EVERYTHING FUNNELS INTO ONE FILE</text>
+          <text x="262" y="234" font-size="16" font-weight="700" fill="#14203A" font-family="IBM Plex Mono, monospace">personalization-pack.md</text>
+          <line x1="450" y1="254" x2="450" y2="280" stroke="#3A4A6B" stroke-width="2" marker-end="url(#ar)"/>
+          <text x="8" y="302" font-size="11" letter-spacing="2" fill="#43506E">WORKSHOP 2</text>
+          <rect x="240" y="286" width="420" height="42" fill="#FBFCFD" stroke="#14203A" stroke-width="1.5" rx="3"/>
+          <text x="262" y="312" font-size="14" fill="#14203A">6 emails · 1 connect request · 3 LinkedIn messages</text>
+        </g>
+      </svg>
+      <figcaption>Fig. 1 — Nothing reaches Workshop 2 except through the pack.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ========== RULES ========== -->
+  <section id="rules">
+    <span class="eyebrow">Before we start</span>
+    <h2>How to read anything an AI writes</h2>
+    <p class="goal">Three labels. You will use them in every step of both workshops. Learn them now and the rest of the day is easy.</p>
+
+    <div class="legend">
+      <div><span class="chip v">Verified</span> &nbsp;A named source exists, it has a date, and you opened it.</div>
+      <div><span class="chip a">Asserted</span> &nbsp;Sounds right, no source. Treat it as a guess, never as a fact.</div>
+      <div><span class="chip f">Fabricated</span> &nbsp;Stated as fact, no source exists anywhere. This is the one that loses deals.</div>
+    </div>
+
+    <p>The problem with a fabricated claim is that it looks identical to a real one. A made-up funding round reads exactly like a real funding round. Nothing in the output warns you.</p>
+
+    <h3>Four rules for the day</h3>
+    <ol class="body-list">
+      <li><b>One job per prompt.</b> That is why today is five small steps instead of one big one.</li>
+      <li><b>Decide the output shape first.</b> Every prompt today tells the AI exactly what format to return.</li>
+      <li><b>Something else has to grade it.</b> Asking the same chat "is this good?" always gets a yes.</li>
+      <li><b>You own every line.</b> Nobody has ever survived a deal review by saying the agent wrote it.</li>
+    </ol>
+  </section>
+
+  <!-- ================= WORKSHOP 1 ================= -->
+  <div class="divider">
+    <span class="eyebrow">Part one of two</span>
+    <h2>Workshop 1 — Build the research chain</h2>
+  </div>
+
+  <section id="w1a">
+    <div class="step-head"><span class="clock">00–08</span><h2>Watch the whole thing run once</h2></div>
+    <p class="goal">Laptops closed. You are watching, not building.</p>
+    <ol class="do">
+      <li><div><b>Close your laptop</b><p>All of this happens on the screen at the front.</p></div></li>
+      <li><div><b>Watch the handoffs</b><p>Five steps. Notice what comes out of each one and gets pasted into the next.</p></div></li>
+      <li><div><b>Find one claim you would not say out loud</b><p>Somewhere in the output is something you would not be willing to say to a stranger. Spot it.</p></div></li>
+    </ol>
+    <div class="faculty">
+      <span class="eyebrow">Faculty note</span>
+      <p>Run this on a pre-tested account, not one you assigned. Do not build live. Keep the five outputs saved in case a run stalls. Eight minutes covers Step 0 in full plus fast-forwarded Steps 1 to 4.</p>
+    </div>
+  </section>
+
+  <section id="w1b">
+    <div class="step-head"><span class="clock">08–18</span><h2>Step 0 — Who should Procol sell to?</h2></div>
+    <p class="goal">Your first prompt, and your first grading. You will judge the answer before you use it.</p>
+
+    <ol class="do">
+      <li><div><b>Open Claude and start a new Project</b>
+        <p>Name it <code>Research Chain — [your group]</code>. Turn on web search in the chat settings. Everything today happens inside this one Project.</p></div></li>
+      <li><div><b>Paste the Step 0 prompt into a new chat and run it</b>
+        <p>Not into project instructions. Just a normal chat inside the Project.</p></div></li>
+      <li><div><b>Read the answer properly</b><p>Do not skim. You are about to grade it.</p></div></li>
+      <li><div><b>Grade it against the four questions below, out loud, as a group</b></div></li>
+    </ol>
+
+    <div class="block">
+      <div class="block-bar"><span>Step 0 · the ICP</span><button class="copy" type="button">Copy</button></div>
+<pre>I sell Procol: procurement software that replaces email and spreadsheet
+sourcing with structured e-auctions, vendor management and spend
+analytics. Buyers are procurement, finance and supply chain leaders.
+
+Tell me who to sell to. Use exactly this format and add nothing else.
+
+## Who fits
+| Industry | Company size | What must be true about their spend | Why they would care |
+
+## Who does NOT fit
+| Looks similar but is wrong | Why |
+
+## Buying signals
+| Signal they need this NOW | Exactly where I would see it from outside |
+
+## Weakest assumption
+The one thing above I am least sure about, and what I would check first.
+
+Rules:
+- Maximum 4 rows per table.
+- Every buying signal must be visible from outside the company.
+  If I could not see it without being an employee, do not list it.
+- Do not hedge. No "it depends".</pre>
+    </div>
+
+    <h3>Now grade it</h3>
+    <table>
+      <thead><tr><th>Ask yourselves</th><th>If the answer is no</th></tr></thead>
+      <tbody>
+        <tr><td>Could I actually <b>see</b> every buying signal from outside?</td><td>Cross it out. It is a wish, not a signal.</td></tr>
+        <tr><td>Is the "does not fit" table genuinely different from the "fits" table?</td><td>The AI has not understood the product. Re-run with a sharper description.</td></tr>
+        <tr><td>Would this ICP rule out any real company?</td><td>An ICP that includes everyone is not an ICP.</td></tr>
+        <tr><td>Do you agree with the weakest assumption it named?</td><td>Name the one you think is actually weakest. That disagreement is the useful part.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="check">
+      <span class="eyebrow">Before you move on</span>
+      <p>Pick <b>one buying signal</b> that survived. Write it somewhere you can find it. You will paste it into the next prompt.</p>
+    </div>
+
+    <div class="faculty">
+      <span class="eyebrow">Faculty note</span>
+      <p>This replaces writing an ICP by hand. Students do not have enough Procol context to write one cold, and the grading is where the learning is anyway. Put one group's answer on screen at minute 15 and ask the room which signals to cross out. Expect "they are hiring a procurement lead" (visible, good) versus "they are frustrated with their process" (invisible, cross it out). That contrast is the whole lesson.</p>
+    </div>
+  </section>
+
+  <section id="w1c">
+    <div class="step-head"><span class="clock">18–30</span><h2>Step 1 — What is changing in their industry?</h2></div>
+    <p class="goal">Everyone builds this one together, following the front of the room.</p>
+
+    <ol class="do">
+      <li><div><b>New chat, same Project</b><p>Keep the Step 0 chat open. You will need it.</p></div></li>
+      <li><div><b>Paste the prompt below. Do not run it yet.</b></div></li>
+      <li><div><b>Replace the line marked EDIT THIS</b>
+        <p>Put in the buying signal you kept from Step 0. This is the only edit, and it is what makes your output different from every other group's.</p></div></li>
+      <li><div><b>Type your target account's industry at the bottom, then run</b></div></li>
+      <li><div><b>Check the counts at the end</b>
+        <p>If ASSERTED is higher than VERIFIED, the agent is guessing more than it is finding.</p></div></li>
+    </ol>
+
+    <div class="block">
+      <div class="block-bar"><span>Step 1 · the shift · edit before running</span><button class="copy" type="button">Copy</button></div>
+<pre>You research what is changing in an industry that makes companies
+spend money on new procurement software.
+
+What I sell: Procol. Procurement software. E-auctions, vendor
+management, spend analytics. Buyers are procurement, finance and
+supply chain leaders.
+
+Rules:
+1. Only changes from the last 18 months. Older is background, not change.
+2. Every change needs a named source with a date. No source, leave it out.
+3. Do not connect two facts unless a source connects them.
+4. Maximum 4 changes. Cut anything true of every industry.
+5. << EDIT THIS: paste your buying signal from Step 0 and tell the
+   agent to look for it specifically. >>
+
+Return exactly this and nothing else:
+
+## Industry: [name]
+| What changed | Source + date | Why it frees up procurement budget | Status |
+
+Status is VERIFIED or ASSERTED.
+Then: VERIFIED: n | ASSERTED: n | TOTAL: n
+Then: two things I could not find out.
+
+Industry: [type it here]</pre>
+    </div>
+
+    <div class="note warn">
+      <p>If you skip the edit, your output will look almost identical to every other group's. We compare across the room, so it will be obvious.</p>
+    </div>
+  </section>
+
+  <section id="w1d">
+    <div class="step-head"><span class="clock">30–46</span><h2>Steps 2, 3 and 4 — split the group</h2></div>
+    <p class="goal">One person per step. You work at the same time, but each of you needs the person before you to finish first.</p>
+
+    <ol class="do">
+      <li><div><b>Decide who owns which step</b><p>Steps 2, 3 and 4. In a group of four, the fourth person owns Steps 0 and 1 and helps whoever is stuck.</p></div></li>
+      <li><div><b>Each person opens their own new chat in the same Project</b></div></li>
+      <li><div><b>Paste the previous step's full output at the top, then your prompt below it</b>
+        <p>This copy-paste <i>is</i> the handoff. It is the single most important action in the workshop.</p></div></li>
+      <li><div><b>Run it, read it, check the counts</b><p>Do not re-run to make it prettier. Move on.</p></div></li>
+      <li><div><b>Post your output to your group chat so the next person can use it</b></div></li>
+    </ol>
+
+    <div class="block">
+      <div class="block-bar"><span>Step 2 · the account</span><button class="copy" type="button">Copy</button></div>
+<pre>[Paste the Step 1 output above this line.]
+
+You research one company to find where Procol would fit.
+
+Rules:
+1. Only include things that change how I would sell. Skip company
+   history, founder stories, awards.
+2. Every claim needs a named source with a date. Mark anything older
+   than 24 months as STALE next to the date.
+3. If you cannot find how they run procurement today, write
+   "not publicly findable". Do not guess.
+
+Return exactly this and nothing else:
+
+## Account: [company]
+What they do and where their money goes:
+| Claim | Source + date | Status |
+
+How they run procurement today:
+| Claim | Source + date | Status |
+
+What changed at this company in the last 12 months:
+| Event | Why it matters for procurement | Source + date | Status |
+
+Which change from Step 1 applies to them, and which does not:
+
+VERIFIED: n | ASSERTED: n | TOTAL: n
+Two things I could not find out:
+
+Company: [type it here]</pre>
+    </div>
+
+    <div class="block">
+      <div class="block-bar"><span>Step 3 · the role</span><button class="copy" type="button">Copy</button></div>
+<pre>[Paste the Step 2 output above this line.]
+
+You work out which job titles at this company would care about Procol,
+and what each of them is judged on at work.
+
+Rules:
+1. Job titles only. No named people in this step.
+2. For each title, say what they are measured on. If you are guessing
+   that from the title rather than a source, mark it ASSERTED.
+3. Include at least one person who would block this purchase. A buying
+   group with no blocker means you have not understood it.
+
+Return exactly this and nothing else:
+
+## Who would be involved: [company]
+| Job title | Role in the decision | Measured on | What they would fear about buying this | Status |
+
+Role in the decision is one of:
+champion / holds the budget / technical checker / daily user / blocker
+
+Who to approach first, and one sentence on why:
+VERIFIED: n | ASSERTED: n | TOTAL: n</pre>
+    </div>
+
+    <div class="block">
+      <div class="block-bar"><span>Step 4 · the person</span><button class="copy" type="button">Copy</button></div>
+<pre>[Paste the Step 3 output above this line.]
+
+You find real named people in those roles, and the public evidence
+that would let me start a relevant conversation with them.
+
+Rules:
+1. Public professional sources only: company site, LinkedIn, press,
+   podcasts, conference talks, filings. Nothing personal.
+2. Every person needs a link and a date. No link, leave them out.
+3. "Evidence" means something they said or did that I can point to.
+   A job title is not evidence.
+4. If you find nobody with real public evidence, say so. Do not pad.
+
+Return exactly this and nothing else:
+
+## People at [company]
+| Name | Title | Time in role | What they said or did | Link + date | Status |
+
+One opening line for each person, taken only from the
+"what they said or did" column:
+
+VERIFIED: n | ASSERTED: n | TOTAL: n</pre>
+    </div>
+
+    <div class="faculty">
+      <span class="eyebrow">Faculty note</span>
+      <p>This block is the most likely to overrun. Two-minute warning at minute 42. If a group's Step 2 stalls, hand them a pre-run Step 2 output so Steps 3 and 4 are not blocked. Losing one step is better than losing the chain.</p>
+    </div>
+  </section>
+
+  <section id="w1e">
+    <div class="step-head"><span class="clock">46–56</span><h2>Put it all in one file</h2></div>
+    <p class="goal">This file is the only thing that travels to Workshop 2. Nothing else survives.</p>
+
+    <ol class="do">
+      <li><div><b>Open a blank doc and paste the template below</b></div></li>
+      <li><div><b>Fill each field from the step named beside it</b><p>Copy the actual sourced claim, not a summary of it.</p></div></li>
+      <li><div><b>Leave empty fields empty</b>
+        <p>Do not fill a gap with something that sounds right. An empty field is information. A guessed field is a landmine.</p></div></li>
+      <li><div><b>Save it where all of you can reach it in two weeks</b></div></li>
+    </ol>
+
+    <div class="block">
+      <div class="block-bar"><span>personalization-pack.md · do not rename the fields</span><button class="copy" type="button">Copy</button></div>
+<pre># Personalization Pack
+Group:            Account:            Date:
+
+## The company
+Name:
+What they do:
+Why they fit our ICP (one line):
+
+## What changed in their industry          [from Step 1]
+The change:
+Source + date:
+Why it frees up budget:
+Status:
+
+## What changed at this company            [from Step 2]
+How they run procurement today:
+What happened in the last 12 months:
+Source + date:
+Status:
+
+## Who we are writing to                   [from Step 3]
+Job title:
+Role in the decision:
+What they are measured on:
+What they would fear about buying this:
+
+## The person                              [from Step 4]
+Name / title / time in role:
+What they said or did:
+Link + date:
+Status:
+
+## Do not use                              [filled in at minute 70]
+-
+-</pre>
+    </div>
+
+    <div class="note good">
+      <span class="eyebrow">The section people skip</span>
+      <p><b>Do not use</b> is the most important part of this file. Claims that fail the grading do not get deleted, they get written down as banned. In Workshop 2, any message containing a banned claim fails, no matter how good it reads.</p>
+    </div>
+  </section>
+
+  <section id="w1f">
+    <div class="step-head"><span class="clock">56–70</span><h2>Grade each other's work</h2></div>
+    <p class="goal">You do not grade your own step. You grade the step before yours.</p>
+
+    <ol class="do">
+      <li><div><b>Work out who you are grading</b>
+        <p>Step 2 grades Step 1. Step 3 grades Step 2. Step 4 grades Step 3. Step 1 grades Step 4.</p></div></li>
+      <li><div><b>Open a chat OUTSIDE the Project</b>
+        <p>A grader that shares the writer's instructions shares the writer's blind spots. This matters more than it sounds.</p></div></li>
+      <li><div><b>Paste the grading prompt, then the output you are grading</b></div></li>
+      <li><div><b>Work out the verification ratio using the calculator below</b></div></li>
+      <li><div><b>Check the grader yourself</b>
+        <p>Pick any three rows. Do you agree with what it said? If not, that is the most useful thing you will find today.</p></div></li>
+      <li><div><b>Copy every failed row into the "Do not use" section of your pack</b></div></li>
+    </ol>
+
+    <div class="block">
+      <div class="block-bar"><span>the grading prompt · yes or no only</span><button class="copy" type="button">Copy</button></div>
+<pre>You are a strict grader. You are not helpful or encouraging.
+
+Below is a piece of research. For EVERY row in EVERY table, answer
+these four questions with YES or NO only. No explanations.
+
+A. Does it name a real source, not "industry knowledge"?
+B. Does the source have a date?
+C. Is that date within the last 24 months?
+D. Would a salesperson act differently if this row turned out to be false?
+
+Return one table: row, then A, B, C, D.
+Then return exactly:
+ROWS: n | FAILED A: n | FAILED B: n | FAILED C: n | FAILED D: n
+Then list every row that failed A under the heading DO NOT USE.
+
+Add no other commentary.
+
+--- RESEARCH TO GRADE ---
+[paste here]</pre>
+    </div>
+
+    <div class="note">
+      <span class="eyebrow">Why yes and no, instead of a score out of 10</span>
+      <p>If the grader says "quality: 7/10, fairly thorough", you have not built a grader. You have built a second opinion that makes things up just as confidently as the first one did. You can check a YES in five seconds. You cannot check a 7. <b>A grade you cannot check is not a grade.</b></p>
+    </div>
+
+    <h3>Your verification ratio</h3>
+    <div class="calc">
+      <div><label for="cSourced">Rows that passed A, B and C</label>
+        <input id="cSourced" type="number" min="0" value="0" inputmode="numeric"></div>
+      <div><label for="cTotal">Total rows</label>
+        <input id="cTotal" type="number" min="0" value="0" inputmode="numeric"></div>
+      <div id="ratioOut" aria-live="polite"><span id="ratioNum">—</span><span id="ratioMsg">Enter your counts.</span></div>
+    </div>
+
+    <h3>Practice first — spot the bad claims</h3>
+    <p>Six claims about <b>Meridian Castings, a company we invented</b>. It is not real. We made it up so we could plant mistakes in it on purpose, which we would not do to a real business. Three claims are unusable. Click the ones you would refuse to put in front of a buyer.</p>
+
+    <div class="audit" id="audit">
+      <button class="claim" type="button" data-bad="true" data-why="Made up. 'Industry knowledge' means the agent invented authority for itself. Funding rounds are the most commonly fabricated fact in AI-written research, because they are easy to make sound plausible.">
+        <span>Meridian Castings raised ₹95 Cr in early 2026 from a growth fund.
+          <span class="src">Source: industry knowledge</span></span>
+        <span class="mark">Flag</span><span class="verdict"></span>
+      </button>
+      <button class="claim" type="button" data-bad="false" data-why="Usable. Named first-party source, and supplier concentration is exactly the fact that decides whether procurement software is worth their time.">
+        <span>About 60% of their input cost sits with 40 raw-material suppliers.
+          <span class="src">Source: FY26 annual report, supplier note</span></span>
+        <span class="mark">Flag</span><span class="verdict"></span>
+      </button>
+      <button class="claim" type="button" data-bad="true" data-why="Two facts joined by an invented reason. The hire is sourced. The 'which means' is not. Say this to the buyer and they will correct you in ten seconds, and you will have spent your credibility on a guess.">
+        <span>They hired a Head of Sourcing in March, which means they are unhappy with their current process.
+          <span class="src">Source: LinkedIn job change (the hire only)</span></span>
+        <span class="mark">Flag</span><span class="verdict"></span>
+      </button>
+      <button class="claim" type="button" data-bad="false" data-why="Usable, and the best line here. Something the buyer said themselves about how they work today is worth more than any market statistic. This is what an opening line is built from.">
+        <span>Their COO said on a trade podcast that sourcing runs on email and spreadsheets.
+          <span class="src">Source: industry podcast, episode 88, Feb 2026</span></span>
+        <span class="mark">Flag</span><span class="verdict"></span>
+      </button>
+      <button class="claim" type="button" data-bad="true" data-why="Out of date, and the sentence does not say so. A 2022 number written without its date reads as current. Nobody lied, and the buyer still heard something false. That is how stale facts do their damage.">
+        <span>Headcount is around 1,400 across three plants.
+          <span class="src">Source: company press release, 2022</span></span>
+        <span class="mark">Flag</span><span class="verdict"></span>
+      </button>
+      <button class="claim" type="button" data-bad="false" data-why="Usable. Dated, sourced, and it gives a reason to call now rather than next quarter. This is what a trigger event actually looks like.">
+        <span>A fourth plant was announced in January 2026, opening next year.
+          <span class="src">Source: national business daily, 14 Jan 2026</span></span>
+        <span class="mark">Flag</span><span class="verdict"></span>
+      </button>
+      <div class="audit-actions">
+        <button class="btn" type="button" id="scoreBtn">Score my answers</button>
+        <button class="btn ghost" type="button" id="resetBtn">Reset</button>
+        <span class="score-out" id="auditScore"></span>
+      </div>
+    </div>
+
+    <div class="note good">
+      <span class="eyebrow">Three failure types. They never change.</span>
+      <p><b>Made up</b> — no source exists. <b>Out of date</b> — true once, not now. <b>Joined without evidence</b> — two real facts, one invented link between them. Learn these three and you can check any AI output in any job.</p>
+    </div>
+  </section>
+
+  <section id="w1g">
+    <div class="step-head"><span class="clock">70–82</span><h2>Fix one thing. Run it again.</h2></div>
+    <p class="goal">Not "make it better". One specific failure, one specific change.</p>
+
+    <ol class="do">
+      <li><div><b>Pick the single worst failure the grader found</b></div></li>
+      <li><div><b>Use the table below to work out which part is broken</b></div></li>
+      <li><div><b>Change the prompt, not the chat</b>
+        <p>Do not type "please add sources". Edit the rules in the prompt itself and run it again from scratch.</p></div></li>
+      <li><div><b>Run the grader again on the new output</b></div></li>
+      <li><div><b>Compare the counts, before and after</b>
+        <p>If the numbers did not move, your fix was cosmetic. Try a different one.</p></div></li>
+    </ol>
+
+    <table>
+      <thead><tr><th>What the grader found</th><th>What is broken</th><th>What to change</th></tr></thead>
+      <tbody>
+        <tr><td>Lots of rows failed A</td><td>Your rules</td><td>Add an example of a claim you would reject, and say why</td></tr>
+        <tr><td>Lots of rows failed C</td><td>Web search, or your rules</td><td>Check search is actually on, then add a hard recency rule</td></tr>
+        <tr><td>Lots of rows failed D</td><td>What the agent knows about your product</td><td>It cannot judge relevance because it does not know enough about Procol. Add two lines.</td></tr>
+        <tr><td>Everything passed</td><td>Your grader</td><td>The questions are too easy, or you have not hand-checked it</td></tr>
+      </tbody>
+    </table>
+
+    <div class="check">
+      <span class="eyebrow">Before you move on</span>
+      <p>Every claim that still fails goes into <b>Do not use</b>. It is now banned in Workshop 2.</p>
+    </div>
+  </section>
+
+  <section id="w1h">
+    <div class="step-head"><span class="clock">82–90</span><h2>Prompts, saved prompts, and skill files</h2></div>
+    <p class="goal">You have probably been wondering whether to save all this somewhere. Here is the honest answer.</p>
+
+    <p>Today you pasted prompts by hand and copied output between them. That worked. Here is what changes if you save them, and what does not.</p>
+
+    <table>
+      <thead><tr><th></th><th>What it is</th><th>Lives where</th><th>Use it when</th></tr></thead>
+      <tbody>
+        <tr><td><b>A prompt</b></td><td>Text you paste into one chat</td><td>Nowhere. It dies with the chat.</td><td>You are still working out what you want. This is where you are today.</td></tr>
+        <tr><td><b>Project instructions</b></td><td>A prompt that applies to every chat in one Project</td><td>Saved in the Project. One per Project.</td><td>Something is true for all five steps, like "always cite a source".</td></tr>
+        <tr><td><b>A skill file</b></td><td>A named prompt saved as its own file</td><td>A folder. As many as you like.</td><td>You do the same job repeatedly and want to call it by name.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <span class="eyebrow">The part that surprises people</span>
+      <p><b>The text does not change.</b> A skill file is the same words you pasted today, in a file, with a name. There is no special syntax to learn and no code to write. The only thing that changes is where it lives and who calls it.</p>
+    </div>
+
+    <h3>What that looks like as a folder</h3>
+    <div class="block">
+      <div class="block-bar"><span>the same prompts, saved</span><button class="copy" type="button">Copy</button></div>
+<pre>research-chain/
+  context/
+    our-product.md          what we sell
+    target-account.md       who we are researching
+  skills/
+    00-icp.md               the Step 0 prompt, unchanged
+    01-shift.md             the Step 1 prompt, unchanged
+    02-account.md
+    03-role.md
+    04-person.md
+    grade-research.md       the grading prompt
+  outputs/
+    personalization-pack.md</pre>
+    </div>
+
+    <p>No code. Eight text files and three folders.</p>
+
+    <div class="note warn">
+      <span class="eyebrow">The one rule that makes it work</span>
+      <p><b>No skill file may contain a company name.</b> Every fact about what you sell and who you are researching goes in <code>context/</code>. If you typed "Procol" into <code>02-account.md</code>, then the day you point it at a different product it will quietly keep researching procurement software. It will not throw an error. It will just be wrong.</p>
+    </div>
+
+    <h3>Do you have to do this?</h3>
+    <p>No. Copy-paste works fine for one account. Saving to files starts paying off somewhere around your twentieth account, and only once the prompts have stopped changing. Saving a prompt you are still fixing is the wrong order.</p>
+
+    <div class="note good">
+      <span class="eyebrow">What you actually built today</span>
+      <p>When you pasted Step 2's output into Step 3, you were the thing running the chain. Automation would replace <i>you</i>, not the chain.</p>
+      <p>And there is a cost. Running it by hand, you saw all five outputs and caught the bad one. Automated, you would see only the final pack, with a made-up claim from Step 1 quietly repeated and built on three times over. It would come out sounding <b>more</b> confident than the research deserved.</p>
+      <p>So automation does not remove the human. It moves them from checking five outputs to <b>deciding what is allowed to pass</b>. The grading prompt you wrote today is what that check is made of.</p>
+    </div>
+
+    <div class="faculty">
+      <span class="eyebrow">Faculty note</span>
+      <p>Put your own skills folder on screen for sixty seconds here. Scroll through one file so they see it is plain English. The message is: what you did by hand for five steps, this does for twelve, and the file that runs it is a document you could read.</p>
+    </div>
+  </section>
+
+  <!-- ================= WORKSHOP 2 ================= -->
+  <div class="divider">
+    <span class="eyebrow">Part two of two</span>
+    <h2>Workshop 2 — Spend the research</h2>
+  </div>
+
+  <section id="w2a">
+    <div class="step-head"><span class="clock">00–10</span><h2>Grade your own pack, cold</h2></div>
+    <p class="goal">Read what you wrote two weeks ago as if a stranger wrote it. Score it before you find out what it is for.</p>
+
+    <ol class="do">
+      <li><div><b>Open your pack. Do not open Claude yet.</b></div></li>
+      <li><div><b>Read every field out loud in your group</b><p>Reading aloud catches vagueness that reading silently does not.</p></div></li>
+      <li><div><b>Score it out of 10 and write the number down</b></div></li>
+    </ol>
+
+    <table>
+      <thead><tr><th>Score</th><th>What it means</th><th>What happens today</th></tr></thead>
+      <tbody>
+        <tr><td>8–10</td><td>Every field filled, sourced, specific to this account</td><td>Your messages will nearly write themselves</td></tr>
+        <tr><td>5–7</td><td>Filled, but "The person" section is thin</td><td>Style B will be hard. You will feel it at minute 36.</td></tr>
+        <tr><td>Below 5</td><td>Generic, or half the fields empty</td><td>You cannot fix this today. Write the messages anyway and watch what happens.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note warn">
+      <p>Nobody is re-running research today. Whatever is in the pack is what you have. This is exactly what sales work is like: you are always spending research you did earlier, under time pressure, and you find out how good it was at the worst possible moment.</p>
+    </div>
+  </section>
+
+  <section id="w2b">
+    <div class="step-head"><span class="clock">10–20</span><h2>Two styles that break in opposite ways</h2></div>
+    <p class="goal">Teaching block. Laptops closed.</p>
+
+    <table>
+      <thead><tr><th></th><th>Style A — lead with the insight</th><th>Style B — lead with the evidence</th></tr></thead>
+      <tbody>
+        <tr><td>Opens with</td><td>What changed in their industry (Step 1)</td><td>Something this person said or did (Step 4)</td></tr>
+        <tr><td>Works by</td><td>Showing them something they had not connected</td><td>Proving you did the work on them specifically</td></tr>
+        <tr><td>Sounds like</td><td>“Here is something you may not have noticed”</td><td>“I heard what you said, and here is why it matters”</td></tr>
+        <tr><td><b>Fails when</b></td><td><b>Step 1 was generic</b></td><td><b>Step 4 was thin</b></td></tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <span class="eyebrow">The rule for both</span>
+      <p>Every sentence must come from a named field in your pack. If it comes from nowhere, it is filler and it goes. This is stricter than it sounds. Most cold emails are around 70% filler, and the person writing them cannot see it until they are forced to trace each sentence back.</p>
+    </div>
+  </section>
+
+  <section id="w2c">
+    <div class="step-head"><span class="clock">20–36</span><h2>Style A — three emails</h2></div>
+    <p class="goal">Two people own this while the other two start Style B.</p>
+
+    <ol class="do">
+      <li><div><b>New chat. Paste your whole pack at the top.</b></div></li>
+      <li><div><b>Paste the prompt below underneath it, and run</b></div></li>
+      <li><div><b>Read the trace table, not just the emails</b>
+        <p>The trace table says which pack field each sentence came from. That is where the problems are visible.</p></div></li>
+      <li><div><b>Delete any sentence that traces to nothing</b><p>By hand. Do not ask the AI to do it for you.</p></div></li>
+    </ol>
+
+    <div class="block">
+      <div class="block-bar"><span>Style A · lead with the insight</span><button class="copy" type="button">Copy</button></div>
+<pre>[Paste your personalization pack above this line.]
+
+Write three cold emails from a Procol salesperson to the person
+in the pack.
+
+Hard rules:
+1. Every sentence must come from a named field in the pack. After each
+   email, list which field each sentence came from.
+2. Nothing from the "Do not use" section. Not reworded either.
+3. No sentence that would be true of any company in this industry.
+4. Under 120 words each. Subject lines under 8 words.
+5. Banned phrases: "I hope this finds you well", "quick question",
+   "circling back", "just following up".
+
+Email 1: Open with what changed in their industry. Say what that
+  changes for someone in their job. Ask one question. Do not describe
+  Procol's features.
+Email 2: A new angle, not a reminder. Use what changed at their
+  company. Mention email 1 in one clause at most.
+Email 3: Short. Make it easy to say no. Leave behind one useful thing
+  even if they never reply.
+
+After each email: a table of sentence → which pack field it came from.</pre>
+    </div>
+  </section>
+
+  <section id="w2d">
+    <div class="step-head"><span class="clock">36–50</span><h2>Style B — three emails</h2></div>
+    <p class="goal">The other two own this. Same pack, opposite starting point.</p>
+
+    <ol class="do">
+      <li><div><b>New chat. Paste your whole pack at the top.</b></div></li>
+      <li><div><b>Paste the prompt below, and run</b></div></li>
+      <li><div><b>If it refuses to write, read the reason carefully</b>
+        <p>It refuses when "The person" section is empty. That refusal is the most honest feedback in either workshop. Write down what it says.</p></div></li>
+    </ol>
+
+    <div class="block">
+      <div class="block-bar"><span>Style B · lead with the evidence</span><button class="copy" type="button">Copy</button></div>
+<pre>[Paste your personalization pack above this line.]
+
+Write three cold emails from a Procol salesperson to the person
+in the pack.
+
+Hard rules:
+1. Email 1 must open with the exact thing this person said or did,
+   from "The person" section. Quote or paraphrase it accurately.
+   If that field is empty, write "CANNOT WRITE THIS EMAIL" and say
+   what is missing. Do not invent anything to fill the gap.
+2. Every sentence comes from a named pack field. Trace table after
+   each email.
+3. Nothing from "Do not use", reworded or not.
+4. Under 120 words each. Subject lines under 8 words.
+5. Do not flatter. Referencing what someone said is research.
+   Praising them for saying it is filler.
+
+Email 1: Their own words, then the one thing that implies about how
+  they buy things. One question.
+Email 2: Connect their situation to what they are measured on.
+  Still no feature list.
+Email 3: Short. Easy to say no. One useful thing left behind.
+
+After each email: a table of sentence → which pack field it came from.</pre>
+    </div>
+  </section>
+
+  <section id="w2e">
+    <div class="step-head"><span class="clock">50–62</span><h2>LinkedIn — one request, three messages</h2></div>
+    <p class="goal">Whole group together. 300 characters is where nothing can hide.</p>
+
+    <ol class="do">
+      <li><div><b>All of you, one chat, one attempt</b></div></li>
+      <li><div><b>Paste the pack, then the prompt below</b></div></li>
+      <li><div><b>Run the swap test on the connect request</b>
+        <p>Could you send it to a different person at a different company by changing only the name? If yes, it is not personalisation. It is a mail merge with better manners.</p></div></li>
+    </ol>
+
+    <div class="block">
+      <div class="block-bar"><span>LinkedIn · connect request + 3 messages</span><button class="copy" type="button">Copy</button></div>
+<pre>[Paste your personalization pack above this line.]
+
+Write LinkedIn outreach from a Procol salesperson to the person
+in the pack.
+
+Hard rules:
+1. Connect request: under 300 characters, hard limit. No pitch. No ask
+   beyond connecting. It must contain one specific fact about them that
+   could not be true of anyone else.
+2. Messages are shorter and less formal than email. No subject lines.
+   No paragraph longer than two sentences.
+3. Every line comes from a pack field. Nothing from "Do not use".
+4. Message 3 has to work even if messages 1 and 2 got no reply, and
+   must not mention that they got no reply.
+
+Return:
+Connect request (show the character count)
+Message 1 — sent when they accept. No ask at all. Give something.
+Message 2 — three days later. One question about what they are
+  measured on.
+Message 3 — a week later. One specific offer, with an easy no.
+
+Then a table of every line → which pack field it came from.</pre>
+    </div>
+  </section>
+
+  <section id="w2f">
+    <div class="step-head"><span class="clock">62–76</span><h2>Grade the messages</h2></div>
+    <p class="goal">Workshop 1 asked "is this claim sourced". This asks "did this sentence earn its place".</p>
+
+    <ol class="do">
+      <li><div><b>Swap with another group</b><p>You grade theirs, they grade yours.</p></div></li>
+      <li><div><b>Open a chat outside the Project</b></div></li>
+      <li><div><b>Paste the grading prompt, then their pack, then their messages</b></div></li>
+      <li><div><b>Apply the verdict table without arguing</b>
+        <p>The counts decide, not your opinion of how the email reads.</p></div></li>
+    </ol>
+
+    <div class="block">
+      <div class="block-bar"><span>the message grader · one label per sentence</span><button class="copy" type="button">Copy</button></div>
+<pre>You are a strict grader. Not helpful, not encouraging.
+
+Below is a research pack, then some messages.
+Split every message into sentences. Give each sentence exactly one label:
+
+FROM PACK  — it comes from a named field in the pack
+GENERIC    — it would be true of any company in this industry
+MADE UP    — it is not in the pack and not sourced anywhere
+BANNED     — it repeats or rewords something in "Do not use"
+
+Return the sentence list with labels, then exactly:
+SENTENCES: n | FROM PACK: n | GENERIC: n | MADE UP: n | BANNED: n
+
+Add no other commentary.
+
+--- PACK ---
+[paste]
+--- MESSAGES ---
+[paste]</pre>
+    </div>
+
+    <table>
+      <thead><tr><th>Result</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td>Any MADE UP or BANNED</td><td>Does not go out. No discussion.</td></tr>
+        <tr><td>GENERIC above 30%</td><td>The research did not earn the email. Fix the sentences, not the research.</td></tr>
+        <tr><td>FROM PACK above 70%</td><td>Strong. Now read it aloud and check it still sounds like a person wrote it.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Practice first — label these four</h3>
+    <p>Four sentences from a Style A email, written about <b>Meridian Castings, the company we invented</b> in Workshop 1. Pick one label per sentence.</p>
+
+    <div class="labeller" id="lab">
+      <div class="sent" data-answer="GENERIC" data-why="GENERIC. Every manufacturer in India could receive this sentence unchanged. It sounds informed and says nothing. This is the most common failure and the hardest one to see in your own writing.">
+        <p>“In today’s volatile input-cost environment, procurement teams are under more pressure than ever.”</p>
+        <div class="sbtns"><button class="sbtn" type="button">FROM PACK</button><button class="sbtn" type="button">GENERIC</button><button class="sbtn" type="button">MADE UP</button></div>
+        <div class="sfeed"></div>
+      </div>
+      <div class="sent" data-answer="FROM PACK" data-why="FROM PACK. It comes straight from 'how they run procurement today', sourced to a dated podcast. Specific, checkable, and impossible to send to anyone else.">
+        <p>“You mentioned on the podcast in February that sourcing still runs on email and spreadsheets.”</p>
+        <div class="sbtns"><button class="sbtn" type="button">FROM PACK</button><button class="sbtn" type="button">GENERIC</button><button class="sbtn" type="button">MADE UP</button></div>
+        <div class="sfeed"></div>
+      </div>
+      <div class="sent" data-answer="MADE UP" data-why="MADE UP. No field in the pack contains a savings figure for this account. The agent produced a number because the shape of the sentence wanted one. Numbers are where invention hides best, because they read as evidence.">
+        <p>“Companies like yours typically recover 8–12% of addressable spend in the first year.”</p>
+        <div class="sbtns"><button class="sbtn" type="button">FROM PACK</button><button class="sbtn" type="button">GENERIC</button><button class="sbtn" type="button">MADE UP</button></div>
+        <div class="sfeed"></div>
+      </div>
+      <div class="sent" data-answer="FROM PACK" data-why="FROM PACK. It combines the new plant with what this person is measured on. Note that it makes no claim about the product at all, which is exactly why it works.">
+        <p>“With the fourth plant opening next year, your supplier base grows before your team does.”</p>
+        <div class="sbtns"><button class="sbtn" type="button">FROM PACK</button><button class="sbtn" type="button">GENERIC</button><button class="sbtn" type="button">MADE UP</button></div>
+        <div class="sfeed"></div>
+      </div>
+      <div class="audit-actions">
+        <button class="btn" type="button" id="labScore">Score my answers</button>
+        <button class="btn ghost" type="button" id="labReset">Reset</button>
+        <span class="score-out" id="labOut"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="w2g">
+    <div class="step-head"><span class="clock">76–86</span><h2>Work out what went wrong, and where</h2></div>
+    <p class="goal">One of your two styles is clearly worse. The question is not how to fix the email.</p>
+
+    <ol class="do">
+      <li><div><b>Put Style A and Style B side by side</b></div></li>
+      <li><div><b>Agree which one is worse</b></div></li>
+      <li><div><b>Use the table to find which research step caused it</b></div></li>
+      <li><div><b>Write one sentence: “Our weakest email is weak because Step __ was ___”</b></div></li>
+    </ol>
+
+    <table>
+      <thead><tr><th>What you are seeing</th><th>Real cause</th><th>Decided at</th></tr></thead>
+      <tbody>
+        <tr><td>Style A is vague, could go to anyone</td><td>The industry change was generic</td><td>Step 1, two weeks ago</td></tr>
+        <tr><td>Style B refused to write, or opened weakly</td><td>No real public evidence on the person</td><td>Step 4</td></tr>
+        <tr><td>Both read like a brochure</td><td>You never worked out what they are measured on</td><td>Step 3</td></tr>
+        <tr><td>Lots of GENERIC across all six</td><td>You never found anything that changed at the company</td><td>Step 2</td></tr>
+        <tr><td>Connect request only needed a name swap</td><td>“The person” is a job title, not evidence</td><td>Step 4</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note good">
+      <p>This is the skill that transfers. Not "how do I write a better email". <b>Which earlier failure produced this email.</b> Salespeople who can do this get better every quarter. Salespeople who cannot rewrite subject lines forever.</p>
+    </div>
+  </section>
+
+  <section id="w2h">
+    <div class="step-head"><span class="clock">86–90</span><h2>Final project — do it again with everything changed</h2></div>
+    <p class="goal">The system is only real if it survives being pointed at something else.</p>
+
+    <ol class="do">
+      <li><div><b>Pick one pairing from the table below</b><p>Or propose your own and get it approved.</p></div></li>
+      <li><div><b>Save your prompts as files, using the folder layout from Workshop 1</b>
+        <p>Then take every company name out of the prompt files and move it into <code>context/</code>.</p></div></li>
+      <li><div><b>Run all five research steps, then all three message prompts</b></div></li>
+      <li><div><b>Run both graders and keep the counts</b></div></li>
+      <li><div><b>Write one paragraph: what broke when you swapped, and what you changed</b></div></li>
+    </ol>
+
+    <h3>Pick a pairing</h3>
+    <p>Each is a real Indian B2B company selling to a real Indian target account. <b>Some of these pairings do not work.</b> Proving that from your research is a legitimate result.</p>
+
+    <table>
+      <thead><tr><th>You sell for</th><th>What they sell</th><th>Target account</th></tr></thead>
+      <tbody>
+        <tr><td><b>MoveInSync</b></td><td>Employee commute and fleet software</td><td>Mphasis</td></tr>
+        <tr><td><b>Xoxoday</b></td><td>Sales commission and incentive software</td><td>Bajaj Finserv</td></tr>
+        <tr><td><b>WebEngage</b></td><td>Customer engagement and retention platform</td><td>Honasa (Mamaearth)</td></tr>
+        <tr><td><b>IDfy</b></td><td>Identity verification and background checks</td><td>Poonawalla Fincorp</td></tr>
+        <tr><td><b>GoKwik</b></td><td>Checkout and return-to-origin technology</td><td>boAt</td></tr>
+        <tr><td><b>TrueFoundry</b></td><td>Platform for deploying machine learning models</td><td>Meesho</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note warn">
+      <span class="eyebrow">What you hand in</span>
+      <p>Your folder. The filled pack. Both grader outputs with their counts. The six emails and the LinkedIn set. And the paragraph on what broke.</p>
+      <p>You are marked on the <b>counts and the paragraph</b>, not on whether the emails read nicely. A good-sounding email with three MADE UP sentences scores lower than an awkward one with none.</p>
+    </div>
+
+    <div class="faculty">
+      <span class="eyebrow">Faculty note</span>
+      <p>The pairings are deliberately uneven. TrueFoundry to Meesho is a strong fit and the research will come easily. Xoxoday to Bajaj Finserv is plausible but the buying group is enormous and Step 3 will struggle. At least one group should come back arguing their pairing does not work. Reward that if the evidence supports it. Being able to disqualify an account from public research is worth more than a polished email to the wrong company.</p>
+    </div>
+  </section>
+
+  </main>
+</div>
+
+<footer>
+  <div>Mesa School of Business · AI Agent Workshops 1 &amp; 2 · Follow along at your own pace · Nothing on this page is submitted automatically</div>
+</footer>
+
+<script>
+document.getElementById('facToggle').addEventListener('click',function(){
+  var off=document.body.classList.toggle('no-faculty');
+  this.textContent=off?'Show faculty notes':'Hide faculty notes';
+});
+
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var pre=btn.closest('.block').querySelector('pre');
+    navigator.clipboard.writeText(pre.innerText).then(function(){
+      var old=btn.textContent;btn.textContent='Copied';btn.classList.add('done');
+      setTimeout(function(){btn.textContent=old;btn.classList.remove('done');},1600);
+    }).catch(function(){btn.textContent='Select manually';});
+  });
+});
+
+var s=document.getElementById('cSourced'),t=document.getElementById('cTotal'),
+    num=document.getElementById('ratioNum'),msg=document.getElementById('ratioMsg');
+function ratio(){
+  var a=parseInt(s.value,10),b=parseInt(t.value,10);
+  if(!b||b<=0||isNaN(a)){num.textContent='—';num.style.color='';msg.textContent='Enter your counts.';return;}
+  if(a>b){num.textContent='—';num.style.color='';msg.textContent='Sourced rows cannot exceed total rows.';return;}
+  var p=Math.round(a/b*100);num.textContent=p+'%';
+  if(p<50){num.style.color='#A32B2B';msg.textContent='Not usable in front of a buyer.';}
+  else if(p<75){num.style.color='#B26A00';msg.textContent='Normal first attempt. Fix the prompt, not the chat.';}
+  else{num.style.color='#0F6F63';msg.textContent='Strong. Check it is useful, not just cautious.';}
+}
+s.addEventListener('input',ratio);t.addEventListener('input',ratio);
+
+var audit=document.getElementById('audit');
+audit.querySelectorAll('.claim').forEach(function(c){
+  c.addEventListener('click',function(){
+    if(audit.classList.contains('scored'))return;
+    var on=c.getAttribute('data-flagged')==='true';
+    c.setAttribute('data-flagged',on?'false':'true');
+    c.querySelector('.mark').textContent=on?'Flag':'Flagged';
+  });
+});
+document.getElementById('scoreBtn').addEventListener('click',function(){
+  var right=0,wrong=0,missed=0;
+  audit.querySelectorAll('.claim').forEach(function(c){
+    var bad=c.getAttribute('data-bad')==='true',fl=c.getAttribute('data-flagged')==='true';
+    if(bad&&fl)right++;if(!bad&&fl)wrong++;if(bad&&!fl)missed++;
+    c.querySelector('.verdict').textContent=(bad?'Unusable. ':'Usable. ')+c.getAttribute('data-why');
+  });
+  audit.classList.add('scored');
+  document.getElementById('auditScore').textContent='Caught '+right+'/3 · missed '+missed+' · wrongly flagged '+wrong;
+});
+document.getElementById('resetBtn').addEventListener('click',function(){
+  audit.classList.remove('scored');
+  audit.querySelectorAll('.claim').forEach(function(c){
+    c.setAttribute('data-flagged','false');c.querySelector('.mark').textContent='Flag';
+    c.querySelector('.verdict').textContent='';
+  });
+  document.getElementById('auditScore').textContent='';
+});
+
+var lab=document.getElementById('lab');
+lab.querySelectorAll('.sent').forEach(function(sn){
+  sn.querySelectorAll('.sbtn').forEach(function(b){
+    b.setAttribute('aria-pressed','false');
+    b.addEventListener('click',function(){
+      if(lab.classList.contains('scored'))return;
+      sn.querySelectorAll('.sbtn').forEach(function(o){o.setAttribute('aria-pressed','false');});
+      b.setAttribute('aria-pressed','true');
+    });
+  });
+});
+document.getElementById('labScore').addEventListener('click',function(){
+  var right=0,total=0;
+  lab.querySelectorAll('.sent').forEach(function(sn){
+    total++;var picked=null;
+    sn.querySelectorAll('.sbtn').forEach(function(b){
+      if(b.getAttribute('aria-pressed')==='true')picked=b.textContent;
+    });
+    if(picked===sn.getAttribute('data-answer'))right++;
+    sn.querySelector('.sfeed').textContent=sn.getAttribute('data-why');
+  });
+  lab.classList.add('scored');
+  document.getElementById('labOut').textContent=right+'/'+total+' correct';
+});
+document.getElementById('labReset').addEventListener('click',function(){
+  lab.classList.remove('scored');
+  lab.querySelectorAll('.sbtn').forEach(function(b){b.setAttribute('aria-pressed','false');});
+  lab.querySelectorAll('.sfeed').forEach(function(f){f.textContent='';});
+  document.getElementById('labOut').textContent='';
+});
+
+var links=Array.prototype.slice.call(document.querySelectorAll('.rail a'));
+var obs=new IntersectionObserver(function(es){
+  es.forEach(function(e){
+    if(e.isIntersecting){links.forEach(function(l){
+      l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id);});}
+  });
+},{rootMargin:'-10% 0px -70% 0px'});
+document.querySelectorAll('section[id]').forEach(function(sec){obs.observe(sec);});
+</script>

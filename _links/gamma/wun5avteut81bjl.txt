@@ -1,0 +1,89 @@
+Source: https://gamma.app/docs/Copy-of-Personas-wun5avteut81bjl?mode=doc
+Title: Copy of Personas
+Captured: 2026-10-20T07:53:42.996Z (Gamma page text via browser)
+
+Copy of Personas
+
+PO
+Personas
+
+Personas are fictional representations of the ideal customer. They are more specific than the target audience and contain comprehensive details about who the buyer is, defining who the company wants to sell to and who their ideal clients are. Understanding personas is key to building solid relationships with customers.
+
+Last edited 3 months ago
+
+Why care about Personas?
+1
+Comprehensive Details
+
+A buyer persona contains comprehensive details of who your buyer is.
+
+2
+Defines Your Company
+
+It defines who your company is and who you want to sell to.
+
+3
+Ideal Clients
+
+It defines who your ideal clients are and what you need to know about them in order to build a solid relationship with them.
+
+4
+Multiple Personas
+
+A business can have one target audience and multiple buyer personas.
+
+Sample B2C
+
+
+
+
+Sample B2B
+
+
+
+
+Framework for Personas
+1
+Identify
+
+Identify the different types of personas relevant to your business.
+
+2
+Research
+
+Conduct research to gather data and insights about each persona.
+
+3
+Build
+
+Build detailed profiles for each persona based on the research.
+
+4
+Refine
+
+Continuously refine and update the personas as you gather more information.
+
+Framework for Personas
+Framework - break down by Personas
+Types of Personas
+1
+Functional Personas (Executive Sponsor, Influencers, Buyers / P&L, Users)
+CEO
+Head of Sales / P&L owner
+1-2 Downs
+Head of Contact Center / Operations
+1-2 Downs
+CMO
+Head of Marketing
+IT Head / CTO
+Product and Integration
+2
+Ancillary Personas (Roadblocks)
+Compliance and Infosec
+Finance / Procurement
+Legal
+3
+Bonus (In Very Large Enterprises)
+Training and L&D Lead
+Quality Lead
+Building Account Map
